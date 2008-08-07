@@ -1,0 +1,26 @@
+options
+weekday
+start_date	20080315
+end_date	20081215
+remove_date	20080704
+agency_name	Halifax Metro Transit
+agency_url	http://shuttle/
+agency_timezone	America/Los_Angeles
+
+stops
+Northridge Road	8165	44.671826	-63.6163061
+Robie & Lady Hammond	8208	44.6647155	-63.61677
+Robie & Quinpool (south bound)	8214	44.64737	-63.59070
+South & Barrington	6096	44.640231	-63.5699951
+Barrington & Duke (north bound)	6087	44.649345	-63.57469
+Gottingen & Young	7366	44.662365	-63.59804
+Novalea (Samuel Prince Manor)	7378	44.671285	-63.61181
+
+O in	Bar Circle Inbound
+Northridge Road	06:00:00	06:20:00
+Robie & Lady Hammond	06:04:00	06:24:00
+Robie & Quinpool (south bound)	06:14:00	06:34:00
+South & Barrington	06:21:00	06:41:00
+Barrington & Duke (north bound)	06:28:00	06:48:00
+Gottingen & Young	06:37:00	06:57:00
+Novalea (Samuel Prince Manor)	06:45:00	07:05:00
