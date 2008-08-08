@@ -4,6 +4,8 @@ use strict;
 
 open FILE, $ARGV[0] or die $!;
 
+my $trailing_newline = $ARGV[1];
+
 my $done_places = 0;
 my @sched;
 my $sched_name;
@@ -82,4 +84,8 @@ while (<FILE>) {
 
 foreach (@sched) {
     print "$_\n";
+}
+
+if ($trailing_newline) {
+    print "\n";
 }
