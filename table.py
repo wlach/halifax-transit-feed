@@ -54,8 +54,10 @@ def AddRouteToSchedule(schedule, table):
       t = r.AddTrip(schedule, headsign='My headsign')
       trip_stops = []  # Build a list of (time, stopname) tuples
       for i in range(0, len(trip)):
-        if re.search(r'\S', trip[i]):
+        if re.search(r'[0-9]+:[0-9]+', trip[i]):
           trip_stops.append( (transitfeed.TimeToSecondsSinceMidnight(trip[i]), table[1][i]) )
+        elif not re.search(r'^\-$', trip[i]):
+          print "WARNING: Unrecognized trip stop %s" % trip[i];
       trip_stops.sort()  # Sort by time
       for (time, stopname) in trip_stops:
         t.AddStopTime(stop=stops[stopname.lower()], arrival_secs=time,
