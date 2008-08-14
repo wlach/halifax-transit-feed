@@ -6,7 +6,7 @@ Barrington & Duke (north bound)
 North & Brunswick
 Bridge Terminal (Dartmouth Sportsplex)
 
-# - - - 604a 607a
+- - - 604a 607a
 600a 611a 625a 633a 637a
 610a 621a 635a 643a 647a
 620a 631a 645a 653a 657a
