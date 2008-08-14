@@ -1,0 +1,14 @@
+3	To Manors
+
+Mumford Terminal
+Village at Bayers Road
+Richmond Manor
+Gordon B. Isnor Manor
+Barrington & Duke (north bound)
+Spring Garden & Summer Street
+Joseph Howe Manor
+
+957a 1012a 1026a 1037a 1040a 1047a 1055a
+1207p 1222p 1236p 1247p 1250p 1257p 105p
+217p 232p 246p 257p 300p 307p 315p
+247p 302p 316p 327p 330p 337p 345p
