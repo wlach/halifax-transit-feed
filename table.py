@@ -166,7 +166,8 @@ def main():
     else:
       table.append(line.split('\t'))
 
-  ProcessTable(schedule, table)
+  if table:
+    ProcessTable(schedule, table)
 
   schedule.WriteGoogleTransitFeed(options.output)
 
