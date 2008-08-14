@@ -3,7 +3,7 @@
 Mumford Terminal
 Oxford & Quinpool (south bound)
 Barrington & Duke (north bound)
-North & Brunswick
+North & Brunswick (south bound)
 Bridge Terminal (Dartmouth Sportsplex)
 
 - - - 604a 607a
