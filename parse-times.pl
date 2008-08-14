@@ -4,8 +4,6 @@ use strict;
 
 open FILE, $ARGV[0] or die $!;
 
-my $trailing_newline = $ARGV[1];
-
 my $done_places = 0;
 my @sched;
 my $sched_name;
@@ -60,6 +58,8 @@ sub parse_time {
 	    $hour += 24;
 	}
 	$time = $hour . $time;
+    } elsif ($time =~ /^-\Z/) {
+	# no stop at this time
     } else {
 	print "Should not happen! Time misformed.\n";
 	exit;
@@ -86,6 +86,4 @@ foreach (@sched) {
     print "$_\n";
 }
 
-if ($trailing_newline) {
-    print "\n";
-}
+print "\n";
