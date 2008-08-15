@@ -51,7 +51,7 @@ def AddRouteToSchedule(schedule, table):
       if len(trip) > len(table[1]):
         print "ignoring %s" % trip[len(table[1]):]
         trip = trip[0:len(table[1])]
-      t = r.AddTrip(schedule, headsign='My headsign')
+      t = r.AddTrip(schedule, headsign=table[0][1])
       trip_stops = []  # Build a list of (time, stopname) tuples
       for i in range(0, len(trip)):
         if re.search(r'[0-9]+:[0-9]+', trip[i]):
