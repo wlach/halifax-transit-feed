@@ -24,7 +24,8 @@ while (<STDIN>) {
 	}
 	print "]";
     } else {
-	print $_;
+	# yes, this conditional is loaded with assumptions...
+	print ",\n" . $_;
     }
 }
 
