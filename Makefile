@@ -19,4 +19,4 @@ hfxtable.yml: hfxtable.yml.in $(ROUTE_FILES) indent-route.pl
 		./indent-route.pl < $(ROUTE_FILE) >> hfxtable.yml;)
 
 clean:
-	rm -f hfxtable.yml hfxfeed.zip
+	rm -f hfxtable.yml hfxfeed.zip *~
