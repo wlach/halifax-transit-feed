@@ -57,7 +57,9 @@ while (<STDIN>) {
 	    print parse_time($_);
 	}
 	print "],\n";
-    }   
+    } else {
+	print $_;
+    }
 }  
 
 print "]\n";
