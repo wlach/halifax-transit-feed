@@ -26,8 +26,8 @@ $HOME/git/googletransitdatafeed-halifax-fork/python/schedule_viewer.py \
 === Copyright ===
 
 With the exception of table.py, which is licensed under the Apache Public
-License (and belongs to Google), please consider all software tools in this 
-distribution to be in the public domain. Use them for what you will.
+License, please consider all software tools in distribution to be in the public 
+domain. Use them for what you will.
 
 I believe the Metro Transit route data is considered factual information
 which can not be copyrighted. Note, however, that Metro Transit and/or
