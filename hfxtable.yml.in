@@ -21,8 +21,12 @@ stops:
   - { name: Gottingen & Young (south bound), stop_code: 6770, lat: 44.662365, lng: -63.59804 }
   - { name: Novalea (Samuel Prince Manor), stop_code: 7378, lat: 44.671285, lng: -63.61181 }
   - { name: Mumford Terminal, stop_code: 7284, lat: 44.648658, lng: -63.621684 }
-  - { name: Oxford & Quinpool (south bound), stop_code: 7412, lat: 44.644512, lng: -63.600296 }
-  - { name: Oxford & Quinpool (north bound), stop_code: 7421, lat: 44.644512, lng: -63.600296 }
+  - { name: Mumford Terminal, stop_code: 7285, lat: 44.648658, lng: -63.621684 }
+  - { name: Mumford Terminal, stop_code: 8643, lat: 44.648658, lng: -63.621684 }
+  - { name: Quinpool & Oxford, stop_code: 7412, lat: 44.644512, lng: -63.600296 }
+  - { name: Quinpool & Oxford, stop_code: 7421, lat: 44.644512, lng: -63.600296 }
+  - { name: Quinpool & Oxford, stop_code: 8136, lat: 44.644512, lng: -63.600296 }
+  - { name: Quinpool & Oxford, stop_code: 8137, lat: 44.644512, lng: -63.600296 }
   - { name: North & Brunswick (south bound), stop_code: 7351, lat: 44.6582, lng: -63.5895 }
   - { name: North & Brunswick (north bound), stop_code: 7348, lat: 44.6582, lng: -63.5895 }
   - { name: Bridge Terminal (Dartmouth Sportsplex), stop_code: 7151, lat: 44.670089, lng: -63.577491 }
