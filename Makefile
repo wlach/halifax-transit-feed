@@ -8,9 +8,9 @@ ROUTE_FILES=1-to-dartmouth.yml 1-to-mumford.yml \
  	3-to-shopping-malls.yml 3-to-manors.yml \
  	4-to-farnham-gate-via-rosedale.yml 4-to-downtown-via-north.yml \
  	5-to-springvale.yml 5-to-downtown.yml \
- 	6-to-stonehaven.yml 6-to-downtown.yml 
-# 	7-robie-to-gottingen.yml 7-gottingen-to-robie.yml \
-# 	9-to-point-pleasant-park.yml 9-to-mumford.yml
+ 	6-to-stonehaven.yml 6-to-downtown.yml \
+ 	7-robie-to-gottingen.yml 7-gottingen-to-robie.yml \
+ 	9-to-point-pleasant-park.yml 9-to-mumford.yml
 
 hfxtable.yml: hfxtable.yml.in $(ROUTE_FILES) indent-route.pl
 	cp hfxtable.yml.in hfxtable.yml

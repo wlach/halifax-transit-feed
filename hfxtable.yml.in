@@ -8,9 +8,10 @@ options:
   agency_timezone: America/Halifax
 
 stops:
-  - { name: Northridge Road, stop_code: 8165, lat: 44.671826, lng: -63.6163061 }
-  - { name: Robie & Lady Hammond (south bound), stop_code: 8208, lat: 44.6647155, lng: -63.61677 }
-  - { name: Robie & Lady Hammond (north bound), stop_code: 8180, lat: 44.6647155, lng: -63.61677 }
+  - { name: Northridge Road (Richmond Manor), stop_code: 8165, lat: 44.671826, lng: -63.6163061 }
+  - { name: Robie & Lady Hammond, stop_code: 8208, lat: 44.6647155, lng: -63.61677 }
+  - { name: Robie & Lady Hammond, stop_code: 7094, lat: 44.6647155, lng: -63.61677 }
+  - { name: Robie & Lady Hammond, stop_code: 8180, lat: 44.6647155, lng: -63.61677 }
   - { name: Robie & Quinpool (south bound), stop_code: 8214, lat: 44.64737, lng: -63.59070 }
   - { name: Robie & Quinpool (north bound), stop_code: 8184, lat: 44.64737, lng: -63.59070 }
   - { name: South & Barrington, stop_code: 6096, lat: 44.640231, lng: -63.5699951 }
@@ -42,7 +43,6 @@ stops:
   - { name: J.H. MacKenzie Manor, stop_code: 6791, lat: 44.637589, lng: -63.571281 }
   - { name: Spring Garden & Summer Street, stop_code: 8337, lat: 44.641325, lng: -63.583331 }
   - { name: Gordon B. Isnor Manor, stop_code: 6505, lat: 44.651589, lng: -63.585292 }
-  - { name: Richmond Manor, stop_code: 8165, lat: 44.67189, lng: -63.616177 }
   - { name: Ross Street & Dunbrack, stop_code: 6601, lat: 44.676468, lng: -63.66354 }
   - { name: Dutch Village & Deal Street, stop_code: 6611, lat: 44.659069, lng: -63.631546 }
   - { name: Alma & Deal Street, stop_code: 9042, lat: 44.659069, lng: -63.631546 }
@@ -52,5 +52,7 @@ stops:
   - { name: Stonehaven & Glenmore, stop_code:  8361, lat: 44.635254, lng: -63.630154 }
   - { name: Point Pleasant Park, stop_code: 8649, lat: 44.625298, lng: -63.56406 }
   - { name: Tower Road Turing Loop, stop_code: 8409, lat: 44.6259, lng: -63.574524 }
+
+  - { name: Duffus & Novalea Drive, stop_code: 6583, lat: 44.6673, lng: -63.6061 }
 
 routes:
