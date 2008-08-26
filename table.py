@@ -68,7 +68,7 @@ def AddRouteToSchedule(schedule, routedata):
     t = r.AddTrip(schedule, headsign=routedata['long_name'])
 
     if len(trip) > len(routedata['stop_codes']):
-        print "Length of trip exceeds number of stops!" 
+        print "Length of trip (%s) exceeds number of stops (%s)!" % (len(trip), len(routedata['stop_codes']))
         class StopTimesError(Exception): pass
         raise StopTimesError()
     else:
