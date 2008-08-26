@@ -1,6 +1,7 @@
-#!/usr/bin/python2.5
+#!/usr/bin/python
 
 # Copyright (C) 2007 Google Inc.
+# Copyright (C) 2008 William Lachance
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,105 +15,34 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# An example script that demonstrates converting a proprietary format to a
-# Google Transit Feed Specification file. 
-# 
-# You can load table.txt, the example input, in Excel. It contains three
-# sections:
-# 1) A list of global options, starting with a line containing the word
-#    'options'. Each option has an name in the first column and most options
-#    have a value in the second column.
-# 2) A table of stops, starting with a line containing the word 'stops'. Each
-#    row of the table has 3 columns: name, latitude, longitude
-# 3) A list of routes. There is an empty row between each route. The first row
-#    for a route lists the short_name and long_name. After the first row the
-#    left-most column lists the stop names visited by the route. Each column
-#    contains the times a single trip visits the stops.
-#
-# This is very simple example which you could use as a base for your own
-# transit feed builder.
-
 import transitfeed
 from optparse import OptionParser
+import yaml, sys, os.path
 import re
 
 stops = {}
 
-# table is a list of lists in this form
-# [ ['Short Name', 'Long Name'],
-#   ['Stop 1', 'Stop 2', ...]
-#   [time_at_1, time_at_2, ...]  # times for trip 1
-#   [time_at_1, time_at_2, ...]  # times for trip 2
-#   ... ]
-def AddRouteToSchedule(schedule, table):
-  if len(table) >= 2:
-    r = schedule.AddRoute(short_name=table[0][0], long_name=table[0][1], route_type='Bus')
-    for trip in table[2:]:
-      if len(trip) > len(table[1]):
-        print "ignoring %s" % trip[len(table[1]):]
-        trip = trip[0:len(table[1])]
-      t = r.AddTrip(schedule, headsign=table[0][1])
-      trip_stops = []  # Build a list of (time, stopname) tuples
-      for i in range(0, len(trip)):
-        if re.search(r'[0-9]+:[0-9]+', trip[i]):
-          trip_stops.append( (transitfeed.TimeToSecondsSinceMidnight(trip[i]), table[1][i]) )
-        elif not re.search(r'^\-$', trip[i]):
-          print "WARNING: Unrecognized trip stop %s" % trip[i];
-      trip_stops.sort()  # Sort by time
-      for (time, stopname) in trip_stops:
-        t.AddStopTime(stop=stops[stopname.lower()], arrival_secs=time,
-                      departure_secs=time)
+def ProcessOptions(schedule, options):
+  
+  # the follow features are REQUIRED
+  agency_name = options.get('agency_name')
+  agency_url = options.get('agency_url')
+  agency_timezone = options.get('agency_timezone')
 
-def TransposeTable(table):
-  """Transpose a list of lists, using None to extend all input lists to the
-  same length.
-
-  For example:
-  >>> TransposeTable(
-  [ [11,   12,   13],
-    [21,   22],
-    [31,   32,   33,   34]])
-
-  [ [11,   21,   31],
-    [12,   22,   32],
-    [13,   None, 33],
-    [None, None, 34]]
-  """
-  transposed = []
-  rows = len(table)
-  cols = max(len(row) for row in table)
-  for x in range(cols):
-    transposed.append([])
-    for y in range(rows):
-      if x < len(table[y]):
-        transposed[x].append(table[y][x])
-      else:
-        transposed[x].append(None)
-  return transposed
-
-def ProcessOptions(schedule, table):
+  # the service period options are, well, optional
   service_period = schedule.GetDefaultServicePeriod()
-  agency_name, agency_url, agency_timezone = (None, None, None)
 
-  for row in table[1:]:
-    command = row[0].lower()
-    if command == 'weekday':
-      service_period.SetWeekdayService()
-    elif command == 'start_date':
-      service_period.SetStartDate(row[1])
-    elif command == 'end_date':
-      service_period.SetEndDate(row[1])
-    elif command == 'add_date':
-      service_period.SetDateHasService(date=row[1])
-    elif command == 'remove_date':
-      service_period.SetDateHasService(date=row[1], has_service=False)
-    elif command == 'agency_name':
-      agency_name = row[1]
-    elif command == 'agency_url':
-      agency_url = row[1]
-    elif command == 'agency_timezone':
-      agency_timezone = row[1]
-
+  if options.get('start_date'):
+    service_period.SetStartDate(options['start_date'])
+  if options.get('end_date'):
+    service_period.SetEndDate(options['end_date'])
+  if options.get('weekday'):
+    service_period.SetWeekdayService()
+  if options.get('add_date'):
+    service_period.SetDateHasService(options['add_date'])
+  if options.get('remove_date'):
+    service_period.SetDateHasService(options['remove_date'], has_service=False)
+  
   if not (agency_name and agency_url and agency_timezone):
     print "You must provide agency information"
 
@@ -120,33 +50,59 @@ def ProcessOptions(schedule, table):
                             agency_timezone=agency_timezone)
 
 
-def AddStops(schedule, table):
-  for name, code, lat_str, lng_str in table[1:]:
-    stop = schedule.AddStop(lat=float(lat_str), lng=float(lng_str), name=name, stop_code=code)
-    stops[name.lower()] = stop
+def AddStops(schedule, stopsdata):
+  for stopdata in stopsdata:
+    stop_code = stopdata['stop_code']
+    # all stops fields are REQUIRED. throw an exception if they're not there
+    stop = schedule.AddStop(lat=float(stopdata['lat']), lng=float(stopdata['lng']), 
+                            name=stopdata['name'], stop_code=stop_code)
+    stops[stop_code] = stop
+    
+def AddRouteToSchedule(schedule, routedata):
+  r = schedule.AddRoute(short_name=str(routedata['short_name']), 
+                        long_name=routedata['long_name'],
+                        route_type='Bus')
+  timerex = re.compile('^(\d+)(\d\d)([a-z])$')
 
-def ProcessTable(schedule, table):
-  if table[0][0].lower() == 'options':
-    ProcessOptions(schedule, table)
-  elif table[0][0].lower() == 'stops':
-    AddStops(schedule, table)
-  else:
-    transposed = [table[0]]  # Keep route_short_name and route_long_name on first row
+  for trip in routedata['stop_times']:
+    t = r.AddTrip(schedule, headsign=routedata['long_name'])
 
-    # Transpose rest of table. Input contains the stop names in table[x][0], x
-    # >= 1 with trips found in columns, so we need to transpose table[1:].
-    # As a diagram Transpose from
-    # [['stop 1', '10:00', '11:00', '12:00'],
-    #  ['stop 2', '10:10', '11:10', '12:10'],
-    #  ['stop 3', '10:20', '11:20', '12:20']]
-    # to
-    # [['stop 1', 'stop 2', 'stop 3'],
-    #  ['10:00',  '10:10',  '10:20'],
-    #  ['11:00',  '11:11',  '11:20'],
-    #  ['12:00',  '12:12',  '12:20']]
-    transposed.extend(TransposeTable(table[1:]))
-    AddRouteToSchedule(schedule, transposed)
+    if len(trip) > len(routedata['stop_codes']):
+        print "Length of trip exceeds number of stops!" 
+        class StopTimesError(Exception): pass
+        raise StopTimesError()
+    else:
+      trip_stops = []  # Build a list of (time, stop_code) tuples
+      i = 0
+      for stop_time in trip:
+        matches = timerex.match(stop_time)
+        if matches:
+          hour, minute, shift = (int(matches.group(1)), 
+                                 str(matches.group(2)), 
+                                 matches.group(3))
+          if shift == 'p' and hour < 12:
+            hour += 12
+          elif shift == 'x':
+            if hour == 12:
+              hour += 12
+            else:
+              hour += 24
 
+          # munge hours and minutes if they're < 10
+          if hour < 10:
+            hour = "0" + str(hour)
+
+          clock_time = str(hour) + ":" + minute + ":00"
+          seconds = transitfeed.TimeToSecondsSinceMidnight(clock_time)
+          trip_stops.append((seconds, routedata['stop_codes'][i]) )  
+        elif re.search(r'^\-$', stop_time):
+          pass
+        i = i+1
+
+    trip_stops.sort()  # Sort by time
+    for (time, stop_code) in trip_stops:
+      t.AddStopTime(stop=stops[stop_code], arrival_secs=time,
+                    departure_secs=time)
 
 def main():
   parser = OptionParser()
@@ -158,18 +114,13 @@ def main():
   (options, args) = parser.parse_args()
 
   schedule = transitfeed.Schedule()
+  stream = open(options.input, 'r')
+  data = yaml.load(stream)
+  ProcessOptions(schedule, data['options'])
+  AddStops(schedule, data['stops'])
 
-  table = []
-  for line in open(options.input):
-    line = line.rstrip()
-    if not line:
-      ProcessTable(schedule, table)
-      table = []
-    else:
-      table.append(line.split('\t'))
-
-  if table:
-    ProcessTable(schedule, table)
+  for route in data['routes']:
+    AddRouteToSchedule(schedule, route)
 
   schedule.WriteGoogleTransitFeed(options.output)
 

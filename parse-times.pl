@@ -2,8 +2,6 @@
 
 use strict;
 
-#print "\n";
-
 sub parse_time {
     my ($time) = @_;
     if ($time =~ /a\Z/) {
@@ -40,8 +38,6 @@ sub parse_time {
 
 }
 
-print "[\n";
-
 while (<STDIN>) {
     if ($_ !~ /^\#/) {
 	chomp;
@@ -54,7 +50,7 @@ while (<STDIN>) {
 	    } else {
 		$first = 0;
 	    }
-	    print parse_time($_);
+	    print $_;
 	}
 	print "],\n";
     } else {
@@ -62,4 +58,3 @@ while (<STDIN>) {
     }
 }  
 
-print "]\n";
