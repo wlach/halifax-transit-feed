@@ -2,35 +2,6 @@
 
 use strict;
 
-open FILE, $ARGV[0] or die $!;
-
-my $done_places = 0;
-my @sched;
-my $sched_name;
-
-while (<FILE>) {
-    chomp;
-    if ($_ !~ /^\Z/) {
-	$sched_name = $_;	
-    } else {
-	last
-    }
-}
-
-print "$sched_name\n";
-
-while (<FILE>) {
-    if ($_ !~ /^\#/) {
-	chomp;
-	if ($_ !~ /^\Z/) {
-	    push @sched, $_;
-	    #print "$_\n";
-	} else {
-	    last;
-	}
-    }
-}
-
 #print "\n";
 
 sub parse_time {
@@ -69,21 +40,24 @@ sub parse_time {
 
 }
 
-while (<FILE>) {
+print "[\n";
+
+while (<STDIN>) {
     if ($_ !~ /^\#/) {
 	chomp;
 	my @times = split /\ +/;
-	my $i = 0;
+	print "  [ ";
+	my $first = 1;
 	foreach (@times) {
-	    my $time = parse_time($_);
-	    $sched[$i] .= "\t$time";
-	    $i++;
+	    if (!$first) {
+		print ", ";
+	    } else {
+		$first = 0;
+	    }
+	    print parse_time($_);
 	}
+	print "],\n";
     }   
 }  
 
-foreach (@sched) {
-    print "$_\n";
-}
-
-print "\n";
+print "]\n";
