@@ -54,5 +54,6 @@ stops:
   - { name: Tower Road Turing Loop, stop_code: 8409, lat: 44.6259, lng: -63.574524 }
 
   - { name: Duffus & Novalea Drive, stop_code: 6583, lat: 44.6673, lng: -63.6061 }
+  - { name: North and Gottingen, stop_code: 6781, lat: 44.6574, lng: -63.5912 }
 
 routes:

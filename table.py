@@ -67,8 +67,8 @@ def AddRouteToSchedule(schedule, routedata):
   for trip in routedata['stop_times']:
     t = r.AddTrip(schedule, headsign=routedata['long_name'])
 
-    if len(trip) > len(routedata['stop_codes']):
-        print "Length of trip (%s) exceeds number of stops (%s)!" % (len(trip), len(routedata['stop_codes']))
+    if len(trip) > len(routedata['time_points']):
+        print "Length of trip (%s) exceeds number of time points (%s)!" % (len(trip), len(routedata['time_points']))
         class StopTimesError(Exception): pass
         raise StopTimesError()
     else:
@@ -94,15 +94,25 @@ def AddRouteToSchedule(schedule, routedata):
 
           clock_time = str(hour) + ":" + minute + ":00"
           seconds = transitfeed.TimeToSecondsSinceMidnight(clock_time)
-          trip_stops.append((seconds, routedata['stop_codes'][i]) )  
+          trip_stops.append((seconds, routedata['time_points'][i]) )  
         elif re.search(r'^\-$', stop_time):
           pass
-        i = i+1
+        i = i + 1
 
     trip_stops.sort()  # Sort by time
-    for (time, stop_code) in trip_stops:
+    prev_stop_code = None
+    between_stops = routedata.get('between_stops')
+
+    for (time, stop_code) in trip_stops:      
+      if prev_stop_code and between_stops:
+        between_stop_list = between_stops.get('%s-%s' % (prev_stop_code, stop_code))
+        if between_stop_list:
+          for between_stop_code in between_stop_list:          
+            t.AddStopTime(stop=stops[between_stop_code]) 
+
       t.AddStopTime(stop=stops[stop_code], arrival_secs=time,
                     departure_secs=time)
+      prev_stop_code = stop_code
 
 def main():
   parser = OptionParser()
