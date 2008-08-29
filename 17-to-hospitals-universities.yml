@@ -3,6 +3,7 @@ long_name: "Saint Mary's: To Hospitals / Universities"
 stop_codes: [ 7087, 7166, 6564, 8561, 8214, 8308, 6966 ]
 between_stops:  
   6564-8561: [ 6197, 6193, 6203 ]
+  8561-8214: [ 8557, 8565, 8566 ]
 time_points: [ 7087, 7166, 6564, 8561, 8214, 8308, 6966 ]
 stop_times: [
   [ 625a, 634a, 638a, 645a, 652a, 658a, 702a],

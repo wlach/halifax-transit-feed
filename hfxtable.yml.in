@@ -62,4 +62,8 @@ stops:
   - { name: Romans and Bayers, stop_code: 6197, lat: 44.6526, lng: -63.6214 }
   - { name: Coleman and Bayers, stop_code: 6193, lat: 44.6516, lng: -63.6178 }
   - { name: Connolly and Bayers, stop_code: 6203, lat: 44.6530, lng: -63.6132 }
+  - { name: Windsor and Almon, stop_code: 8557, lat: 44.6543, lng: -63.6029 }
+  - { name: Windsor and Summit, stop_code: 8565, lat: 44.6532, lng: -63.6006 }
+  - { name: Windsor and North, stop_code: 8566, lat: 44.6523, lng: -63.5986 }
+
 routes:
