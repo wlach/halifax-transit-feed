@@ -10,7 +10,8 @@ ROUTE_FILES=1-to-dartmouth.yml 1-to-mumford.yml \
  	5-to-springvale.yml 5-to-downtown.yml \
  	6-to-stonehaven.yml 6-to-downtown.yml \
  	7-robie-to-gottingen.yml 7-gottingen-to-robie.yml \
- 	9-to-point-pleasant-park.yml 9-to-mumford.yml
+ 	9-to-point-pleasant-park.yml 9-to-mumford.yml \
+	17-to-hospitals-universities.yml
 
 hfxtable.yml: hfxtable.yml.in $(ROUTE_FILES) indent-route.pl
 	cp hfxtable.yml.in hfxtable.yml

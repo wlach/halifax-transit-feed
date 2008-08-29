@@ -55,5 +55,11 @@ stops:
 
   - { name: Duffus & Novalea Drive, stop_code: 6583, lat: 44.6673, lng: -63.6061 }
   - { name: North and Gottingen, stop_code: 6781, lat: 44.6574, lng: -63.5912 }
-
+  - { name: Titus and Main, stop_code: 7166, lat: 44.6594, lng: -63.6343 }
+  - { name: Windsor and Young, stop_code: 8561, lat: 44.6564, lng: -63.6069 }
+  - { name: Spring Garden and South Park, stop_code: 8308, lat: 44.6422, lng: -63.5797 }
+  - { name: Inglis and Robie, stop_code: 6966, lat: 44.6327, lng: -63.5830 }
+  - { name: Romans and Bayers, stop_code: 6197, lat: 44.6526, lng: -63.6214 }
+  - { name: Coleman and Bayers, stop_code: 6193, lat: 44.6516, lng: -63.6178 }
+  - { name: Connolly and Bayers, stop_code: 6203, lat: 44.6530, lng: -63.6132 }
 routes:

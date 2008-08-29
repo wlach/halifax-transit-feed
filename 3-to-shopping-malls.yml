@@ -1,6 +1,8 @@
 short_name: 3
 long_name: To Shopping Malls
 stop_codes: [ 8430, 6791, 8337, 6087, 6505, 8165, 6564, 7284 ]
+between_stops:  
+  6564-7284: [ 6197, 6193 ]
 time_points: [ 8430, 6791, 8337, 6087, 6505, 8165, 6564, 7284 ]
 stop_times: [
   [ 855a, 858a, 904a, 913a, 916a, 927a, 941a, 950a],
