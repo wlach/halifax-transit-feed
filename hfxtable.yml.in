@@ -65,5 +65,11 @@ stops:
   - { name: Windsor and Almon, stop_code: 8557, lat: 44.6543, lng: -63.6029 }
   - { name: Windsor and Summit, stop_code: 8565, lat: 44.6532, lng: -63.6006 }
   - { name: Windsor and North, stop_code: 8566, lat: 44.6523, lng: -63.5986 }
-
+  - { name: Sackville Terminal, stop_code: 8260, lat: 44.7680, lng: -63.6987 }
+  - { name: Cobequid Terminal, stop_code: 8646, lat: 44.7525, lng: -63.6649 }
+  - { name: Sunnyside (Bedford Highway & Dartmouth), stop_code: 6236, lat: 44.7316, lng: -63.6573 }
+  - { name: Mount Saint Vincent University, stop_code: 6216, lat: 44.6695, lng: -63.6421 }
+  - { name: Upper Water and Cornwallis, stop_code: 8414, lat: 44.6539, lng: -63.5814 }
+  - { name: Oxford and Young, stop_code: 7423, lat: 44.6543, lng: -63.6097 }
+  - { name: Larry Uteck Boulevard and Bedford Highway, stop_code: 7125, lat: 44.6989, lng: -63.6639 }
 routes:
