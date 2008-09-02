@@ -1,6 +1,5 @@
 short_name: 5
 long_name: To Downtown
-stop_codes: [ 6578, 7284, 6397, 8435 ]
 time_points: [ 6578, 7284, 6397, 8435 ] 
 stop_times: [
   [ 720a, 730a, 735a, 745a],

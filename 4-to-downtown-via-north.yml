@@ -1,6 +1,5 @@
 short_name: 4
 long_name: To Downtown via North
-stop_codes: [ 6601, 7087, 6611, 6564, 7284, 7351, 6105, 8435 ]
 time_points: [ 6601, 7087, 6611, 6564, 7284, 7351, 6105, 8435 ]
 stop_times: [
   [ 538a, 549a, 558a, 602a, 611a, 620a, 625a, 628a],

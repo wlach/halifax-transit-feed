@@ -1,6 +1,5 @@
 short_name: 6
 long_name: To Stonehaven
-stop_codes: [ 8435, 8137, 8643, 8361 ]
 time_points: [ 8435, 8137, 8643, 8361 ]
 stop_times: [
   [ -, -, 604a, 614a],

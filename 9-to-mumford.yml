@@ -1,6 +1,5 @@
 short_name: 9
 long_name: To Mumford Terminal
-stop_codes: [ 8649, 8409, 6087, 6583, 7284 ]
 time_points: [ 8649, 8409, 6087, 6583, 7284 ]
 stop_times: [
   [ 620a, -, 630a, 641a, 652a],

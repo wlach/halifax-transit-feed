@@ -1,6 +1,5 @@
 short_name: 58
 long_name: To Lucien Drive
-stop_codes: [ 7284, 7412, 6087, 8640, 6031, 7445, 6575 ]
 time_points: [ 7284, 7412, 6087, 8640, 6031, 7445, 6575 ]
 between_stops:  
   7284-7412: [ 6203, 7423 ]

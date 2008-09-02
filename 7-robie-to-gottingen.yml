@@ -1,6 +1,5 @@
 short_name: 7
 long_name: Robie to Gottingen via South Street and Downtown
-stop_codes: [ 8165, 8208, 8214, 6096, 6087, 7366, 7378 ]
 time_points: [ 8165, 8208, 8214, 6096, 6087, 7366, 7378 ]
 stop_times: [
   [ 600a, 604a, 614a, 621a, 628a, 637a, 645a],

@@ -1,6 +1,5 @@
 short_name: 1
 long_name: To Dartmouth
-stop_codes: [ 7284, 7412, 6087, 7351, 7151 ]
 time_points: [ 7284, 7412, 6087, 7351, 7151 ]
 between_stops:  
   7284-7412: [ 6203, 7423 ]
