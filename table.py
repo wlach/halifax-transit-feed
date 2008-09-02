@@ -16,6 +16,7 @@
 # limitations under the License.
 
 import transitfeed
+from transitfeed import ServicePeriod
 from optparse import OptionParser
 import yaml, sys, os.path
 import re
@@ -29,20 +30,32 @@ def ProcessOptions(schedule, options):
   agency_url = options.get('agency_url')
   agency_timezone = options.get('agency_timezone')
 
-  # the service period options are, well, optional
-  service_period = schedule.GetDefaultServicePeriod()
+  service_periods = []
 
-  if options.get('start_date'):
-    service_period.SetStartDate(options['start_date'])
-  if options.get('end_date'):
-    service_period.SetEndDate(options['end_date'])
-  if options.get('weekday'):
-    service_period.SetWeekdayService()
-  if options.get('add_date'):
-    service_period.SetDateHasService(options['add_date'])
-  if options.get('remove_date'):
-    service_period.SetDateHasService(options['remove_date'], has_service=False)
-  
+  service_periods.append(ServicePeriod(id="weekday"))
+  service_periods[0].SetWeekdayService()
+  service_periods.append(ServicePeriod(id="saturday"))
+  service_periods[1].SetDayOfWeekHasService(5)
+  service_periods.append(ServicePeriod(id="sunday"))
+  service_periods[2].SetDayOfWeekHasService(6)
+
+  # the service period options are, well, optional
+  for service_period in service_periods:
+    if options.get('start_date'):
+      service_period.SetStartDate(options['start_date'])
+    if options.get('end_date'):
+      service_period.SetEndDate(options['end_date'])
+    if options.get('add_date'):
+      service_period.SetDateHasService(options['add_date'])
+    if options.get('remove_date'):
+      service_period.SetDateHasService(options['remove_date'], 
+                                       has_service=False)
+
+  # Add all service period objects to the schedule
+  schedule.SetDefaultServicePeriod(service_periods[0], validate=False)
+  schedule.AddServicePeriodObject(service_periods[1], validate=False)
+  schedule.AddServicePeriodObject(service_periods[2], validate=False)
+
   if not (agency_name and agency_url and agency_timezone):
     print "You must provide agency information"
 
@@ -57,15 +70,15 @@ def AddStops(schedule, stopsdata):
     stop = schedule.AddStop(lat=float(stopdata['lat']), lng=float(stopdata['lng']), 
                             name=stopdata['name'], stop_code=stop_code)
     stops[stop_code] = stop
-    
-def AddRouteToSchedule(schedule, routedata):
-  r = schedule.AddRoute(short_name=str(routedata['short_name']), 
-                        long_name=routedata['long_name'],
-                        route_type='Bus')
+
+
+def AddTripsToSchedule(schedule, route, routedata, service_id, stop_times):
+
+  service_period = schedule.GetServicePeriod(service_id)
   timerex = re.compile('^(\d+)(\d\d)([a-z])$')
 
-  for trip in routedata['stop_times']:
-    t = r.AddTrip(schedule, headsign=routedata['long_name'])
+  for trip in stop_times:
+    t = route.AddTrip(schedule, headsign=routedata['long_name'], service_period=service_period)
 
     if len(trip) > len(routedata['time_points']):
         print "Length of trip (%s) exceeds number of time points (%s)!" % (len(trip), len(routedata['time_points']))
@@ -113,6 +126,18 @@ def AddRouteToSchedule(schedule, routedata):
       t.AddStopTime(stop=stops[stop_code], arrival_secs=time,
                     departure_secs=time)
       prev_stop_code = stop_code
+
+
+    
+def AddRouteToSchedule(schedule, routedata):
+  r = schedule.AddRoute(short_name=str(routedata['short_name']), 
+                        long_name=routedata['long_name'],
+                        route_type='Bus')
+  AddTripsToSchedule(schedule, r, routedata, "weekday", routedata['stop_times'])
+  if routedata.get('stop_times_saturday'):
+    AddTripsToSchedule(schedule, r, routedata, "saturday", routedata['stop_times_saturday'])  
+  if routedata.get('stop_times_sunday'):
+    AddTripsToSchedule(schedule, r, routedata, "sunday", routedata['stop_times_sunday'])  
 
 def main():
   parser = OptionParser()
