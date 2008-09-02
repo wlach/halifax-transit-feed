@@ -1,6 +1,8 @@
 short_name: 3
 long_name: To Manors
 stop_codes: [ 7284, 6564, 8165, 6505, 6087, 8337, 8430 ]
+between_stops:  
+  8165-6505: [ 6781 ]
 time_points: [ 7284, 6564, 8165, 6505, 6087, 8337, 8430 ]
 stop_times: [
   [ 957a, 1012a, 1026a, 1037a, 1040a, 1047a, 1055a],

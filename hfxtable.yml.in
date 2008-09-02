@@ -8,6 +8,7 @@ options:
   agency_timezone: America/Halifax
 
 stops:
+# the following waypoints are derived from google maps
   - { name: Northridge Road (Richmond Manor), stop_code: 8165, lat: 44.671826, lng: -63.6163061 }
   - { name: Robie & Lady Hammond, stop_code: 8208, lat: 44.6647155, lng: -63.61677 }
   - { name: Robie & Lady Hammond, stop_code: 7094, lat: 44.6647155, lng: -63.61677 }
@@ -30,11 +31,12 @@ stops:
   - { name: Quinpool & Oxford, stop_code: 8137, lat: 44.644512, lng: -63.600296 }
   - { name: North & Brunswick (south bound), stop_code: 7351, lat: 44.6582, lng: -63.5895 }
   - { name: North & Brunswick (north bound), stop_code: 7348, lat: 44.6582, lng: -63.5895 }
-  - { name: Bridge Terminal (Dartmouth Sportsplex), stop_code: 7151, lat: 44.670089, lng: -63.577491 }
   - { name: Kearney Lake & Grosvenor, stop_code: 7019, lat: 44.681611, lng: -63.667767 }
   - { name: Kearney Lake & Wedgewood, stop_code: 7023, lat: 44.681611, lng: -63.667767 }
   - { name: Lacewood Terminal, stop_code: 7087, lat: 44.661511, lng: -63.656975 }
+  - { name: Lacewood Terminal, stop_code: 7086, lat: 44.661511, lng: -63.656975 }
   - { name: Village at Bayers Road, stop_code: 6564, lat: 44.653622, lng: -63.627683 }
+  - { name: Village at Bayers Road, stop_code: 6563, lat: 44.653622, lng: -63.627683 }
   - { name: Mumford Road & Joseph Howe, stop_code: 6612, lat: 44.648528, lng: -63.629597 }
   - { name: Water Street Terminal, stop_code: 8435, lat: 44.649161, lng: -63.572411 }
   - { name: Alma & Dutch Village, stop_code: 6032, lat: 44.659581, lng: -63.630681 }
@@ -52,9 +54,8 @@ stops:
   - { name: Stonehaven & Glenmore, stop_code:  8361, lat: 44.635254, lng: -63.630154 }
   - { name: Point Pleasant Park, stop_code: 8649, lat: 44.625298, lng: -63.56406 }
   - { name: Tower Road Turing Loop, stop_code: 8409, lat: 44.6259, lng: -63.574524 }
-
+# the following waypoints are derived from openstreetmap
   - { name: Duffus & Novalea Drive, stop_code: 6583, lat: 44.6673, lng: -63.6061 }
-  - { name: North and Gottingen, stop_code: 6781, lat: 44.6574, lng: -63.5912 }
   - { name: Titus and Main, stop_code: 7166, lat: 44.6594, lng: -63.6343 }
   - { name: Windsor and Young, stop_code: 8561, lat: 44.6564, lng: -63.6069 }
   - { name: Spring Garden and South Park, stop_code: 8308, lat: 44.6422, lng: -63.5797 }
@@ -72,4 +73,23 @@ stops:
   - { name: Upper Water and Cornwallis, stop_code: 8414, lat: 44.6539, lng: -63.5814 }
   - { name: Oxford and Young, stop_code: 7423, lat: 44.6543, lng: -63.6097 }
   - { name: Larry Uteck Boulevard and Bedford Highway, stop_code: 7125, lat: 44.6989, lng: -63.6639 }
+  - { name: Dorothea and Lucien, stop_code: 6575, lat: 44.6784, lng: -63.5109, bad: 1 }
+  - { name: Penhorn Terminal, stop_code: 7445, lat: 44.6730, lng: -63.5413, bad: 1 }
+  - { name: Alderney Ferry Terminal, stop_code: 6031, lat: 44.6645, lng: -63.5685 }
+  - { name: Bridge Terminal (Dartmouth Sportsplex), stop_code: 7151, lat: 44.6703, lng: -63.5765 }
+  - { name: Bridge Terminal (Dartmouth Sportsplex), stop_code: 8640, lat: 44.6703, lng: -63.5765 }
+  - { name: South and LeMarchant, stop_code: 7144, lat: 44.6359, lng: -63.5895 }
+  - { name: Robie and Young, stop_code: 8269, lat: 44.6597, lng: -63.6021 }
+  - { name: Robie and Spring Garden (north bound), stop_code: 8185, lat: 44.6407, lng: -63.5867 }
+  - { name: Coburg and Henry, stop_code: 6448, lat: 44.6397, lng: -63.5887 }
+  - { name: Windsor and Young, stop_code: 8571, lat: 44.6562, lng: -63.6062 }
+# the following were taken by wlach's GPS device
+  - { name: Robie and Spring Garden, stop_code: 8332, lat: 44.64055, lng: -63.58652 }
+  - { name: Robie and Binney (north bound), stop_code: 8219, lat: 44.64235, lng: -63.58776 }
+  - { name: Robie and Cherry (north bound), stop_code: 8179, lat: 44.64426, lng: -63.58869 }
+  - { name: North and Gottingen, stop_code: 7346, lat: 44.65704, lng: -63.59146 }
+  - { name: North and Gottingen, stop_code: 6781, lat: 44.65768, lng: -63.59172 }
+  - { name: North and Gottingen, stop_code: 6769, lat: 44.65748, lng: -63.59123 }
+
+
 routes:

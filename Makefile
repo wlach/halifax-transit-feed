@@ -11,7 +11,9 @@ ROUTE_FILES=1-to-dartmouth.yml 1-to-mumford.yml \
  	6-to-stonehaven.yml 6-to-downtown.yml \
  	7-robie-to-gottingen.yml 7-gottingen-to-robie.yml \
  	9-to-point-pleasant-park.yml 9-to-mumford.yml \
-	17-to-hospitals-universities.yml \
+	17-to-hospitals-universities.yml 17-to-lacewood.yml \
+	42-to-lacewood.yml \
+	58-to-lucien-drive.yml \
 	80-to-bedford-halifax.yml \
 	81-to-downtown-halifax.yml
 

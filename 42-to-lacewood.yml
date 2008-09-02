@@ -1,0 +1,9 @@
+short_name: 42
+long_name: To Lacewood
+stop_codes: [ 7144, 8184, 8629, 6032, 7086 ]
+time_points: [ 7144, 8184, 8629, 6032, 7086 ]
+between_stops:
+  7144-8184: [ 8185, 8219, 8179 ]
+
+
+# No service Saturdays, Sundays or Holidays

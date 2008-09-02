@@ -1,6 +1,8 @@
 short_name: 4
 long_name: To Farnham Gate via Rosedale
 stop_codes: [ 8435, 7348, 7284, 6564, 6611, 7087, 6601 ]
+between_stops:  
+  7348-7284: [ 7346 ]
 time_points: [ 8435, 7348, 7284, 6564, 6611, 7087, 6601 ]
 stop_times: [
   [ -, -, -, -, 520a, 529a, 537a],

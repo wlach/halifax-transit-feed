@@ -2,7 +2,7 @@ short_name: 80
 long_name: To Bedford - Halifax
 stop_codes: [ 8260, 8646, 6236, 6216, 6564, 8214, 6087, 8414 ]
 time_points: [ 8260, 8646, 6236, 6216, 6564, 8214, 6087, 8414 ]
-between_stops:  
+between_stops:
   6564-8214: [ 6197, 6193, 6203 ]
 stop_times: [
   [ 542a, 554a, 602a, 618a, 625a, 635a, 645a, 647a],
