@@ -86,6 +86,12 @@ stops:
   - { name: Coburg and Henry, stop_code: 6448, lat: 44.6397, lng: -63.5887 }
   - { name: Windsor and Young, stop_code: 8571, lat: 44.6562, lng: -63.6062 }
   - { name: Robie & Young, stop_code: 8629, lat: 44.6595, lng: -63.6022 }
+  - { name: Summer Street (QEII Health Sciences), stop_code: 8363, lat: 44.6457, lng: -63.5856, bad: 1 }
+  - { name: Chain Lake & Lakelands, stop_code: 6160, lat: 44.6375, lng: -63.6691 }
+  - { name: Greenwood Heights, stop_code: 6315, lat: 44.6553, lng: -63.7361, bad: 1  }
+  - { name: Glengary Gardens, stop_code: 6722, lat: 44.6605, lng: -63.7467, bad: 1  }
+
+
 # the following were taken by wlach's GPS device
   - { name: Robie and Spring Garden, stop_code: 8332, lat: 44.64055, lng: -63.58652 }
   - { name: Robie and Spring Garden, stop_code: 8328, lat: 44.64093, lng: -63.58556 }
