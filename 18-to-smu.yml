@@ -1,6 +1,8 @@
 short_name: 18
 long_name: To SMU
 time_points: [ 7087, 6216, 8214, 6966 ]
+between_stops:  
+  8214-6966: [ 8183, 8196, 8195, 8194, 8328 ]
 stop_times: [
   [ 610a, 622a, 641a, 649a],
   [ 640a, 652a, 711a, 719a],

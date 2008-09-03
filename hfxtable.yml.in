@@ -12,7 +12,6 @@ stops:
   - { name: Robie & Lady Hammond, stop_code: 8208, lat: 44.6647155, lng: -63.61677 }
   - { name: Robie & Lady Hammond, stop_code: 7094, lat: 44.6647155, lng: -63.61677 }
   - { name: Robie & Lady Hammond, stop_code: 8180, lat: 44.6647155, lng: -63.61677 }
-  - { name: Robie & Quinpool (south bound), stop_code: 8214, lat: 44.64737, lng: -63.59070 }
   - { name: Robie & Quinpool (north bound), stop_code: 8184, lat: 44.64737, lng: -63.59070 }
   - { name: South & Barrington, stop_code: 6096, lat: 44.640231, lng: -63.5699951 }
   - { name: Barrington & Duke (north bound), stop_code: 6087, lat: 44.649345, lng: -63.57469 }
@@ -82,15 +81,27 @@ stops:
   - { name: Bridge Terminal (Dartmouth Sportsplex), stop_code: 8640, lat: 44.6703, lng: -63.5765 }
   - { name: South and LeMarchant, stop_code: 7144, lat: 44.6359, lng: -63.5895 }
   - { name: Robie and Young, stop_code: 8269, lat: 44.6597, lng: -63.6021 }
+  - { name: Robie and Young, stop_code: 8193, lat: 44.6597, lng: -63.6021 }
   - { name: Robie and Spring Garden (north bound), stop_code: 8185, lat: 44.6407, lng: -63.5867 }
   - { name: Coburg and Henry, stop_code: 6448, lat: 44.6397, lng: -63.5887 }
   - { name: Windsor and Young, stop_code: 8571, lat: 44.6562, lng: -63.6062 }
 # the following were taken by wlach's GPS device
   - { name: Robie and Spring Garden, stop_code: 8332, lat: 44.64055, lng: -63.58652 }
+  - { name: Robie and Spring Garden, stop_code: 8328, lat: 44.64093, lng: -63.58556 }
   - { name: Robie and Binney (north bound), stop_code: 8219, lat: 44.64235, lng: -63.58776 }
   - { name: Robie and Cherry (north bound), stop_code: 8179, lat: 44.64426, lng: -63.58869 }
   - { name: North and Gottingen, stop_code: 7346, lat: 44.65704, lng: -63.59146 }
   - { name: North and Gottingen, stop_code: 6781, lat: 44.65768, lng: -63.59172 }
   - { name: North and Gottingen, stop_code: 6769, lat: 44.65748, lng: -63.59123 }
+  - { name: Robie and Bliss (south bound), stop_code: 8194, lat: 44.64158, lng: -63.58758 }
+  - { name: Robie and Jubilee (south bound), stop_code: 8195, lat: 44.64328, lng: -63.58837 }
+  - { name: Robie and Cherry (south bound), stop_code: 8196, lat: 44.64467, lng: -63.58923 }
+  - { name: Robie and Shirley (south bound), stop_code: 8183, lat: 44.64612, lng: -63.59004 }
+  - { name: Robie & Quinpool (south bound), stop_code: 8214, lat: 44.64768, lng: -63.59078 }
+  - { name: Robie & Welsford (south bound), stop_code: 8190, lat: 44.64857, lng: -63.59114 }
+  - { name: Robie & Cunard (south bound), stop_code: 8205, lat: 44.65038, lng: -63.59227 }
+  - { name: Robie & Charles (south bound), stop_code: 8178, lat: 44.65305, lng: -63.59373 }
+  - { name: Robie & North (south bound), stop_code: 8213, lat: 44.65498, lng: -63.59537 }
+  - { name: Robie & North, stop_code: 7341, lat: 44.65499, lng: -63.59449 }
 
 routes:

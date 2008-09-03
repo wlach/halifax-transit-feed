@@ -3,6 +3,7 @@ long_name: To Dartmouth
 time_points: [ 7284, 7412, 6087, 7351, 7151 ]
 between_stops:  
   7284-7412: [ 6203, 7423 ]
+  7412-6087: [ 8328 ]
 stop_times: [
   [ -, -, -, 604a, 607a],
   [ 600a, 611a, 625a, 633a, 637a],

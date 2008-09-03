@@ -35,9 +35,7 @@ stop_times: [
   [ 523p, 529p, 537p, 545p, 552p],
   [ 543p, 549p, 557p, 605p, 612p],
   [ 603p, 609p, 617p, 625p, 632p],
-  [ 623p, 629p, 637p, 645p, 652p],
-  [ -, -, -, -, -],
-  [ -, -, -, -, -]
+  [ 623p, 629p, 637p, 645p, 652p]
 ]
 
 # No service Saturdays, Sundays or Holidays
