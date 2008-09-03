@@ -36,6 +36,7 @@ sub parse_time {
 }
 
 my $num_intervals = $ARGV[0] or die "No num intervals given!";
+my $interval = $ARGV[1] or die "No interval given!";
 
 my @times;
 
@@ -43,7 +44,15 @@ $_ = <STDIN>;
 print $_;
 
 if ($_ !~ /^\#/) {
-    my @timestrs = split /\ +/;
+    my @timestrs;
+    if ($_ =~ m/\[(.*)\]/) {
+	my $inner = $1;
+	@timestrs = split (/\,/, $inner);
+
+    } else {
+	@timestrs = split /\ /;
+    }
+
     foreach (@timestrs) {
 	my ($hour, $minute) = parse_time($_);
 	push @times, [ $hour, $minute ];
@@ -56,7 +65,7 @@ for (my $i=1; $i<($num_intervals+1); $i++) {
 	my $mytime = $_;
 	my ($hour, $minute) = (@$mytime[0], @$mytime[1]);
 	if ($hour > 0 || $minute > 0) {
-	    $minute += 30 * $i;
+	    $minute += $interval * $i;
 	    if ($minute > 59) {
 		$hour += int($minute / 60);
 		$minute = $minute % 60;
