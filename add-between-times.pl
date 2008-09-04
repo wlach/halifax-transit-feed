@@ -24,11 +24,11 @@ sub parse_time {
 	} else {
 	    $hour += 24;
 	}
-    } elsif ($time =~ /^-\Z/) {
+    } elsif ($time =~ /^\ *-\Z/) {
 	($hour, $minute) = (0, 0);
 	# no stop at this time
     } else {
-	print "Should not happen! Time misformed.\n";
+	print "Should not happen! Time ('$time') misformed.\n";
 	exit;
     }
 
