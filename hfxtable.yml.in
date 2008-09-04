@@ -90,8 +90,9 @@ stops:
   - { name: Chain Lake & Lakelands, stop_code: 6160, lat: 44.6375, lng: -63.6691 }
   - { name: Greenwood Heights, stop_code: 6315, lat: 44.6553, lng: -63.7361, bad: 1  }
   - { name: Glengary Gardens, stop_code: 6722, lat: 44.6605, lng: -63.7467, bad: 1  }
-
-
+  - { name: Summer Street (QEII Health Sciences), stop_code: 8364, lat: 44.6457, lng: -63.5856, bad: 1 }
+  - { name: Chain Lake & Lakelands, stop_code: 6189, lat: 44.6375, lng: -63.6691 }
+  - { name: Greenwood Heights, stop_code: 6317, lat: 44.6553, lng: -63.7361, bad: 1  }
 # the following were taken by wlach's GPS device
   - { name: Robie and Spring Garden, stop_code: 8332, lat: 44.64055, lng: -63.58652 }
   - { name: Robie and Spring Garden, stop_code: 8328, lat: 44.64093, lng: -63.58556 }
