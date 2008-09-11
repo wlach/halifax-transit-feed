@@ -1,6 +1,8 @@
 short_name: 23
 long_name: To Timberlea
 time_points: [ 8414, 8643, 6160, 6315, 6722 ]
+between_stops:  
+  8414-8643: [ 8184, 8206 ]
 stop_times: [
   [ -, 533a, 548a, 554a, 600a],
   [ -, 603a, 618a, 624a, 630a],

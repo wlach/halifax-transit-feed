@@ -1,6 +1,8 @@
 short_name: 4
 long_name: To Downtown via North
 time_points: [ 6601, 7087, 6611, 6564, 7284, 7351, 6105, 8435 ]
+between_stops:  
+  7284-7351: [ 7357, 7352, 7342, 7354, 7347 ] 
 stop_times: [
   [ 538a, 549a, 558a, 602a, 611a, 620a, 625a, 628a],
   [ 624a, 635a, 645a, 649a, 657a, 707a, 712a, 715a],

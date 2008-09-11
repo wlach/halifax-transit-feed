@@ -12,7 +12,6 @@ stops:
   - { name: Robie & Lady Hammond, stop_code: 8208, lat: 44.6647155, lng: -63.61677 }
   - { name: Robie & Lady Hammond, stop_code: 7094, lat: 44.6647155, lng: -63.61677 }
   - { name: Robie & Lady Hammond, stop_code: 8180, lat: 44.6647155, lng: -63.61677 }
-  - { name: Robie & Quinpool (north bound), stop_code: 8184, lat: 44.64737, lng: -63.59070 }
   - { name: South & Barrington, stop_code: 6096, lat: 44.640231, lng: -63.5699951 }
   - { name: Barrington & Duke (north bound), stop_code: 6087, lat: 44.649345, lng: -63.57469 }
   - { name: Barrington & Duke (south bound), stop_code: 6105, lat: 44.649345, lng: -63.57469 }
@@ -79,6 +78,7 @@ stops:
   - { name: Alderney Ferry Terminal, stop_code: 6031, lat: 44.6645, lng: -63.5685 }
   - { name: Bridge Terminal (Dartmouth Sportsplex), stop_code: 7151, lat: 44.6703, lng: -63.5765 }
   - { name: Bridge Terminal (Dartmouth Sportsplex), stop_code: 8640, lat: 44.6703, lng: -63.5765 }
+  - { name: Bridge Terminal (Dartmouth Sportsplex), stop_code: 8641, lat: 44.6703, lng: -63.5765 }
   - { name: South and LeMarchant, stop_code: 7144, lat: 44.6359, lng: -63.5895 }
   - { name: Robie and Young, stop_code: 8269, lat: 44.6597, lng: -63.6021 }
   - { name: Robie and Young, stop_code: 8193, lat: 44.6597, lng: -63.6021 }
@@ -88,11 +88,19 @@ stops:
   - { name: Robie & Young, stop_code: 8629, lat: 44.6595, lng: -63.6022 }
   - { name: Summer Street (QEII Health Sciences), stop_code: 8363, lat: 44.6457, lng: -63.5856, bad: 1 }
   - { name: Chain Lake & Lakelands, stop_code: 6160, lat: 44.6375, lng: -63.6691 }
-  - { name: Greenwood Heights, stop_code: 6315, lat: 44.6553, lng: -63.7361, bad: 1  }
+  - { name: Greenwood Heights, stop_code: 6315, lat: 44.6553, lng: -63.7361, bad: 1 }
   - { name: Glengary Gardens, stop_code: 6722, lat: 44.6605, lng: -63.7467, bad: 1  }
   - { name: Summer Street (QEII Health Sciences), stop_code: 8364, lat: 44.6457, lng: -63.5856, bad: 1 }
   - { name: Chain Lake & Lakelands, stop_code: 6189, lat: 44.6375, lng: -63.6691 }
   - { name: Greenwood Heights, stop_code: 6317, lat: 44.6553, lng: -63.7361, bad: 1  }
+  - { name: TeleTech (Chain Lake Drive), stop_code: 6390, lat: 44.6375, lng: -63.6691, bad: 1 }
+  - { name: Highfield Terminal, stop_code: 6923, lat: 44.6862, lng: -63.5925, bad: 1 }
+  - { name: Highfield Terminal, stop_code: 6918, lat: 44.6862, lng: -63.5925, bad: 1 }
+  - { name: Ilsley Avenue (across Metro Transit), stop_code: 6949, lat: 44.6963, lng: -63.5830, bad: 1 }
+  - { name: Ilsley Avenue (across Metro Transit), stop_code: 7205, lat: 44.6963, lng: -63.5830, bad: 1 }
+  - { name: Wright Avenue and Macdonald, stop_code: 7153, lat: 44.7069, lng: -63.5972, bad: 1 }
+  - { name: Colford Avenue, stop_code: 6767, lat: 44.7208, lng: -63.5853, bad: 1 }
+
 # the following were taken by wlach's GPS device
   - { name: Robie and Spring Garden, stop_code: 8332, lat: 44.64055, lng: -63.58652 }
   - { name: Robie and Spring Garden, stop_code: 8328, lat: 44.64093, lng: -63.58556 }
@@ -111,5 +119,19 @@ stops:
   - { name: Robie & Charles (south bound), stop_code: 8178, lat: 44.65305, lng: -63.59373 }
   - { name: Robie & North (south bound), stop_code: 8213, lat: 44.65498, lng: -63.59537 }
   - { name: Robie & North, stop_code: 7341, lat: 44.65499, lng: -63.59449 }
+  - { name: North and Windsor, stop_code: 7358, lat: 44.65234, lng: -63.59830 }
+  - { name: North and Clifton, stop_code: 7353, lat: 44.65381, lng: -63.59615 }
+
+  - { name: North and Gottingen, stop_code: 7347, lat: 44.65706, lng: -63.59150 }
+  - { name: North and Maynard, stop_code: 7354, lat: 44.65610, lng: -63.59275 }
+  - { name: North and Robie, stop_code: 7342, lat: 44.65448, lng: -63.59507 }
+  - { name: North and Clifton, stop_code: 7352, lat: 44.65361, lng: -63.59630 }
+  - { name: North and Windsor, stop_code: 7357, lat: 44.65211, lng: -63.59844 }
+  - { name: Robie and Willow, stop_code: 8222, lat: 44.65372, lng: -63.59403 }
+  - { name: Robie and Garrick, stop_code: 8221, lat: 44.65171, lng: -63.59281 }
+  - { name: Robie and Cunard, stop_code: 8206, lat: 44.65001, lng: -63.59176 }
+  - { name: Robie and Quinpool (north bound), stop_code: 8184, lat: 44.64795, lng: -63.59068 }
+  - { name: Quinpool and Windsor, stop_code: 8150, lat: 44.64685, lng: -63.59166 }
+  
 
 routes:

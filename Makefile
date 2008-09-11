@@ -16,9 +16,10 @@ ROUTE_FILES=1-to-dartmouth.yml 1-to-mumford.yml \
 	21-to-timberlea.yml 21-to-lacewood-halifax.yml \
 	23-to-timberlea.yml 23-to-mumford-halifax.yml \
 	42-to-lacewood.yml 42-to-dalhousie.yml \
+	52-to-bridge-terminal-burnside.yml 52-to-lacewood-chain-lake-drive.yml \
 	58-to-lucien-drive.yml \
 	80-to-bedford-halifax.yml 80-to-bedford-sackville.yml \
-	81-to-downtown-halifax.yml
+	81-to-downtown-halifax.yml 81-to-hemlock-ravine.yml
 
 hfxtable.yml: hfxtable.yml.in $(ROUTE_FILES) indent-route.pl
 	cp hfxtable.yml.in hfxtable.yml

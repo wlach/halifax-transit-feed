@@ -3,6 +3,7 @@ long_name: To Lacewood
 time_points: [ 6966, 8184, 6219, 7086 ]
 between_stops:  
   6966-8184: [ 8185, 8219, 8179 ]
+  8184-6219: [ 8206 ]
 stop_times: [
   [ -, -, 612a, 625a],
   [ -, -, 642a, 655a],
