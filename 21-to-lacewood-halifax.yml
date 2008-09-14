@@ -2,6 +2,8 @@ short_name: 21
 long_name: To Lacewood / Halifax
 time_points: [ 6317, 6189, 7087, 8364 ]
 # FIXME: should start at 6722, 5 minutes before
+between_stops:  
+  7087-8364: [ 6783, 6776, 6777, 6781 ]
 stop_times: [
   [ 550a, 602a, 615a, 651a],
   [ 625a, 637a, 650a, 726a],

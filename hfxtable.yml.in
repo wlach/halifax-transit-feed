@@ -9,6 +9,7 @@ options:
 stops:
 # the following waypoints are derived from google maps
   - { name: Northridge Road (Richmond Manor), stop_code: 8165, lat: 44.671826, lng: -63.6163061 }
+  - { name: Northridge Road (Richmond Manor), stop_code: 8164, lat: 44.671826, lng: -63.6163061 }
   - { name: Robie & Lady Hammond, stop_code: 8208, lat: 44.6647155, lng: -63.61677 }
   - { name: Robie & Lady Hammond, stop_code: 7094, lat: 44.6647155, lng: -63.61677 }
   - { name: Robie & Lady Hammond, stop_code: 8180, lat: 44.6647155, lng: -63.61677 }
@@ -17,8 +18,6 @@ stops:
   - { name: Barrington & Duke (south bound), stop_code: 6105, lat: 44.649345, lng: -63.57469 }
   - { name: Barrington & Morris, stop_code: 6114, lat: 44.641761, lng: -63.571278 }
   - { name: Gottingen & Young (north bound), stop_code: 7366, lat: 44.662365, lng: -63.59804 }
-  - { name: Gottingen & Young (south bound), stop_code: 6770, lat: 44.662365, lng: -63.59804 }
-  - { name: Novalea (Samuel Prince Manor), stop_code: 7378, lat: 44.671285, lng: -63.61181 }
   - { name: Mumford Terminal, stop_code: 7284, lat: 44.648658, lng: -63.621684 }
   - { name: Mumford Terminal, stop_code: 7285, lat: 44.648658, lng: -63.621684 }
   - { name: Mumford Terminal, stop_code: 8643, lat: 44.648658, lng: -63.621684 }
@@ -27,7 +26,6 @@ stops:
   - { name: Quinpool & Oxford, stop_code: 8136, lat: 44.644512, lng: -63.600296 }
   - { name: Quinpool & Oxford, stop_code: 8137, lat: 44.644512, lng: -63.600296 }
   - { name: North & Brunswick (south bound), stop_code: 7351, lat: 44.6582, lng: -63.5895 }
-  - { name: North & Brunswick (north bound), stop_code: 7348, lat: 44.6582, lng: -63.5895 }
   - { name: Kearney Lake & Grosvenor, stop_code: 7019, lat: 44.681611, lng: -63.667767 }
   - { name: Kearney Lake & Wedgewood, stop_code: 7023, lat: 44.681611, lng: -63.667767 }
   - { name: Lacewood Terminal, stop_code: 7087, lat: 44.661511, lng: -63.656975 }
@@ -52,7 +50,6 @@ stops:
   - { name: Point Pleasant Park, stop_code: 8649, lat: 44.625298, lng: -63.56406 }
   - { name: Tower Road Turing Loop, stop_code: 8409, lat: 44.6259, lng: -63.574524 }
 # the following waypoints are derived from openstreetmap
-  - { name: Duffus & Novalea Drive, stop_code: 6583, lat: 44.6673, lng: -63.6061 }
   - { name: Titus and Main, stop_code: 7166, lat: 44.6594, lng: -63.6343 }
   - { name: Windsor and Young, stop_code: 8561, lat: 44.6564, lng: -63.6069 }
   - { name: Spring Garden and South Park, stop_code: 8308, lat: 44.6422, lng: -63.5797 }
@@ -132,6 +129,34 @@ stops:
   - { name: Robie and Cunard, stop_code: 8206, lat: 44.65001, lng: -63.59176 }
   - { name: Robie and Quinpool (north bound), stop_code: 8184, lat: 44.64795, lng: -63.59068 }
   - { name: Quinpool and Windsor, stop_code: 8150, lat: 44.64685, lng: -63.59166 }
+  - { name: North & Brunswick, stop_code: 7348, lat: 44.65833, lng: -63.59029 }
+  - { name: Novalea & Duffus, stop_code: 6583, lat: 44.66729, lng: -63.60655 }
+  - { name: Gottingen & Black, stop_code: 6785, lat: 44.65825, lng: -63.59252 }
+  - { name: Gottingen & Bloomfield, stop_code: 6768, lat: 44.65982, lng: -63.59452 }
+  - { name: Gottingen & Macara, stop_code: 6782, lat: 44.66113, lng: -63.59659 }
+  - { name: Novalea & Livingstone, stop_code: 7377, lat: 44.66388, lng: -63.60046 }
+  - { name: Novalea & Stanley, stop_code: 7381, lat: 44.66479, lng: -63.60187 }
+  - { name: Novalea & Cabot, stop_code: 7374, lat: 44.66624, lng: -63.60420 }
+  - { name: Novalea & Devonshire, stop_code: 7369, lat: 44.66717, lng: -63.60568 }
+  - { name: Novalea & Vestby, stop_code: 7373, lat: 44.66871, lng: -63.60773 }
+  - { name: Novalea & Leeds, stop_code: 7376, lat: 44.67042, lng: -63.61035 }
+  # all of these are headed towards the macdonald bridge
+  - { name: Novalea (Samuel Prince Manor), stop_code: 7380, lat: 44.67160, lng: -63.61214 }
+  - { name: Novalea (Samuel Prince Manor), stop_code: 7379, lat: 44.67160, lng: -63.61214 }
+  - { name: Novalea (Samuel Prince Manor), stop_code: 7378, lat: 44.67176, lng: -63.61225 }
+  # the following three are headed AWAY from the macdonald bridge
+  - { name: Novalea (Samuel Prince Manor), stop_code: 7367, lat: 44.67160, lng: -63.61234 }
+  - { name: Novalea (Samuel Prince Manor), stop_code: 7368, lat: 44.67160, lng: -63.61234 }
+
+  - { name: Novalea & Vestby, stop_code: 7382, lat: 44.66854, lng: -63.60771 }
+  - { name: Novalea & Duffus, stop_code: 7370, lat: 44.66755, lng: -63.60648 }
+  - { name: Novalea & Cabot, stop_code: 7362, lat: 44.66645, lng: -63.60485 }
+  - { name: Novalea & Stanley, stop_code: 7365, lat: 44.66493, lng: -63.60239 }
+  - { name: Novalea & Livingstone, stop_code: 7364, lat: 44.66404, lng: -63.60110 }
+  - { name: Gottingen & Young, stop_code: 6770, lat: 44.66227, lng: -63.59841 }
+  - { name: Gottingen & Sullivan, stop_code: 6783, lat: 44.66177, lng: -63.59768 }
+  - { name: Gottingen & Almon, stop_code: 6776, lat: 44.66018, lng: -63.59534 }
+  - { name: Gottingen & Black, stop_code: 6777, lat: 44.65850, lng: -63.59289 }
   
 
 routes:
