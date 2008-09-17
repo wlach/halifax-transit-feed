@@ -2,7 +2,7 @@ short_name: 23
 long_name: To Mumford / Halifax
 time_points: [ 6722, 6317, 6189, 7284, 8414 ]
 between_stops:
-  7284-8414: [ 8205 ]
+  7284-8414: [ 8205, 6087 ]
 stop_times: [
   [ 605a, 610a, 617a, 632a, 656a],
   [ 635a, 640a, 647a, 703a, 729a],

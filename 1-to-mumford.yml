@@ -2,6 +2,7 @@ short_name: 1
 long_name: To Mumford
 time_points: [ 7151, 6105, 7421, 7284 ]
 between_stops:  
+  7151-6105: [ 8638, 6088, 6104, 6125 ]
   6105-7421: [ 8332, 6448 ]
 stop_times: [
   [ 610a, 620a, 633a, 644a],

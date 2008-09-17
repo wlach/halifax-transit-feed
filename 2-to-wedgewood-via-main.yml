@@ -2,6 +2,7 @@ short_name: 2
 long_name: To Wedgewood via Main
 time_points: [ 8435, 7348, 8643, 6612, 6564, 6032, 6597, 7087, 7019 ] 
 between_stops:  
+  8435-7348: [ 6089 ]
   7348-8643: [ 7346, 7341, 7353, 7358 ]
 stop_times: [
   [ -, -, -, -, -, 540a, 545a, 550a, 556a],
