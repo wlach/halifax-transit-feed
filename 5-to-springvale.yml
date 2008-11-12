@@ -1,6 +1,8 @@
 short_name: 5
 long_name: To Springvale
 time_points: [ 8435, 6396, 7284, 6578 ]
+between_stops:  
+  8435-6396: [ 6544 ]
 stop_times: [
   [ -, -, 710a, 720a],
   [ -, -, 740a, 750a],

@@ -3,6 +3,7 @@ long_name: To Mumford Terminal
 time_points: [ 8649, 8409, 6087, 6583, 7284 ]
 between_stops: 
   6087-6583: [ 6089 ]
+  6583-7284: [ 8560 ]
 stop_times: [
   [ 620a, -, 630a, 641a, 652a],
   [ 650a, -, 703a, 714a, 725a],

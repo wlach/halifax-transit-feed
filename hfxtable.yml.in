@@ -13,7 +13,6 @@ stops:
   - { name: Robie & Lady Hammond, stop_code: 8180, lat: 44.6647155, lng: -63.61677 }
   - { name: South & Barrington, stop_code: 6096, lat: 44.640231, lng: -63.5699951 }
   - { name: Barrington & Morris, stop_code: 6114, lat: 44.641761, lng: -63.571278 }
-  - { name: Gottingen & Young (north bound), stop_code: 7366, lat: 44.662365, lng: -63.59804 }
   - { name: Mumford Terminal, stop_code: 7284, lat: 44.648658, lng: -63.621684 }
   - { name: Mumford Terminal, stop_code: 7285, lat: 44.648658, lng: -63.621684 }
   - { name: Mumford Terminal, stop_code: 8643, lat: 44.648658, lng: -63.621684 }
@@ -46,15 +45,11 @@ stops:
   - { name: Tower Road Turing Loop, stop_code: 8409, lat: 44.6259, lng: -63.574524 }
 # the following waypoints are derived from openstreetmap
   - { name: Titus & Main, stop_code: 7166, lat: 44.6594, lng: -63.6343 }
-  - { name: Windsor & Young, stop_code: 8561, lat: 44.6564, lng: -63.6069 }
   - { name: Spring Garden & South Park, stop_code: 8308, lat: 44.6422, lng: -63.5797 }
   - { name: Inglis & Robie, stop_code: 6966, lat: 44.6327, lng: -63.5830 }
   - { name: Romans & Bayers, stop_code: 6197, lat: 44.6526, lng: -63.6214 }
   - { name: Coleman & Bayers, stop_code: 6193, lat: 44.6516, lng: -63.6178 }
   - { name: Connolly & Bayers, stop_code: 6203, lat: 44.6530, lng: -63.6132 }
-  - { name: Windsor & Almon, stop_code: 8557, lat: 44.6543, lng: -63.6029 }
-  - { name: Windsor & Summit, stop_code: 8565, lat: 44.6532, lng: -63.6006 }
-  - { name: Windsor & North, stop_code: 8566, lat: 44.6523, lng: -63.5986 }
   - { name: Sackville Terminal, stop_code: 8260, lat: 44.7680, lng: -63.6987 }
   - { name: Cobequid Terminal, stop_code: 8646, lat: 44.7525, lng: -63.6649 }
   - { name: Cobequid Terminal, stop_code: 6445, lat: 44.7525, lng: -63.6649 }
@@ -75,7 +70,6 @@ stops:
   - { name: Robie & Young, stop_code: 8269, lat: 44.6597, lng: -63.6021 }
   - { name: Robie & Spring Garden (north bound), stop_code: 8185, lat: 44.6407, lng: -63.5867 }
   - { name: Coburg & Henry, stop_code: 6448, lat: 44.6397, lng: -63.5887 }
-  - { name: Windsor & Young, stop_code: 8571, lat: 44.6562, lng: -63.6062 }
   - { name: Robie & Young, stop_code: 8629, lat: 44.6595, lng: -63.6022 }
   - { name: Summer Street (QEII Health Sciences), stop_code: 8363, lat: 44.6457, lng: -63.5856, bad: 1 }
   - { name: Chain Lake & Lakelands, stop_code: 6160, lat: 44.6375, lng: -63.6691 }
@@ -174,5 +168,40 @@ stops:
   - { name: Northridge Road (Richmond Manor), stop_code: 8164, lat: 44.67193, lng: -63.61618 }
   - { name: Novalea & Sentinel, stop_code: 7361, lat: 44.67318, lng: -63.61473 }
   - { name: Novalea & Ridge, stop_code: 7360, lat: 44.67323, lng: -63.61551 }
+
+  - { name: Windsor & Charles (south bound), stop_code: 8559, lat: 44.65146, lng: -63.59704 }
+  - { name: Hunter & Cunard (south bound), stop_code: 6545, lat: 44.65035, lng: -63.59433 }
+  - { name: Hunter & Cunard (north bound), stop_code: 6544, lat: 44.65039, lng: -63.59469 }
+  - { name: Windsor & Charles (north bound), stop_code: 8558, lat: 44.65127, lng: -63.59656 }
+
+  - { name: Windsor & North (north bound), stop_code: 8554, lat: 44.65252, lng: -63.59893 }
+  - { name: Windsor & Summit (north bound), stop_code: 8568, lat: 44.65307, lng: -63.60000 }
+  - { name: Windsor & Almon (north bound), stop_code: 8556, lat: 44.65420, lng: -63.60240 }
+  - { name: Windsor & London (north bound), stop_code: 8572, lat: 44.65505, lng: -63.60432 }
+  - { name: Windsor & Young (north bound), stop_code: 8571, lat: 44.65581, lng: -63.60568 }  
+
+  - { name: Windsor & Bayers (north bound), stop_code: 8574, lat: 44.65717, lng: -63.60773 }
+  - { name: Windsor & Ashton (north bound), stop_code: 8550, lat: 44.65829, lng: -63.60944 }
+  - { name: Windsor & Maxwell (north bound), stop_code: 8549, lat: 44.66015, lng: -63.61264 }
+  - { name: Windsor & Hood (north bound), stop_code: 8567, lat: 44.66087, lng: -63.61576 }
+  - { name: Windsor & Connolly (north bound), stop_code: 8570, lat: 44.66040, lng: -63.61868 }
+  - { name: Windsor & Strawberry (north bound), stop_code: 8552, lat: 44.66066, lng: -63.62020 }
+
+  - { name: Windsor & Kempt (north bound), stop_code: 8563, lat: 44.66192, lng: -63.62175 }
+  - { name: Windsor & Kempt (north bound), stop_code: 8553, lat: 44.66236, lng: -63.62236 }
+  - { name: Windsor & Connaught, stop_code: 8560, lat: 44.66040, lng: -63.62022 }
+
+  - { name: Windsor & Connolly (south bound), stop_code: 8551, lat: 44.66026, lng: -63.61910 }
+  - { name: Windsor & Hood (south bound), stop_code: 8562, lat: 44.66074, lng: -63.61580 }
+  - { name: Windsor & Maxwell (south bound), stop_code: 8565, lat: 44.66006, lng: -63.61291 }
+  - { name: Windsor & Ashton (south bound), stop_code: 8573, lat: 44.65826, lng: -63.60962 }
+  - { name: Windsor & Bayers (south bound), stop_code: 8555, lat: 44.65711, lng: -63.60793 }
+
+  - { name: Windsor & Young (south bound), stop_code: 8561, lat: 44.65604, lng: -63.60638 }
+  - { name: Windsor & London (south bound), stop_code: 8564, lat: 44.65511, lng: -63.60471 }
+  - { name: Windsor & Almon (south bound), stop_code: 8557, lat: 44.65430, lng: -63.60298 }
+#  - { name: Windsor & Summit (south bound), stop_code: 856x, lat: 44.65322, lng: -63.60061 }
+  - { name: Windsor & North (south bound), stop_code: 8566, lat: 44.65227, lng: -63.59863 }
+
 
 routes:
