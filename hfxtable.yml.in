@@ -222,4 +222,11 @@ stops:
   - { name: Gottingen & Cunard (north bound), stop_code: 6779, lat: 44.65325, lng: -63.58519 }
   - { name: Gottingen & Gerrish (north bound), stop_code: 6775, lat: 44.65407, lng: -63.58622 }
   - { name: Gottingen & Charles (north bound), stop_code: 6787, lat: 44.65573, lng: -63.58866 }
+
+  - { name: Gottingen & Charles (south bound), stop_code: 6774, lat: 44.65557, lng: -63.58865 }
+  - { name: Gottingen & Gerrish (south bound), stop_code: 6780, lat: 44.65489, lng: -63.58771 }
+  - { name: Gottingen & Cunard (south bound), stop_code: 6786, lat: 44.65361, lng: -63.58581 }
+  - { name: Gottigen & Cornwallis (south bound), stop_code: 6790, lat: 44.65200, lng: -63.58332 }
+  - { name: Gottingen & Falkland (south bound), stop_code: 6771, lat: 44.65089, lng: -63.58185 }
+
 routes:
