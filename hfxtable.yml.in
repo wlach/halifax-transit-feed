@@ -229,4 +229,13 @@ stops:
   - { name: Gottigen & Cornwallis (south bound), stop_code: 6790, lat: 44.65200, lng: -63.58332 }
   - { name: Gottingen & Falkland (south bound), stop_code: 6771, lat: 44.65089, lng: -63.58185 }
 
+  - { name: North & Dublin, stop_code: 7344, lat: 44.65061, lng: -63.60074 }
+  - { name: North & Oxford, stop_code: 7356, lat: 44.64929, lng: -63.60253 }
+  - { name: Chebucto & Connolly, stop_code: 6405, lat: 44.64818, lng: -63.60497 }
+  - { name: Chebucto & Connaught, stop_code: 6404, lat: 44.64759, lng: -63.60729 }
+
+  - { name: Chebucto & Elm, stop_code: 6406, lat: 44.64787, lng: -63.60564 }
+  - { name: North & Oxford, stop_code: 7355, lat: 44.64896, lng: -63.60284 }
+  - { name: North & Dublin, stop_code: 7345, lat: 44.65013, lng: -63.60110 }
+
 routes:

@@ -1,7 +1,8 @@
 short_name: 5
 long_name: To Downtown
 time_points: [ 6578, 7284, 6397, 8435 ] 
-between_stops:  
+between_stops: 
+  7284-6397: [ 6406 ]
   6397-8435: [ 6545 ]
 stop_times: [
   [ 720a, 730a, 735a, 745a],
