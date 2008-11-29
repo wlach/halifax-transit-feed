@@ -2,7 +2,9 @@ short_name: 23
 long_name: To Timberlea
 time_points: [ 8414, 8643, 6160, 6315, 6722 ]
 between_stops:  
-  8414-8643: [ 6125, 6105, 8184, 8206, 6544 ]
+  8414-8643: [ 6125, 6105, 8184, 6544 ]
+# 8206 should come right after 8184, but google transit's
+# interpolation algorithm can't handle it
 stop_times: [
   [ -, 533a, 548a, 554a, 600a],
   [ -, 603a, 618a, 624a, 630a],

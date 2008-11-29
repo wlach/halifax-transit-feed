@@ -1,27 +1,27 @@
 === Introduction === 
 
 This distribution contains everything required to build a basic google transit 
-feed for Halifax Metro Transit, Canada. Note that it is woefully incomplete
-at the moment. 
+feed for Halifax Metro Transit, Nova Scotia, Canada. Note that it is woefully 
+incomplete at the moment. 
 
 Requirements: GNU Make, Perl, Python 2.5.
 
 === Usage ===
 
-First, check out a copy of google transit feed's tools:
+First, grab a copy of google transit feed tools:
 
-cd $HOME/git
-git clone git@github.com:wlach/googletransitdatafeed-halifax-fork.git
+cd $HOME/src
+wget http://googletransitdatafeed.googlecode.com/files/transitfeed-1.1.7.tar.gz
+tar zxvf transitfeed-1.1.7.tar.gz
 
 Set PYTHONPATH to the python directory in the above checkout:
 
-export PYTHONPATH=$HOME/git/googletransitdatafeed-halifax-fork/python
+export PYTHONPATH=$HOME/src/transitfeed-1.1.7/python
 
 Then just type "make" to build the feed. The output at the end is "feed.zip".
 For fun, you can view this feed using the snazzy transit feed view application:
 
-$HOME/git/googletransitdatafeed-halifax-fork/python/schedule_viewer.py \
-    --feed=hfxfeed.zip
+$HOME/src/transitfeed-1.1.7/python/schedule_viewer.py --feed=hfxfeed.zip
 
 === Copyright ===
 

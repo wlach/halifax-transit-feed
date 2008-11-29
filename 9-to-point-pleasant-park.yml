@@ -2,7 +2,7 @@ short_name: 9
 long_name: To Point Pleasant Park
 time_points: [ 7284, 7094, 6105, 8649 ]
 between_stops:
-  7284-7094: [ 8552, 8563, 8553 ]
+  7284-7094: [ 8552, 8563, 8553 ] 
   7094-6105: [ 6088, 6104, 6125 ]
 stop_times: [
   [ 550a, 600a, 610a, 619a],

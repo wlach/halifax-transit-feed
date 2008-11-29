@@ -85,6 +85,19 @@ stops:
   - { name: Ilsley Avenue (across Metro Transit), stop_code: 7205, lat: 44.6963, lng: -63.5830, bad: 1 }
   - { name: Wright Avenue & Macdonald, stop_code: 7153, lat: 44.7069, lng: -63.5972, bad: 1 }
   - { name: Colford Avenue, stop_code: 6767, lat: 44.7208, lng: -63.5853, bad: 1 }
+  # The following are on the #10 route, moving into dartmouth
+  - { name: South & LeMarchant, stop_code: 7144, lat: 44.6354, lng: -63.5891 }
+  - { name: Tower & Inglis (Saint Mary's University), stop_code: 6965, lat: 44.6334, lng: -63.5800, bad: 1 }
+  - { name: Spring Garden & South Park, stop_code: 8312, lat: 44.6421, lng: -63.5796 }
+  - { name: Mic Mac Terminal (Mic Mac Mall), stop_code: 7219, lat: 44.6863, lng: -63.5554, bad: 1 }
+  - { name: Tacoma Center, stop_code: 8369, lat: 44.6798, lng: -63.5364, bad: 1 }
+  - { name: Woodlawn & Main, stop_code: 8598, lat: 44.6841, lng: -63.5309, bad: 1}
+  - { name: Inverary & Strath, stop_code: 6974, lat: 44.6913, lng: -63.5342, bad: 1}
+  # The following are on the #10 route, moving out of dartmouth
+  - { name: Tacoma Center, stop_code: 8368, lat: 44.6798, lng: -63.5364, bad: 1 }
+  - { name: Mic Mac Terminal (Mic Mac Mall), stop_code: 7218, lat: 44.6863, lng: -63.5554, bad: 1 }
+  - { name: Bridge Terminal (Dartmouth Sportsplex), stop_code: 6842, lat: 44.6703, lng: -63.5765 }
+  - { name: Tower & Inglis (Saint Mary's University), stop_code: 6966, lat: 44.6334, lng: -63.5800, bad: 1 }
 
 # the following were taken by wlach's GPS device
   - { name: Robie & Spring Garden, stop_code: 8332, lat: 44.64055, lng: -63.58652 }
@@ -153,7 +166,7 @@ stops:
   - { name: Gottingen & Sullivan, stop_code: 6783, lat: 44.66177, lng: -63.59768 }
   - { name: Gottingen & Almon, stop_code: 6776, lat: 44.66018, lng: -63.59534 }
   - { name: Gottingen & Black, stop_code: 6777, lat: 44.65850, lng: -63.59289 }
-  - { name: North & Brunswick (south bound), stop_code: 7351, lat: 44.65810, lng: -63.58967 }
+  - { name: North & Brunswick, stop_code: 7351, lat: 44.65810, lng: -63.58967 }
   - { name: North & Barrington (south bound), stop_code: 7343, lat: 44.65865, lng: -63.58818 }
   - { name: Barrington & Duke (south bound), stop_code: 6105, lat: 44.64973, lng: -63.57519 }
   - { name: Barrington & Duke (north bound), stop_code: 6087, lat: 44.65066, lng: -63.57561 }
@@ -190,7 +203,7 @@ stops:
   - { name: Windsor & Kempt (north bound), stop_code: 8563, lat: 44.66192, lng: -63.62175 }
   - { name: Windsor & Kempt (north bound), stop_code: 8553, lat: 44.66236, lng: -63.62236 }
   - { name: Windsor & Connaught, stop_code: 8560, lat: 44.66040, lng: -63.62022 }
-
+  
   - { name: Windsor & Connolly (south bound), stop_code: 8551, lat: 44.66026, lng: -63.61910 }
   - { name: Windsor & Hood (south bound), stop_code: 8562, lat: 44.66074, lng: -63.61580 }
   - { name: Windsor & Maxwell (south bound), stop_code: 8565, lat: 44.66006, lng: -63.61291 }
@@ -203,5 +216,10 @@ stops:
 #  - { name: Windsor & Summit (south bound), stop_code: 856x, lat: 44.65322, lng: -63.60061 }
   - { name: Windsor & North (south bound), stop_code: 8566, lat: 44.65227, lng: -63.59863 }
 
-
+  - { name: Cogswell & Brunswick (north bound), stop_code: 6455, lat: 44.65094, lng: -63.57983 }
+  - { name: Cogswell & Gottingen (north bound), stop_code: 6733, lat: 44.65095, lng: -63.58157 }
+  - { name: Gottingen & Cornwallis (north bound), stop_code: 6778, lat: 44.65198, lng: -63.58330 }
+  - { name: Gottingen & Cunard (north bound), stop_code: 6779, lat: 44.65325, lng: -63.58519 }
+  - { name: Gottingen & Gerrish (north bound), stop_code: 6775, lat: 44.65407, lng: -63.58622 }
+  - { name: Gottingen & Charles (north bound), stop_code: 6787, lat: 44.65573, lng: -63.58866 }
 routes:
