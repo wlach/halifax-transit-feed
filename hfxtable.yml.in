@@ -11,8 +11,6 @@ stops:
   - { name: Robie & Lady Hammond, stop_code: 8208, lat: 44.6647155, lng: -63.61677 }
   - { name: Robie & Lady Hammond, stop_code: 7094, lat: 44.6647155, lng: -63.61677 }
   - { name: Robie & Lady Hammond, stop_code: 8180, lat: 44.6647155, lng: -63.61677 }
-  - { name: South & Barrington, stop_code: 6096, lat: 44.640231, lng: -63.5699951 }
-  - { name: Barrington & Morris, stop_code: 6114, lat: 44.641761, lng: -63.571278 }
   - { name: Mumford Terminal, stop_code: 7284, lat: 44.648658, lng: -63.621684 }
   - { name: Mumford Terminal, stop_code: 7285, lat: 44.648658, lng: -63.621684 }
   - { name: Mumford Terminal, stop_code: 8643, lat: 44.648658, lng: -63.621684 }
@@ -24,8 +22,6 @@ stops:
   - { name: Kearney Lake & Wedgewood, stop_code: 7023, lat: 44.681611, lng: -63.667767 }
   - { name: Lacewood Terminal, stop_code: 7087, lat: 44.661511, lng: -63.656975 }
   - { name: Lacewood Terminal, stop_code: 7086, lat: 44.661511, lng: -63.656975 }
-  - { name: Village at Bayers Road, stop_code: 6564, lat: 44.653622, lng: -63.627683 }
-  - { name: Village at Bayers Road, stop_code: 6563, lat: 44.653622, lng: -63.627683 }
   - { name: Mumford Road & Joseph Howe, stop_code: 6612, lat: 44.648528, lng: -63.629597 }
   - { name: Water Street Terminal, stop_code: 8435, lat: 44.649161, lng: -63.572411 }
   - { name: Alma & Dutch Village, stop_code: 6032, lat: 44.659581, lng: -63.630681 }
@@ -170,6 +166,7 @@ stops:
   - { name: North & Barrington (south bound), stop_code: 7343, lat: 44.65865, lng: -63.58818 }
   - { name: Barrington & Duke (south bound), stop_code: 6105, lat: 44.64973, lng: -63.57519 }
   - { name: Barrington & Duke (north bound), stop_code: 6087, lat: 44.65066, lng: -63.57561 }
+  - { name: Barrington & Duke (north bound), stop_code: 6086, lat: 44.65041, lng: -63.57559 }
   - { name: Barrington and Cornwallis (north bound), stop_code: 6089, lat: 44.65436, lng: -63.58181 }
   - { name: Gottingen & Young (north bound), stop_code: 7366, lat: 44.66267, lng: -63.59887 }
   - { name: North & Brunswick (south bound), stop_code: 8638, lat: 44.65853, lng: -63.58986 }
@@ -217,7 +214,7 @@ stops:
   - { name: Windsor & North (south bound), stop_code: 8566, lat: 44.65227, lng: -63.59863 }
 
   - { name: Cogswell & Brunswick (north bound), stop_code: 6455, lat: 44.65094, lng: -63.57983 }
-  - { name: Cogswell & Gottingen (north bound), stop_code: 6733, lat: 44.65095, lng: -63.58157 }
+  - { name: Cogswell & Gottingen (north bound), stop_code: 6773, lat: 44.65095, lng: -63.58157 }
   - { name: Gottingen & Cornwallis (north bound), stop_code: 6778, lat: 44.65198, lng: -63.58330 }
   - { name: Gottingen & Cunard (north bound), stop_code: 6779, lat: 44.65325, lng: -63.58519 }
   - { name: Gottingen & Gerrish (north bound), stop_code: 6775, lat: 44.65407, lng: -63.58622 }
@@ -229,13 +226,72 @@ stops:
   - { name: Gottigen & Cornwallis (south bound), stop_code: 6790, lat: 44.65200, lng: -63.58332 }
   - { name: Gottingen & Falkland (south bound), stop_code: 6771, lat: 44.65089, lng: -63.58185 }
 
+  # following stops are for routes heading from dartmouth to mumford
   - { name: North & Dublin, stop_code: 7344, lat: 44.65061, lng: -63.60074 }
   - { name: North & Oxford, stop_code: 7356, lat: 44.64929, lng: -63.60253 }
   - { name: Chebucto & Connolly, stop_code: 6405, lat: 44.64818, lng: -63.60497 }
   - { name: Chebucto & Connaught, stop_code: 6404, lat: 44.64759, lng: -63.60729 }
 
+  # following stops are for routes heading from mumford towards dartmouth
   - { name: Chebucto & Elm, stop_code: 6406, lat: 44.64787, lng: -63.60564 }
   - { name: North & Oxford, stop_code: 7355, lat: 44.64896, lng: -63.60284 }
   - { name: North & Dublin, stop_code: 7345, lat: 44.65013, lng: -63.60110 }
+
+  # following stops are for routes heading from scotia square towards spring garden
+  - { name: Barrington & George, stop_code: 6108, lat: 44.64848, lng: -63.57482 }
+  - { name: Barrington & Prince, stop_code: 6084, lat: 44.64760, lng: -63.57435 }
+  - { name: Barrington & Sackville, stop_code: 6103, lat: 44.64660, lng: -63.57368 }
+  - { name: Barrington & Blowers, stop_code: 6102, lat: 44.64557, lng: -63.57322 }
+  - { name: Barrington & Spring Garden, stop_code: 6122, lat: 44.64454, lng: -63.57279 }
+
+  # following stops are for routes heading on spring garden, barrington to robie
+  - { name: Spring Garden & Queen, stop_code: 8331, lat: 44.64348, lng: -63.57551 }
+  - { name: Spring Garden & Dresden Row, stop_code: 8330, lat: 44.64288, lng: -63.57759 }
+  - { name: Spring Garden & South Park, stop_code: 8334, lat: 44.64247, lng: -63.57942 }
+  - { name: Spring Garden & Summer, stop_code: 8335, lat: 44.64144, lng: -63.58316 }
+  - { name: Spring Garden & Carlton, stop_code: 8329, lat: 44.64105, lng: -63.58481 }
+
+  # following stop data was collected going along robie, onto south, onto barrington
+  - { name: Robie & Coburg, stop_code: 8186, lat: 44.63979, lng: -63.58671 }
+  - { name: Robie & University, stop_code: 8188, lat: 44.63776, lng: -63.58559 }
+  - { name: Robie & South, stop_code: 8296, lat: 44.63665, lng: -63.58400 }
+  - { name: South & Wellington, stop_code: 8303, lat: 44.63715, lng: -63.58187 }
+  - { name: South & Tower, stop_code: 8305, lat: 44.63778, lng: -63.57941 }
+  - { name: South & South Park, stop_code: 8295, lat: 44.63840, lng: -63.57627 }
+  - { name: South & Queen, stop_code: 8299, lat: 44.63886, lng: -63.57421 }
+  - { name: South & Barrington, stop_code: 8293, lat: 44.63972, lng: -63.57165 }
+  - { name: South & Barrington, stop_code: 6096, lat: 44.64023, lng: -63.57041 }
+  - { name: Barrington & Morris, stop_code: 6113, lat: 44.64155, lng: -63.57109 }
+  - { name: Barrington & Spring Garden, stop_code: 6124, lat: 44.64404, lng: -63.57232 }
+
+  # following stop data was collected going along barrington, onto south, onto robie
+  - { name: Barrington & Morris, stop_code: 6114, lat: 44.64188, lng: -63.57140 }
+  - { name: Barrington & South, stop_code: 6097, lat: 44.64024, lng: -63.57055 }
+  - { name: South & Church, stop_code: 8294, lat: 44.63949, lng: -63.57253 }
+  - { name: South & Queen, stop_code: 8292, lat: 44.63894, lng: -63.57462 }
+  - { name: South & South Park, stop_code: 8300, lat: 44.63836, lng: -63.57711 }
+  - { name: South & Tower, stop_code: 8301, lat: 44.63795, lng: -63.57863 }
+  - { name: South & Wellington, stop_code: 8298, lat: 44.63723, lng: -63.58183 }
+  - { name: South & Robie, stop_code: 8297, lat: 44.63684, lng: -63.58358 }
+  - { name: South & Robie, stop_code: 8220, lat: 44.63685, lng: -63.58488 }
+  - { name: Robie & University, stop_code: 8187, lat: 44.63857, lng: -63.58576 }
+  
+  # random stop on coburg road headed towards downtown from mumford (FIXME: reorganize)
+  - { name: Coburg & Robie, stop_code: 6452, lat: 44.64007, lng: -63.58723 }
+
+  # from ~ Young and Robie to the Bedford Hwy
+  - { name: Young & Monaghan, stop_code: 8629, lat: 44.65816, lng: -63.60450 }
+  - { name: Young & Windsor, stop_code: 8634, lat: 44.65684, lng: -63.60654 }
+  - { name: Bayers & Dublin, stop_code: 6192, lat: 44.65630, lng: -63.60857 }
+  - { name: Bayers & Oxford, stop_code: 6196, lat: 44.65519, lng: -63.60994 }
+  - { name: Bayers & Connolly, stop_code: 6201, lat: 44.65365, lng: -63.61245 }
+  - { name: Bayers & Connaught, stop_code: 6200, lat: 44.65252, lng: -63.61456 }
+  - { name: Bayers & Vaughan, stop_code: 6199, lat: 44.65202, lng: -63.61846 }
+  - { name: Bayers & Romans, stop_code: 6198, lat: 44.65318, lng: -63.62294 }
+  - { name: Village at Bayers Road, stop_code: 6564, lat: 44.65380, lng: -63.62662 }
+  - { name: Village at Bayers Road, stop_code: 6563, lat: 44.65469, lng: -63.62804 }
+  - { name: Desmond & Scott, stop_code: 6565, lat: 44.65629, lng: -63.62758 }
+  - { name: Joseph Howe & Dutch Village, stop_code: 6984, lat: 44.65830, lng: -63.62902 }
+  - { name: Joseph Howe & Dutch Village, stop_code: 6983, lat: 44.66037, lng: -63.62809 }
 
 routes:

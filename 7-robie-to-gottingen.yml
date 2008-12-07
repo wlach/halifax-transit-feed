@@ -3,8 +3,9 @@ long_name: Robie to Gottingen via South Street and Downtown
 time_points: [ 8165, 8208, 8214, 6096, 6087, 7366, 7378 ]
 between_stops:
   8208-8214: [ 8193, 8202, 8182, 8213, 8178, 8205, 8190 ]
-  8214-6096: [ 8183, 8196, 8195, 8194 ]
-  6087-7366: [ 6455, 6733, 6778, 6779, 6775, 6787, 6769, 6785, 6768, 6782 ]
+  8214-6096: [ 8183, 8196, 8195, 8194, 8186, 8188, 8296, 8303, 8305, 8295, 8299, 8293 ]
+  6096-6087: [ 6113, 6124 ]
+  6087-7366: [ 6455, 6773, 6778, 6779, 6775, 6787, 6769, 6785, 6768, 6782 ]
   7366-7378: [ 7377, 7381, 7374, 7369, 7373, 7376 ]
   # 7360 comes before 7378? does the #7 turn along ridge road? either way
   # google's transit feed interpolation algorithm isn't able to rationalize 
