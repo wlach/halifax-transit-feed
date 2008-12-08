@@ -288,10 +288,19 @@ stops:
   - { name: Bayers & Connaught, stop_code: 6200, lat: 44.65252, lng: -63.61456 }
   - { name: Bayers & Vaughan, stop_code: 6199, lat: 44.65202, lng: -63.61846 }
   - { name: Bayers & Romans, stop_code: 6198, lat: 44.65318, lng: -63.62294 }
-  - { name: Village at Bayers Road, stop_code: 6564, lat: 44.65380, lng: -63.62662 }
+  # forgot to get the stop code for this one, it's between
+  #- { name: Village at Bayers Road, stop_code: xxxx, lat: 44.65380, lng: -63.62662 }
   - { name: Village at Bayers Road, stop_code: 6563, lat: 44.65469, lng: -63.62804 }
   - { name: Desmond & Scott, stop_code: 6565, lat: 44.65629, lng: -63.62758 }
   - { name: Joseph Howe & Dutch Village, stop_code: 6984, lat: 44.65830, lng: -63.62902 }
   - { name: Joseph Howe & Dutch Village, stop_code: 6983, lat: 44.66037, lng: -63.62809 }
+
+  # from ~bedford highway to young and robie (partial)
+  - { name: Joseph Howe & Dutch Village, stop_code: 6982, lat: 44.65839, lng: -63.62920 }
+  - { name: Joseph Howe & Scot, stop_code: 6985, lat: 44.65692, lng: -63.62963 }
+  - { name: Scot & Desmond, stop_code: 8262, lat: 44.65638, lng: -63.62809 }
+  - { name: Village at Bayers Road, stop_code: 6564, lat: 44.65470, lng: -63.62797 }
+  - { name: Young & Monaghan, stop_code: 8633, lat: 44.65808, lng: -63.60435 }
+
 
 routes:
