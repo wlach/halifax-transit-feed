@@ -28,7 +28,6 @@ stops:
   - { name: Dunbrack & Main, stop_code: 6597, lat: 44.652714, lng: -63.649692 }
   - { name: Joseph Howe Manor, stop_code: 8430, lat: 44.634822, lng: -63.576186 }
   - { name: J.H. MacKenzie Manor, stop_code: 6791, lat: 44.637589, lng: -63.571281 }
-  - { name: Spring Garden & Summer Street, stop_code: 8337, lat: 44.641325, lng: -63.583331 }
   - { name: Gordon B. Isnor Manor, stop_code: 6505, lat: 44.651589, lng: -63.585292 }
   - { name: Ross Street & Dunbrack, stop_code: 6601, lat: 44.676468, lng: -63.66354 }
   - { name: Dutch Village & Deal Street, stop_code: 6611, lat: 44.659069, lng: -63.631546 }
@@ -97,7 +96,6 @@ stops:
 
 # the following were taken by wlach's GPS device
   - { name: Robie & Spring Garden, stop_code: 8332, lat: 44.64055, lng: -63.58652 }
-  - { name: Robie & Spring Garden, stop_code: 8328, lat: 44.64093, lng: -63.58556 }
   - { name: Robie & Binney (north bound), stop_code: 8219, lat: 44.64235, lng: -63.58776 }
   - { name: Robie & Cherry (north bound), stop_code: 8179, lat: 44.64426, lng: -63.58869 }
   - { name: North & Gottingen, stop_code: 7346, lat: 44.65704, lng: -63.59146 }
@@ -302,5 +300,20 @@ stops:
   - { name: Village at Bayers Road, stop_code: 6564, lat: 44.65470, lng: -63.62797 }
   - { name: Young & Monaghan, stop_code: 8633, lat: 44.65808, lng: -63.60435 }
 
+  # robie -> barrington on spring garden
+  - { name: Spring Garden & Carlton, stop_code: 8328, lat: 44.64091, lng: -63.58551 }
+  - { name: Spring Garden & Summer, stop_code: 8337, lat: 44.64141, lng: -63.58288 }
+  - { name: Spring Garden & South Park, stop_code: 8333, lat: 44.64217, lng: -63.57999 }
+  - { name: Spring Garden & Dresden Row, stop_code: 8336, lat: 44.64302, lng: -63.57741 }
+  - { name: Spring Garden & Queen, stop_code: 8327, lat: 44.64342, lng: -63.57547 }
+  - { name: Spring Garden & Barrington, stop_code: 8338, lat: 44.64393, lng: -63.57325 }
+
+# barrington, from spring garden to duke
+  - { name: Barrington & Sackville, stop_code: 6121, lat: 44.64590, lng: -63.57344 }
+# I have marked down 6086 as being the gotime id for the stop below, but
+# that can't be right: 6086 is for barrington & duke (south bound). the
+# schedules say so
+#- { name: Barrington & Prince, stop_code: xxxx, lat: 44.64671, lng: -63.57383 }
+  - { name: Barrington & George, stop_code: 6106, lat: 44.64871, lng: -63.57474 }
 
 routes:
