@@ -62,7 +62,6 @@ stops:
   - { name: Robie & Young, stop_code: 8269, lat: 44.6597, lng: -63.6021 }
   - { name: Robie & Spring Garden (north bound), stop_code: 8185, lat: 44.6407, lng: -63.5867 }
   - { name: Coburg & Henry, stop_code: 6448, lat: 44.6397, lng: -63.5887 }
-  - { name: Robie & Young, stop_code: 8629, lat: 44.6595, lng: -63.6022 }
   - { name: Summer Street (QEII Health Sciences), stop_code: 8363, lat: 44.6457, lng: -63.5856, bad: 1 }
   - { name: Chain Lake & Lakelands, stop_code: 6160, lat: 44.6375, lng: -63.6691 }
   - { name: Greenwood Heights, stop_code: 6315, lat: 44.6553, lng: -63.7361, bad: 1 }
@@ -78,15 +77,8 @@ stops:
   - { name: Wright Avenue & Macdonald, stop_code: 7153, lat: 44.7069, lng: -63.5972, bad: 1 }
   - { name: Colford Avenue, stop_code: 6767, lat: 44.7208, lng: -63.5853, bad: 1 }
   # The following are on the #10 route, moving into dartmouth
-  - { name: South & LeMarchant, stop_code: 7144, lat: 44.6354, lng: -63.5891 }
   - { name: Tower & Inglis (Saint Mary's University), stop_code: 6965, lat: 44.6334, lng: -63.5800, bad: 1 }
   - { name: Spring Garden & South Park, stop_code: 8312, lat: 44.6421, lng: -63.5796 }
-
-  # The following are on the #10 route, moving out of dartmouth
-  - { name: Tacoma Center, stop_code: 8368, lat: 44.6798, lng: -63.5364, bad: 1 }
-  - { name: Mic Mac Terminal (Mic Mac Mall), stop_code: 7218, lat: 44.6863, lng: -63.5554, bad: 1 }
-  - { name: Bridge Terminal (Dartmouth Sportsplex), stop_code: 6842, lat: 44.6703, lng: -63.5765 }
-  - { name: Tower & Inglis (Saint Mary's University), stop_code: 6966, lat: 44.6334, lng: -63.5800, bad: 1 }
 
 # the following were taken by wlach's GPS device
   - { name: Robie & Spring Garden, stop_code: 8332, lat: 44.64055, lng: -63.58652 }
@@ -162,7 +154,6 @@ stops:
   - { name: Barrington and Cornwallis (north bound), stop_code: 6089, lat: 44.65436, lng: -63.58181 }
   - { name: Gottingen & Young (north bound), stop_code: 7366, lat: 44.66267, lng: -63.59887 }
   - { name: North & Brunswick (south bound), stop_code: 8638, lat: 44.65853, lng: -63.58986 }
-  - { name: North & Barrington (south bound), stop_code: 7343, lat: 44.65865, lng: -63.58818 }
   - { name: Barrington (south bound), stop_code: 6088, lat: 44.65675, lng: -63.58524 }
   - { name: Barrington & Cornwallis (south bound), stop_code: 6104, lat: 44.65441, lng: -63.58209 }
   - { name: Barrington & Cornwallis (south bound), stop_code: 6125, lat: 44.65348, lng: -63.58080 }
@@ -311,6 +302,7 @@ stops:
   - { name: Barrington & George, stop_code: 6106, lat: 44.64871, lng: -63.57474 }
   
   # dartmouth
+  - { name: Bridge Terminal (Dartmouth Sportsplex), stop_code: 6842, lat: 44.67016, lng: -63.57624  }
   - { name: Bridge Terminal (Dartmouth Sportsplex), stop_code: 7151, lat: 44.67016, lng: -63.57624  }
   - { name: Bridge Terminal (Dartmouth Sportsplex), stop_code: 8640, lat: 44.67016, lng: -63.57624  }
   - { name: Bridge Terminal (Dartmouth Sportsplex), stop_code: 8641, lat: 44.67016, lng: -63.57624  }
@@ -356,5 +348,36 @@ stops:
   - { name: Kincardine & Dumbarton, stop_code: 6592, lat: 44.69247, lng: -63.53681 }
   - { name: Kincardine & Greenoch, stop_code: 7057, lat: 44.68988, lng: -63.53612 }
   - { name: Inverary & Strath, stop_code: 6974, lat: 44.68847, lng: -63.53599 }
+
+# following #10, iverary & strath -> tacoma
+  - { name: Strath & Raymoor, stop_code: 8160, lat: 44.68717, lng: -63.53591 }
+  - { name: Raymoor, stop_code: 8161, lat: 44.68559, lng: -63.53323 }
+  - { name: Raymoor & Main, stop_code: 8162, lat: 44.68428, lng: -63.53158 }
+  - { name: Weyburn & Main, stop_code: 8483, lat: 44.68355, lng: -63.53236 }
+  - { name: Weyburn & Athabaskan, stop_code: 8484, lat: 44.68215, lng: -63.53176 }
+  - { name: Weyburn & Spikenard, stop_code: 8482, lat: 44.68078, lng: -63.53111 }
+  - { name: Spikenard & Valleyfield, stop_code: 8319, lat: 44.67957, lng: -63.53369 }
+  - { name: Tacoma Center, stop_code: 8368, lat: 44.67997, lng: -63.53717 }
+
+# following #10, tacoma -> micmac
+  - { name: Hartlen & Main, stop_code: 6835, lat: 44.68165, lng: -63.53725 }
+  - { name: Major & Main, stop_code: 7175, lat: 44.68195, lng: -63.54001 }
+  - { name: Micmac & Brookdlae, stop_code: 7209, lat: 44.68466, lng: -63.55729 }
+  - { name: Micmac & Glencairn, stop_code: 7218, lat: 44.68576, lng: -63.56118 }
+
+# following #10, micmac -> bridge terminal
+  - { name: Micmac & Glencairn, stop_code: 7211, lat: 44.68671, lng: -63.56299 }
+  - { name: Micmac & Woodland, stop_code: 7215, lat: 44.68532, lng: -63.56827 }
+  - { name: Woodland & Laurier, stop_code: 8581, lat: 44.68175, lng: -63.57462 }
+  - { name: Woodland & Pinehill, stop_code: 8583, lat: 44.68072, lng: -63.57587 }
+  - { name: Woodland & Sheridan, stop_code: 8584, lat: 44.67979, lng: -63.57703 }
+  - { name: Woodland & Slayter, stop_code: 8585, lat: 44.67778, lng: -63.57946 }
+  - { name: Victoria & Francse, stop_code: 8424, lat: 44.67623, lng: -63.57887 }
+  - { name: Victoria & Boland, stop_code: 8419, lat: 44.67515, lng: -63.57724 }
+  - { name: Nantucket & Victoria, stop_code: 8429, lat: 44.67296, lng: -63.57360 }
+  - { name: Thistle & Victoria, stop_code: 8427, lat: 44.67185, lng: -63.57202 }
+  - { name: Thistle & Victoria, stop_code: 8389, lat: 44.67106, lng: -63.57202 }
+  - { name: Wyse & Thistle, stop_code: 8392, lat: 44.66898, lng: -63.57436 }
+  - { name: Wyse & Thistle, stop_code: 8614, lat: 44.66898, lng: -63.57540 }
 
 routes:
