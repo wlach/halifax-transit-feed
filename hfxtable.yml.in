@@ -306,6 +306,7 @@ stops:
   - { name: Bridge Terminal (Dartmouth Sportsplex), stop_code: 7151, lat: 44.67016, lng: -63.57624  }
   - { name: Bridge Terminal (Dartmouth Sportsplex), stop_code: 8640, lat: 44.67016, lng: -63.57624  }
   - { name: Bridge Terminal (Dartmouth Sportsplex), stop_code: 8641, lat: 44.67016, lng: -63.57624  }
+  - { name: Bridge Terminal (Dartmouth Sportsplex), stop_code: 8642, lat: 44.67016, lng: -63.57624  }
 
 # following the #10, from bridge terminal to mic mac mall
   - { name: Wyse & Dawson, stop_code: 8616, lat: 44.67162, lng: -63.58015 }
