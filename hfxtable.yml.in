@@ -58,9 +58,6 @@ stops:
   - { name: Dorothea & Lucien, stop_code: 6575, lat: 44.6784, lng: -63.5109, bad: 1 }
   - { name: Penhorn Terminal, stop_code: 7445, lat: 44.6730, lng: -63.5413, bad: 1 }
   - { name: Alderney Ferry Terminal, stop_code: 6031, lat: 44.6645, lng: -63.5685 }
-  - { name: Bridge Terminal (Dartmouth Sportsplex), stop_code: 7151, lat: 44.6703, lng: -63.5765 }
-  - { name: Bridge Terminal (Dartmouth Sportsplex), stop_code: 8640, lat: 44.6703, lng: -63.5765 }
-  - { name: Bridge Terminal (Dartmouth Sportsplex), stop_code: 8641, lat: 44.6703, lng: -63.5765 }
   - { name: South & LeMarchant, stop_code: 7144, lat: 44.6359, lng: -63.5895 }
   - { name: Robie & Young, stop_code: 8269, lat: 44.6597, lng: -63.6021 }
   - { name: Robie & Spring Garden (north bound), stop_code: 8185, lat: 44.6407, lng: -63.5867 }
@@ -84,10 +81,7 @@ stops:
   - { name: South & LeMarchant, stop_code: 7144, lat: 44.6354, lng: -63.5891 }
   - { name: Tower & Inglis (Saint Mary's University), stop_code: 6965, lat: 44.6334, lng: -63.5800, bad: 1 }
   - { name: Spring Garden & South Park, stop_code: 8312, lat: 44.6421, lng: -63.5796 }
-  - { name: Mic Mac Terminal (Mic Mac Mall), stop_code: 7219, lat: 44.6863, lng: -63.5554, bad: 1 }
-  - { name: Tacoma Center, stop_code: 8369, lat: 44.6798, lng: -63.5364, bad: 1 }
-  - { name: Woodlawn & Main, stop_code: 8598, lat: 44.6841, lng: -63.5309, bad: 1}
-  - { name: Inverary & Strath, stop_code: 6974, lat: 44.6913, lng: -63.5342, bad: 1}
+
   # The following are on the #10 route, moving out of dartmouth
   - { name: Tacoma Center, stop_code: 8368, lat: 44.6798, lng: -63.5364, bad: 1 }
   - { name: Mic Mac Terminal (Mic Mac Mall), stop_code: 7218, lat: 44.6863, lng: -63.5554, bad: 1 }
@@ -315,5 +309,52 @@ stops:
 # schedules say so
 #- { name: Barrington & Prince, stop_code: xxxx, lat: 44.64671, lng: -63.57383 }
   - { name: Barrington & George, stop_code: 6106, lat: 44.64871, lng: -63.57474 }
+  
+  # dartmouth
+  - { name: Bridge Terminal (Dartmouth Sportsplex), stop_code: 7151, lat: 44.67016, lng: -63.57624  }
+  - { name: Bridge Terminal (Dartmouth Sportsplex), stop_code: 8640, lat: 44.67016, lng: -63.57624  }
+  - { name: Bridge Terminal (Dartmouth Sportsplex), stop_code: 8641, lat: 44.67016, lng: -63.57624  }
+
+# following the #10, from bridge terminal to mic mac mall
+  - { name: Wyse & Dawson, stop_code: 8616, lat: 44.67162, lng: -63.58015 }
+  - { name: Boland & Cairn, stop_code: 6304, lat: 44.67344, lng: -63.57982 }
+  - { name: Boland & Victoria, stop_code: 6303, lat: 44.67510, lng: -63.57797 }
+  - { name: Boland & Frances, stop_code: 8428, lat: 44.67642, lng: -63.57897 }
+  - { name: Slayter & Woodland, stop_code: 8587, lat: 44.67776, lng: -63.57929 }
+  - { name: Sheridan & Woodland, stop_code: 8580, lat: 44.67969, lng: -63.57693 }
+  - { name: Frederick & Woodland, stop_code: 8586, lat: 44.68060, lng: -63.57579 }
+  - { name: Laurier & Woodland, stop_code: 8582, lat: 44.68202, lng: -63.57399 }
+  - { name: Woodland & Micmac, stop_code: 7214, lat: 44.68501, lng: -63.56801 }
+  - { name: Micmac & Glencarin, stop_code: 7213, lat: 44.68667, lng: -63.56355 }
+  - { name: Mic Mac Terminal (Mic Mac Mall), stop_code: 7219, lat: 44.68536, lng: -63.56081 }
+
+# following the #10, Micmac Mall -> Tacoma Center
+  - { name: Micmac & Brookdale, stop_code: 7210, lat: 44.68456, lng: -63.55681 }
+# the following stop doesn't come between 15:30-17:30, leave it out until
+# we can express this in GTFS (or alternately, just leave this mostly
+# useless top out indefinitely-- 7173 comes right after it)
+#- { name: Main & Gordon, stop_code: 7174, lat: 44.68137, lng: -63.54327 }
+  - { name: Main & Gordon, stop_code: 7173, lat: 44.68169, lng: -63.54023 }
+  - { name: Main & Hartlen, stop_code: 6834, lat: 44.68168, lng: -63.53737 }
+  - { name: Tacoma Center, stop_code: 8369, lat: 44.68039, lng: -63.53747 }
+
+# following the #10, Tacoma Center -> Woodlawn & Main
+  - { name: Valleyfield & Oakwood, stop_code: 8416, lat: 44.67932, lng: -63.53463 }
+  - { name: Spikenard & Margaree Parkway, stop_code: 8323, lat: 44.68022, lng: -63.53151 }
+  - { name: Spikenard & Woodlawn, stop_code: 8320, lat: 44.68092, lng: -63.52837 }
+  - { name: Spikenard & Woodlawn, stop_code: 8603, lat: 44.68174, lng: -63.52757 }
+  - { name: Woodlawn & Main, stop_code: 8598, lat: 44.68351, lng: -63.52875 }
+
+# Following #10, Woodlawn & Main -> Inverary & Strath
+  - { name: Booth & Main, stop_code: 6306, lat: 44.68593, lng: -63.52412 }
+  - { name: Booth & Scotsburn, stop_code: 6305, lat: 44.68786, lng: -63.52550 }
+  - { name: Booth & David, stop_code: 7053, lat: 44.68977, lng: -63.52740 }
+  - { name: Kennedy, stop_code: 7052, lat: 44.69088, lng: -63.52839 }
+  - { name: Kennedy, stop_code: 7051, lat: 44.69151, lng: -63.53071 }
+  - { name: Caladonia, stop_code: 6369, lat: 44.69199, lng: -63.53286 }
+  - { name: Caladonia & Dumbarton, stop_code: 6591, lat: 44.69308, lng: -63.53429 }
+  - { name: Kincardine & Dumbarton, stop_code: 6592, lat: 44.69247, lng: -63.53681 }
+  - { name: Kincardine & Greenoch, stop_code: 7057, lat: 44.68988, lng: -63.53612 }
+  - { name: Inverary & Strath, stop_code: 6974, lat: 44.68847, lng: -63.53599 }
 
 routes:
