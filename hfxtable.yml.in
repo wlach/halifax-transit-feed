@@ -14,9 +14,6 @@ stops:
   - { name: Mumford Terminal, stop_code: 7284, lat: 44.648658, lng: -63.621684 }
   - { name: Mumford Terminal, stop_code: 7285, lat: 44.648658, lng: -63.621684 }
   - { name: Mumford Terminal, stop_code: 8643, lat: 44.648658, lng: -63.621684 }
-  - { name: Quinpool & Oxford, stop_code: 7412, lat: 44.644512, lng: -63.600296 }
-  - { name: Quinpool & Oxford, stop_code: 7421, lat: 44.644512, lng: -63.600296 }
-  - { name: Quinpool & Oxford, stop_code: 8136, lat: 44.644512, lng: -63.600296 }
   - { name: Quinpool & Oxford, stop_code: 8137, lat: 44.644512, lng: -63.600296 }
   - { name: Kearney Lake & Grosvenor, stop_code: 7019, lat: 44.681611, lng: -63.667767 }
   - { name: Kearney Lake & Wedgewood, stop_code: 7023, lat: 44.681611, lng: -63.667767 }
@@ -61,7 +58,6 @@ stops:
   - { name: South & LeMarchant, stop_code: 7144, lat: 44.6359, lng: -63.5895 }
   - { name: Robie & Young, stop_code: 8269, lat: 44.6597, lng: -63.6021 }
   - { name: Robie & Spring Garden (north bound), stop_code: 8185, lat: 44.6407, lng: -63.5867 }
-  - { name: Coburg & Henry, stop_code: 6448, lat: 44.6397, lng: -63.5887 }
   - { name: Summer Street (QEII Health Sciences), stop_code: 8363, lat: 44.6457, lng: -63.5856, bad: 1 }
   - { name: Chain Lake & Lakelands, stop_code: 6160, lat: 44.6375, lng: -63.6691 }
   - { name: Greenwood Heights, stop_code: 6315, lat: 44.6553, lng: -63.7361, bad: 1 }
@@ -259,7 +255,8 @@ stops:
   - { name: South & Robie, stop_code: 8220, lat: 44.63685, lng: -63.58488 }
   - { name: Robie & University, stop_code: 8187, lat: 44.63857, lng: -63.58576 }
   
-  # random stop on coburg road headed towards downtown from mumford (FIXME: reorganize)
+  # ~quinpool and oxford, heading to spring garden and robie
+  - { name: Quinpool & Oxford, stop_code: 7412, lat: 44.64424, lng: -63.60031 }
   - { name: Coburg & Robie, stop_code: 6452, lat: 44.64007, lng: -63.58723 }
 
   # from ~ Young and Robie to the Bedford Hwy
@@ -380,5 +377,21 @@ stops:
   - { name: Thistle & Victoria, stop_code: 8389, lat: 44.67106, lng: -63.57202 }
   - { name: Wyse & Thistle, stop_code: 8392, lat: 44.66898, lng: -63.57436 }
   - { name: Wyse & Thistle, stop_code: 8614, lat: 44.66898, lng: -63.57540 }
+
+# ~coburg and Henry -> quinpool and oxford
+  - { name: Coburg & Henry, stop_code: 6448, lat: 44.63967, lng: -63.58873 }
+  - { name: Coburg & Lemarchant, stop_code: 6450, lat: 44.63914, lng: -63.59097 }
+  - { name: Coburg & Lilac, stop_code: 6451, lat: 44.63833, lng: -63.59454 }
+  - { name: Oxford & Coburg, stop_code: 7401, lat: 44.63822, lng: -63.59685 }
+  - { name: Oxford & Jennings, stop_code: 7403, lat: 44.63940, lng: -63.59741 }
+  - { name: Oxford & Cornwall, stop_code: 7410, lat: 44.64129, lng: -63.59843 }
+  - { name: Oxford & Norwood, stop_code: 7406, lat: 44.64270, lng: -63.59924 }
+  - { name: Quinpool & Oxford, stop_code: 7421, lat: 44.64444, lng: -63.60015 }
+
+# ~ quinpool and oxford, to robie & quinpool
+  - { name: Quinpool & Oxford, stop_code: 8136, lat: 44.64460, lng: -63.59994 }
+  - { name: Quinpool & Preston, stop_code: 8147, lat: 44.64532, lng: -63.59757 }
+  - { name: Quinpool & Vemon, stop_code: 8149, lat: 44.64640, lng: -63.59410 }
+  - { name: Quinpool & Robie, stop_code: 8150, lat: 44.64686, lng: -63.59166 }
 
 routes:
