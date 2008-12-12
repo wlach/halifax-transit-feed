@@ -14,7 +14,6 @@ stops:
   - { name: Mumford Terminal, stop_code: 7284, lat: 44.648658, lng: -63.621684 }
   - { name: Mumford Terminal, stop_code: 7285, lat: 44.648658, lng: -63.621684 }
   - { name: Mumford Terminal, stop_code: 8643, lat: 44.648658, lng: -63.621684 }
-  - { name: Quinpool & Oxford, stop_code: 8137, lat: 44.644512, lng: -63.600296 }
   - { name: Kearney Lake & Grosvenor, stop_code: 7019, lat: 44.681611, lng: -63.667767 }
   - { name: Kearney Lake & Wedgewood, stop_code: 7023, lat: 44.681611, lng: -63.667767 }
   - { name: Lacewood Terminal, stop_code: 7087, lat: 44.661511, lng: -63.656975 }
@@ -77,6 +76,11 @@ stops:
   - { name: Spring Garden & South Park, stop_code: 8312, lat: 44.6421, lng: -63.5796 }
 
 # the following were taken by wlach's GPS device
+
+# quinpool and oxford, moving towards armdale rotary
+  - { name: Quinpool & Oxford, stop_code: 8137, lat: 44.64448, lng: -63.60075 }
+
+# robie stops
   - { name: Robie & Spring Garden, stop_code: 8332, lat: 44.64055, lng: -63.58652 }
   - { name: Robie & Binney (north bound), stop_code: 8219, lat: 44.64235, lng: -63.58776 }
   - { name: Robie & Cherry (north bound), stop_code: 8179, lat: 44.64426, lng: -63.58869 }
