@@ -71,9 +71,6 @@ stops:
   - { name: Ilsley Avenue (across Metro Transit), stop_code: 7205, lat: 44.6963, lng: -63.5830, bad: 1 }
   - { name: Wright Avenue & Macdonald, stop_code: 7153, lat: 44.7069, lng: -63.5972, bad: 1 }
   - { name: Colford Avenue, stop_code: 6767, lat: 44.7208, lng: -63.5853, bad: 1 }
-  # The following are on the #10 route, moving into dartmouth
-  - { name: Tower & Inglis (Saint Mary's University), stop_code: 6965, lat: 44.6334, lng: -63.5800, bad: 1 }
-  - { name: Spring Garden & South Park, stop_code: 8312, lat: 44.6421, lng: -63.5796 }
 
 # the following were taken by wlach's GPS device
 
@@ -247,6 +244,9 @@ stops:
   - { name: Barrington & Morris, stop_code: 6113, lat: 44.64155, lng: -63.57109 }
   - { name: Barrington & Spring Garden, stop_code: 6124, lat: 44.64404, lng: -63.57232 }
 
+# following stop is what you get continuing into south, towards lemarchant
+  - { name: Robie & South, stop_code: 8317, lat: 44.63633, lng: -63.58584 }
+
   # following stop data was collected going along barrington, onto south, onto robie
   - { name: Barrington & Morris, stop_code: 6114, lat: 44.64188, lng: -63.57140 }
   - { name: Barrington & South, stop_code: 6097, lat: 44.64024, lng: -63.57055 }
@@ -404,5 +404,20 @@ stops:
   - { name: Quinpool & Preston, stop_code: 8147, lat: 44.64532, lng: -63.59757 }
   - { name: Quinpool & Vemon, stop_code: 8149, lat: 44.64640, lng: -63.59410 }
   - { name: Quinpool & Robie, stop_code: 8150, lat: 44.64686, lng: -63.59166 }
+
+# south & dalhousie -> spring garden & south park (following #10)
+  - { name: South & Dalhousie, stop_code: 8304, lat: 44.63488, lng: -63.59253 }
+  - { name: Beaufort & South, stop_code: 6206, lat: 44.63380, lng: -63.59510 }
+  - { name: Beaufort & Oakland, stop_code: 6209, lat: 44.63272, lng: -63.59301 }
+  - { name: Beaufort & Inglis, stop_code: 6208, lat: 44.63124, lng: -63.58960 }
+  - { name: Inglis & Greenwood, stop_code: 6961, lat: 44.63194, lng: -63.58596 }
+  - { name: Inglis & Robie, stop_code: 6962, lat: 44.63272, lng: -63.58260 }
+  - { name: Inglis & Wellington, stop_code: 6965, lat: 44.63311, lng: -63.58089 }
+  - { name: Tower & Inglis, stop_code: 6969, lat: 44.63378, lng: -63.57829 }
+  - { name: South Park & Victoria, stop_code: 8314, lat: 44.63568, lng: -63.57665 }
+  - { name: South Park & South, stop_code: 8306, lat: 44.63739, lng: -63.57736 }
+  - { name: South Park & South, stop_code: 8307, lat: 44.63846, lng: -63.57769 }
+  - { name: South Park & University, stop_code: 8309, lat: 44.64016, lng: -63.57856 }
+  - { name: South Park & Spring Garden, stop_code: 8312, lat: 44.64203, lng: -63.57956 }
 
 routes:
