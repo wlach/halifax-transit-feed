@@ -261,6 +261,13 @@ stops:
   
   # ~quinpool and oxford, heading to spring garden and robie
   - { name: Quinpool & Oxford, stop_code: 7412, lat: 44.64424, lng: -63.60031 }
+  - { name: Oxford & Norwood, stop_code: 7419, lat: 44.64296, lng: -63.59948 }
+  - { name: Oxford & Jubilee, stop_code: 7409, lat: 44.64031, lng: -63.59805 }
+  - { name: Oxford & Jennings, stop_code: 7402, lat: 44.63898, lng: -63.59738 }
+  - { name: Coburg & Oxford, stop_code: 6453, lat: 44.63778, lng: -63.59617 }
+  - { name: Coburg & Lilac, stop_code: 6447, lat: 44.63842, lng: -63.59361 }
+  - { name: Coburg & Lemarchant, stop_code: 6449, lat: 44.63903, lng: -63.59137 }
+  - { name: Coburg & Henry, stop_code: 6454, lat: 44.63957, lng: -63.58905 }
   - { name: Coburg & Robie, stop_code: 6452, lat: 44.64007, lng: -63.58723 }
 
   # from ~ Young and Robie to the Bedford Hwy
