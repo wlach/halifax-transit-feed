@@ -10,7 +10,6 @@ stops:
 # the following waypoints are derived from google maps
   - { name: Robie & Lady Hammond, stop_code: 8208, lat: 44.6647155, lng: -63.61677 }
   - { name: Robie & Lady Hammond, stop_code: 7094, lat: 44.6647155, lng: -63.61677 }
-  - { name: Robie & Lady Hammond, stop_code: 8180, lat: 44.6647155, lng: -63.61677 }
   - { name: Mumford Terminal, stop_code: 7284, lat: 44.648658, lng: -63.621684 }
   - { name: Mumford Terminal, stop_code: 7285, lat: 44.648658, lng: -63.621684 }
   - { name: Mumford Terminal, stop_code: 8643, lat: 44.648658, lng: -63.621684 }
@@ -427,5 +426,22 @@ stops:
   - { name: Inglis (SMU), stop_code: 6960, lat: 44.63326, lng: -63.58090 }
   - { name: Inglish & Robie, stop_code: 6966, lat: 44.63280, lng: -63.58262 }
 
+# robie & young -> Leeds & Rosemeade
+  - { name: Robie & Young, stop_code: 8192, lat: 44.66001, lng: -63.60277 }
+  - { name: Robie & Livingstone, stop_code: 8209, lat: 44.66097, lng: -63.60419 }
+  - { name: Robie & Stanley, stop_code: 8217, lat: 44.66197, lng: -63.60570 }
+  - { name: Robie & Cabot, stop_code: 8204, lat: 44.66341, lng: -63.60783 }
+  - { name: Robie & Duffus, stop_code: 8207, lat: 44.66454, lng: -63.60950 }
+  - { name: Robie & Lady Hammond, stop_code: 8180, lat: 44.66556, lng: -63.61093 }
+  - { name: Robie & Normandy, stop_code: 8211, lat: 44.66670, lng: -63.61254 }
+  - { name: Leeds & Rosemeade, stop_code: 7131, lat: 44.66823, lng: -63.61368 }
+
+# Leeds & Rosemeade -> Robie & Young
+  - { name: Leeds & Rosemeade, stop_code: 7133, lat: 44.66856, lng: -63.61347 }
+  - { name: Robie & Normandy, stop_code: 8212, lat: 44.66695, lng: -63.61309 }
+  - { name: Robie & Lady Hammond, stop_code: 8208, lat: 44.66551, lng: -63.61100 }
+  - { name: Robie & Cabot, stop_code: 8203, lat: 44.66370, lng: -63.60844 }
+  - { name: Robie & Stanley, stop_code: 8197, lat: 44.66168, lng: -63.60543 }
+  - { name: Robie & Kaye, stop_code: 8218, lat: 44.66006, lng: -63.60306 }
 
 routes:
