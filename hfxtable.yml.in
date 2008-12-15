@@ -114,7 +114,6 @@ stops:
   - { name: Robie & Almon (north bound), stop_code: 8201, lat: 44.65724, lng: -63.59846 }
   - { name: Robie & Russell (north bound), stop_code: 8251, lat: 44.65879, lng: -63.60080 }
 
-  - { name: Quinpool & Windsor, stop_code: 8150, lat: 44.64685, lng: -63.59166 }
   - { name: North & Brunswick, stop_code: 7348, lat: 44.65833, lng: -63.59029 }
   - { name: Novalea & Duffus, stop_code: 6583, lat: 44.66729, lng: -63.60655 }
   - { name: Gottingen & Black, stop_code: 6785, lat: 44.65825, lng: -63.59252 }
@@ -420,7 +419,7 @@ stops:
   - { name: South Park & Spring Garden, stop_code: 8312, lat: 44.64203, lng: -63.57956 }
 
 # south park and spring garden -> robie and inglis (following #10)
-  - { name: Robie & South Park, stop_code: 8308, lat: 44.64172, lng: -63.57946 }
+  - { name: Spring Garden & South Park, stop_code: 8308, lat: 44.64172, lng: -63.57946 }
   - { name: South Park & Morris, stop_code: 8313, lat: 44.64017, lng: -63.57877 }
   - { name: South Park & South, stop_code: 8311, lat: 44.63837, lng: -63.57793 }
   - { name: South Park & Fenwick, stop_code: 8315, lat: 44.63687, lng: -63.57716 }
