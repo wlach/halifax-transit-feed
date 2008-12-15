@@ -37,7 +37,6 @@ stops:
 # the following waypoints are derived from openstreetmap
   - { name: Titus & Main, stop_code: 7166, lat: 44.6594, lng: -63.6343 }
   - { name: Spring Garden & South Park, stop_code: 8308, lat: 44.6422, lng: -63.5797 }
-  - { name: Inglis & Robie, stop_code: 6966, lat: 44.6327, lng: -63.5830 }
   - { name: Romans & Bayers, stop_code: 6197, lat: 44.6526, lng: -63.6214 }
   - { name: Coleman & Bayers, stop_code: 6193, lat: 44.6516, lng: -63.6178 }
   - { name: Connolly & Bayers, stop_code: 6203, lat: 44.6530, lng: -63.6132 }
@@ -419,5 +418,15 @@ stops:
   - { name: South Park & South, stop_code: 8307, lat: 44.63846, lng: -63.57769 }
   - { name: South Park & University, stop_code: 8309, lat: 44.64016, lng: -63.57856 }
   - { name: South Park & Spring Garden, stop_code: 8312, lat: 44.64203, lng: -63.57956 }
+
+# south park and spring garden -> robie and inglis (following #10)
+  - { name: Robie & South Park, stop_code: 8308, lat: 44.64172, lng: -63.57946 }
+  - { name: South Park & Morris, stop_code: 8313, lat: 44.64017, lng: -63.57877 }
+  - { name: South Park & South, stop_code: 8311, lat: 44.63837, lng: -63.57793 }
+  - { name: South Park & Fenwick, stop_code: 8315, lat: 44.63687, lng: -63.57716 }
+  # (two between stops with no gotime id #'s...)
+  - { name: Inglis (SMU), stop_code: 6960, lat: 44.63326, lng: -63.58090 }
+  - { name: Inglish & Robie, stop_code: 6966, lat: 44.63280, lng: -63.58262 }
+
 
 routes:
