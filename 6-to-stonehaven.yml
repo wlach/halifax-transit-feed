@@ -1,6 +1,8 @@
 short_name: 6
 long_name: To Stonehaven
 time_points: [ 8435, 8137, 8643, 8361 ]
+between_stops:  
+  8137-8643: [ 7275 ]
 stop_times: [
   [ -, -, 604a, 614a],
   [ -, -, 634a, 644a],

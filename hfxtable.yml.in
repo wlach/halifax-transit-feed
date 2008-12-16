@@ -7,18 +7,14 @@ options:
   agency_timezone: America/Halifax
 
 stops:
-# the following waypoints are derived from google maps
+# the following waypoints are derived from google maps / google earth
   - { name: Robie & Lady Hammond, stop_code: 8208, lat: 44.6647155, lng: -63.61677 }
   - { name: Robie & Lady Hammond, stop_code: 7094, lat: 44.6647155, lng: -63.61677 }
-  - { name: Mumford Terminal, stop_code: 7284, lat: 44.648658, lng: -63.621684 }
-  - { name: Mumford Terminal, stop_code: 7285, lat: 44.648658, lng: -63.621684 }
-  - { name: Mumford Terminal, stop_code: 8643, lat: 44.648658, lng: -63.621684 }
   - { name: Kearney Lake & Grosvenor, stop_code: 7019, lat: 44.681611, lng: -63.667767 }
   - { name: Kearney Lake & Wedgewood, stop_code: 7023, lat: 44.681611, lng: -63.667767 }
   - { name: Lacewood Terminal, stop_code: 7087, lat: 44.661511, lng: -63.656975 }
   - { name: Lacewood Terminal, stop_code: 7086, lat: 44.661511, lng: -63.656975 }
   - { name: Mumford Road & Joseph Howe, stop_code: 6612, lat: 44.648528, lng: -63.629597 }
-  - { name: Water Street Terminal, stop_code: 8435, lat: 44.649161, lng: -63.572411 }
   - { name: Alma & Dutch Village, stop_code: 6032, lat: 44.659581, lng: -63.630681 }
   - { name: Dunbrack & Main, stop_code: 6597, lat: 44.652714, lng: -63.649692 }
   - { name: Joseph Howe Manor, stop_code: 8430, lat: 44.634822, lng: -63.576186 }
@@ -208,6 +204,12 @@ stops:
   - { name: North & Oxford, stop_code: 7356, lat: 44.64929, lng: -63.60253 }
   - { name: Chebucto & Connolly, stop_code: 6405, lat: 44.64818, lng: -63.60497 }
   - { name: Chebucto & Connaught, stop_code: 6404, lat: 44.64759, lng: -63.60729 }
+  - { name: Chebucto & Arm Crescent, stop_code: 6413, lat: 44.64631, lng: -63.61047 }
+  - { name: Chebucto & Quinn, stop_code: 6414, lat: 44.64602, lng: -63.61234 }
+  - { name: Mumford & Chebucto, stop_code: 7275, lat: 44.64592, lng: -63.61570 }
+  - { name: Mumford Terminal, stop_code: 7284, lat: 44.64786, lng: -63.62035 }
+  - { name: Mumford Terminal, stop_code: 7285, lat: 44.64786, lng: -63.62035 }
+  - { name: Mumford Terminal, stop_code: 8643, lat: 44.64786, lng: -63.62035 }
 
   # following stops are for routes heading from mumford towards dartmouth
   - { name: Chebucto & Elm, stop_code: 6406, lat: 44.64787, lng: -63.60564 }
@@ -220,6 +222,10 @@ stops:
   - { name: Barrington & Sackville, stop_code: 6103, lat: 44.64660, lng: -63.57368 }
   - { name: Barrington & Blowers, stop_code: 6102, lat: 44.64557, lng: -63.57322 }
   - { name: Barrington & Spring Garden, stop_code: 6122, lat: 44.64454, lng: -63.57279 }
+
+  # following stops heading from scotia square to water street terminal / ferry terminal  
+  - { name: George & Hollis, stop_code: 6733, lat: 44.64851, lng: -63.57341 }
+  - { name: Water Street Terminal, stop_code: 8435, lat: 44.64922, lng: -63.57225 }
 
   # following stops are for routes heading on spring garden, barrington to robie
   - { name: Spring Garden & Queen, stop_code: 8331, lat: 44.64348, lng: -63.57551 }
@@ -395,6 +401,9 @@ stops:
   - { name: Oxford & Cornwall, stop_code: 7410, lat: 44.64129, lng: -63.59843 }
   - { name: Oxford & Norwood, stop_code: 7406, lat: 44.64270, lng: -63.59924 }
   - { name: Quinpool & Oxford, stop_code: 7421, lat: 44.64444, lng: -63.60015 }
+
+# ~ quinpool and oxford, to young and oxford
+  - { name: Oxford & Allan, stop_code: 7404, lat: 44.64699, lng: -63.60142 }
 
 # ~ quinpool and oxford, to robie & quinpool
   - { name: Quinpool & Oxford, stop_code: 8136, lat: 44.64460, lng: -63.59994 }
