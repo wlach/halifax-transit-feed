@@ -71,6 +71,12 @@ stops:
 # quinpool and oxford, moving towards armdale rotary
   - { name: Quinpool & Oxford, stop_code: 8137, lat: 44.64448, lng: -63.60075 }
 
+# mumford rd. and chebucto, moving to terminal (going downtown afterwards)
+  - { name: Mumford & Chebucto, stop_code: 7276, lat: 44.64591, lng: -63.61571 }
+
+# mumford rd. and chebucto, moving out of terminal (going away from dwntwn)
+  - { name: Mumford & Leppert, stop_code: 7273, lat: 44.64604, lng: -63.61616 }
+
 # robie stops
   - { name: Robie & Spring Garden, stop_code: 8332, lat: 44.64055, lng: -63.58652 }
   - { name: Robie & Binney (north bound), stop_code: 8219, lat: 44.64235, lng: -63.58776 }
@@ -212,6 +218,10 @@ stops:
   - { name: Mumford Terminal, stop_code: 8643, lat: 44.64786, lng: -63.62035 }
 
   # following stops are for routes heading from mumford towards dartmouth
+  - { name: Mumford & Leppert, stop_code: 7274, lat: 44.64599, lng: -63.61618 }
+  - { name: Chebucto & Quinn, stop_code: 6409, lat: 44.64571, lng: -63.61272 }
+  - { name: Chebucto & Arm Crescent, stop_code: 6403, lat: 44.64599, lng: -63.61064 }
+  - { name: Chebucto & Newton, stop_code: 6407, lat: 44.64664, lng: -63.60843 }
   - { name: Chebucto & Elm, stop_code: 6406, lat: 44.64787, lng: -63.60564 }
   - { name: North & Oxford, stop_code: 7355, lat: 44.64896, lng: -63.60284 }
   - { name: North & Dublin, stop_code: 7345, lat: 44.65013, lng: -63.60110 }
