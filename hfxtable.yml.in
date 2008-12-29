@@ -43,6 +43,10 @@ stops:
   - { name: Macdonald Avenue & Ilsley Avenue (near Metro Transit H.Q.), stop_code: 7205, lat: 44.695728, lng: -63.583946 }
   - { name: Wright Avenue & Macdonald, stop_code: 7153, lat: 44.701754, lng: -63.600508 }
   - { name: Akerley & Colford, stop_code: 6767, lat: 44.716152, lng: -63.586565 }
+  - { name: Cowie Hill & Ridge Valley, stop_code: 8167, lat: 44.63064, lng: -63.622718 }
+  - { name: Cowie Hill & Ridge Valley, stop_code: 8168, lat: 44.63064, lng: -63.622718 }
+  - { name: Juniper Crescent & Leiblin Drive, stop_code: 7143, lat: 44.595027, lng: -63.636932 }
+
 # the following waypoints are derived from openstreetmap
   - { name: Titus & Main, stop_code: 7166, lat: 44.6594, lng: -63.6343 }
   - { name: Spring Garden & South Park, stop_code: 8308, lat: 44.6422, lng: -63.5797 }

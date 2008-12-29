@@ -12,6 +12,7 @@ ROUTE_FILES=1-to-dartmouth.yml 1-to-mumford.yml \
 	7-robie-to-gottingen.yml 7-gottingen-to-robie.yml \
 	9-to-point-pleasant-park.yml 9-to-mumford.yml \
 	10-to-westphal.yml 10-to-dalhousie.yml \
+	14-to-leiblin-park.yml 14-to-universities-downtown.yml \
 	17-to-hospitals-universities.yml 17-to-lacewood.yml \
 	18-to-smu.yml 18-to-lacewood.yml \
 	21-to-timberlea.yml 21-to-lacewood-halifax.yml \
