@@ -66,9 +66,13 @@ def ProcessOptions(schedule, options):
 def AddStops(schedule, stopsdata):
   for stopdata in stopsdata:
     stop_code = stopdata['stop_code']
-    # all stops fields are REQUIRED. throw an exception if they're not there
-    stop = schedule.AddStop(lat=float(stopdata['lat']), lng=float(stopdata['lng']), 
-                            name=stopdata['name'], stop_code=stop_code)
+    # we have to manually add the stop instead of using AddStop, cause 
+    # we want the stop_code
+    stop_id = unicode(len(schedule.stops))
+    stop = transitfeed.Stop(stop_id=stop_id, lat=stopdata['lat'], 
+                            lng=stopdata['lng'], name=stopdata['name'], 
+                            stop_code=stop_code)
+    schedule.AddStopObject(stop)
     stops[stop_code] = stop
 
 
