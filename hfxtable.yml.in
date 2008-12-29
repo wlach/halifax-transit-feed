@@ -22,26 +22,33 @@ stops:
   - { name: Gordon B. Isnor Manor, stop_code: 6505, lat: 44.651589, lng: -63.585292 }
   - { name: Ross Street & Dunbrack, stop_code: 6601, lat: 44.676468, lng: -63.66354 }
   - { name: Dutch Village & Deal Street, stop_code: 6611, lat: 44.659069, lng: -63.631546 }
-  - { name: Alma & Deal Street, stop_code: 9042, lat: 44.659069, lng: -63.631546 }
   - { name: Downs & Milson, stop_code: 6578, lat: 44.641788, lng: -63.636932 }
   - { name: Chebucto & Oxford (north bound), stop_code: 6396, lat: 44.648689, lng: -63.601871 }
   - { name: Chebucto & Oxford (south bound), stop_code: 6397, lat: 44.648689, lng: -63.601871 }
-  - { name: Stonehaven & Glenmore, stop_code:  8361, lat: 44.635254, lng: -63.630154 }
   - { name: Point Pleasant Park, stop_code: 8649, lat: 44.625298, lng: -63.56406 }
   - { name: Tower Road Turing Loop, stop_code: 8409, lat: 44.6259, lng: -63.574524 }
+# the following waypoints are derived from geobase
+  - { name: Sunnyside (Bedford Highway & Dartmouth), stop_code: 6236, lat: 44.731726, lng: -63.657578 }
+  - { name: Sunnyside (Bedford Highway & Dartmouth), stop_code: 6238, lat: 44.731726, lng: -63.657578 }
+  - { name: Stonehaven & Glenmore, stop_code:  8361, lat: 44.635224, lng: -63.630198 }
+  - { name: Seton Road & Bedford Highway (Mount Saint Vincent University), stop_code: 6216, lat: 44.670526, lng: -63.641589 }
+  - { name: Seton Road & Bedford Highway (Mount Saint Vincent University), stop_code: 6219, lat: 44.670526, lng: -63.641589 }
+  - { name: Walker Avenue & Old Sackville Road (Sackville Terminal), stop_code: 8260, lat: 44.769474, lng: -63.696749 }
+  - { name: Cobequid Drive and Memory Lane (Cobequid Terminal), stop_code: 8646, lat: 44.753835, lng: -63.66313 }
+  - { name: Cobequid Drive and Memory Lane (Cobequid Terminal), stop_code: 6445, lat: 44.753835, lng: -63.66313 }
+  - { name: Ash Lake & Chain Lake Drive (TeleTech), stop_code: 6390, lat: 44.637817, lng: -63.664118 }
+  - { name: Victoria Road & Highfield Park Drive (Highfield Terminal), stop_code: 6923, lat: 44.682821, lng: -63.590579 }
+  - { name: Victoria Road & Highfield Park Drive (Highfield Terminal), stop_code: 6918, lat: 44.682821, lng: -63.590579 }
+  - { name: Macdonald Avenue & Ilsley Avenue (near Metro Transit H.Q.), stop_code: 6949, lat: 44.695728, lng: -63.583946 }
+  - { name: Macdonald Avenue & Ilsley Avenue (near Metro Transit H.Q.), stop_code: 7205, lat: 44.695728, lng: -63.583946 }
+  - { name: Wright Avenue & Macdonald, stop_code: 7153, lat: 44.701754, lng: -63.600508 }
+  - { name: Akerley & Colford, stop_code: 6767, lat: 44.716152, lng: -63.586565 }
 # the following waypoints are derived from openstreetmap
   - { name: Titus & Main, stop_code: 7166, lat: 44.6594, lng: -63.6343 }
   - { name: Spring Garden & South Park, stop_code: 8308, lat: 44.6422, lng: -63.5797 }
   - { name: Romans & Bayers, stop_code: 6197, lat: 44.6526, lng: -63.6214 }
   - { name: Coleman & Bayers, stop_code: 6193, lat: 44.6516, lng: -63.6178 }
   - { name: Connolly & Bayers, stop_code: 6203, lat: 44.6530, lng: -63.6132 }
-  - { name: Sackville Terminal, stop_code: 8260, lat: 44.7680, lng: -63.6987 }
-  - { name: Cobequid Terminal, stop_code: 8646, lat: 44.7525, lng: -63.6649 }
-  - { name: Cobequid Terminal, stop_code: 6445, lat: 44.7525, lng: -63.6649 }
-  - { name: Sunnyside (Bedford Highway & Dartmouth), stop_code: 6236, lat: 44.7316, lng: -63.6573 }
-  - { name: Sunnyside (Bedford Highway & Dartmouth), stop_code: 6238, lat: 44.7316, lng: -63.6573 }
-  - { name: Mount Saint Vincent University, stop_code: 6216, lat: 44.6695, lng: -63.6421, bad: 1 }
-  - { name: Mount Saint Vincent University, stop_code: 6219, lat: 44.6695, lng: -63.6421, bad: 1 }
   - { name: Upper Water & Cornwallis, stop_code: 8414, lat: 44.6539, lng: -63.5814 }
   - { name: Oxford & Young, stop_code: 7423, lat: 44.6543, lng: -63.6097 }
   - { name: Larry Uteck Boulevard & Bedford Highway, stop_code: 7125, lat: 44.6989, lng: -63.6639 }
@@ -58,13 +65,6 @@ stops:
   - { name: Summer Street (QEII Health Sciences), stop_code: 8364, lat: 44.6457, lng: -63.5856, bad: 1 }
   - { name: Chain Lake & Lakelands, stop_code: 6189, lat: 44.6375, lng: -63.6691 }
   - { name: Greenwood Heights, stop_code: 6317, lat: 44.6553, lng: -63.7361, bad: 1  }
-  - { name: TeleTech (Chain Lake Drive), stop_code: 6390, lat: 44.6375, lng: -63.6691, bad: 1 }
-  - { name: Highfield Terminal, stop_code: 6923, lat: 44.6862, lng: -63.5925, bad: 1 }
-  - { name: Highfield Terminal, stop_code: 6918, lat: 44.6862, lng: -63.5925, bad: 1 }
-  - { name: Ilsley Avenue (across Metro Transit), stop_code: 6949, lat: 44.6963, lng: -63.5830, bad: 1 }
-  - { name: Ilsley Avenue (across Metro Transit), stop_code: 7205, lat: 44.6963, lng: -63.5830, bad: 1 }
-  - { name: Wright Avenue & Macdonald, stop_code: 7153, lat: 44.7069, lng: -63.5972, bad: 1 }
-  - { name: Colford Avenue, stop_code: 6767, lat: 44.7208, lng: -63.5853, bad: 1 }
 
 # the following were taken by wlach's GPS device
 
