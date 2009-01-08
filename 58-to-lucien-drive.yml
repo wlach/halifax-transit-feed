@@ -3,6 +3,8 @@ long_name: To Lucien Drive
 time_points: [ 7284, 7412, 6087, 8640, 6031, 7445, 6575 ]
 between_stops:  
   7284-7412: [ 6203, 7423 ]
+  # nb: I haven't checked that 8328-6106 actually are served by the #58, but I'd
+  # be shocked if they weren't
   7412-6087: [ 7419, 7409, 7402, 6453, 6447, 6449, 6454, 6452, 8328, 8337, 8333, 8336, 8327, 8338, 6121, 6106 ]
 stop_times: [
   [ -, -, -, -, -, 540a, 552a],
