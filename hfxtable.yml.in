@@ -47,6 +47,17 @@ stops:
   - { name: Cowie Hill & Ridge Valley, stop_code: 8168, lat: 44.63064, lng: -63.622718 }
   - { name: Juniper Crescent & Leiblin Drive, stop_code: 7143, lat: 44.595027, lng: -63.636932 }
 
+# major timepoints for the 20
+# this is a big lie... I have no actual idea exactly where the dockyards are
+# (not really wanting to waltz around a military installation with a gps), 
+# and decided to put them on some random place on provo wallis
+  - { name: Dockyard, stop_code: 6568, lat: 44.654879, lng: -63.580571, bad: 1 }
+  - { name: Dockyard, stop_code: 6572, lat: 44.654879, lng: -63.580571, bad: 1 }
+  - { name: Greystone (turning loop), stop_code: 6797, lat: 44.599446, lng: -63.614456 }
+  - { name: Greystone (turning loop), stop_code: 6800, lat: 44.599446, lng: -63.614456 }
+  - { name: Herring Cove & Fotherby, stop_code: 6851, lat: 44.588541, lng: -63.593062 }
+  - { name: Herring Cove & Fotherby, stop_code: 6859, lat: 44.588541, lng: -63.593062 }
+  - { name: Herring Cove (St. Paul's Ave & School), stop_code: 7121, lat: 44.571368, lng: -63.561739 }
 # the following waypoints are derived from openstreetmap
   - { name: Titus & Main, stop_code: 7166, lat: 44.6594, lng: -63.6343 }
   - { name: Spring Garden & South Park, stop_code: 8308, lat: 44.6422, lng: -63.5797 }
@@ -71,9 +82,6 @@ stops:
   - { name: Greenwood Heights, stop_code: 6317, lat: 44.6553, lng: -63.7361, bad: 1  }
 
 # the following were taken by wlach's GPS device
-
-# quinpool and oxford, moving towards armdale rotary
-  - { name: Quinpool & Oxford, stop_code: 8137, lat: 44.64448, lng: -63.60075 }
 
 # mumford rd. and chebucto, moving to terminal (going downtown afterwards)
   - { name: Mumford & Chebucto, stop_code: 7276, lat: 44.64591, lng: -63.61571 }
@@ -419,12 +427,6 @@ stops:
 # ~ quinpool and oxford, to young and oxford
   - { name: Oxford & Allan, stop_code: 7404, lat: 44.64699, lng: -63.60142 }
 
-# ~ quinpool and oxford, to robie & quinpool
-  - { name: Quinpool & Oxford, stop_code: 8136, lat: 44.64460, lng: -63.59994 }
-  - { name: Quinpool & Preston, stop_code: 8147, lat: 44.64532, lng: -63.59757 }
-  - { name: Quinpool & Vemon, stop_code: 8149, lat: 44.64640, lng: -63.59410 }
-  - { name: Quinpool & Robie, stop_code: 8150, lat: 44.64686, lng: -63.59166 }
-
 # south & dalhousie -> spring garden & south park (following #10)
   - { name: South & Dalhousie, stop_code: 8304, lat: 44.63488, lng: -63.59253 }
   - { name: Beaufort & South, stop_code: 6206, lat: 44.63380, lng: -63.59510 }
@@ -466,5 +468,21 @@ stops:
   - { name: Robie & Cabot, stop_code: 8203, lat: 44.66370, lng: -63.60844 }
   - { name: Robie & Stanley, stop_code: 8197, lat: 44.66168, lng: -63.60543 }
   - { name: Robie & Kaye, stop_code: 8218, lat: 44.66006, lng: -63.60306 }
+
+# Quinpool & Robie -> Quinpool & Connaught
+  - { name: Quinpool & Robie, stop_code: 8151, lat: 44.64716, lng: -63.59127 }
+  - { name: Quinpool & Monastery, stop_code: 8138, lat: 44.64620, lng: -63.59458 }
+  - { name: Quinpool & Preston, stop_code: 8148, lat: 44.64528, lng: -63.59772 }
+  - { name: Quinpool & Oxford, stop_code: 8137, lat: 44.64446, lng: -63.60074 }
+  - { name: Quinpool & Beech, stop_code: 8134, lat: 44.64408, lng: -63.60197 }
+  - { name: Quinpool & Poplar, stop_code: 8146, lat: 44.64353, lng: -63.60386 }
+
+# Quinpool & Connaught -> Quinpool & Robie
+  - { name: Quinpool & Poplar, stop_code: 8135, lat: 44.64339, lng: -63.60391 }
+  - { name: Quinpool & Beech, stop_code: 8133, lat: 44.64389, lng: -63.60237 }
+  - { name: Quinpool & Oxford, stop_code: 8136, lat: 44.64460, lng: -63.59996 }
+  - { name: Quinpool & Preston, stop_code: 8147, lat: 44.64531, lng: -63.59756 }
+  - { name: Quinpool & Vernon, stop_code: 8149, lat: 44.64639, lng: -63.59360 }
+  - { name: Quinpool & Robie, stop_code: 8150, lat: 44.64702, lng: -63.59167 }
 
 routes:

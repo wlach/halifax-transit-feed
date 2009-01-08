@@ -15,6 +15,7 @@ ROUTE_FILES=1-to-dartmouth.yml 1-to-mumford.yml \
 	14-to-leiblin-park.yml 14-to-universities-downtown.yml \
 	17-to-hospitals-universities.yml 17-to-lacewood.yml \
 	18-to-smu.yml 18-to-lacewood.yml \
+	20-to-herring-cove.yml 20-to-mumford-downtown.yml \
 	21-to-timberlea.yml 21-to-lacewood-halifax.yml \
 	23-to-timberlea.yml 23-to-mumford-halifax.yml \
 	41-to-dalhousie.yml 41-to-bridge-terminal.yml \
