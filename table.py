@@ -63,6 +63,27 @@ def ProcessOptions(schedule, options):
                             agency_timezone=agency_timezone)
 
 
+# Remove any stops from stopsdata that aren't serviced by any routes in
+# routedata.
+def PruneStops(stopsdata, routedata):
+  stopset = set()
+  for route in routedata:
+    stopset.update(route['time_points'])
+    for between_list in route['between_stops']:
+      stopset.update(route['between_stops'][between_list])
+
+  toprune = list()
+  for i, stop in enumerate(stopsdata):
+    if stop['stop_code'] not in stopset:
+      print "Pruning unused stop %s " % stop['stop_code']
+      toprune.append(i)
+
+  # Prune the list in reverse order, as the indices will change otherwise.
+  toprune.sort()
+  toprune.reverse()
+  for prunee in toprune:
+    del stopsdata[prunee]
+
 def AddStops(schedule, stopsdata):
   for stopdata in stopsdata:
     stop_code = stopdata['stop_code']
@@ -156,6 +177,7 @@ def main():
   stream = open(options.input, 'r')
   data = yaml.load(stream)
   ProcessOptions(schedule, data['options'])
+  PruneStops(data['stops'], data['routes'])
   AddStops(schedule, data['stops'])
 
   for route in data['routes']:
