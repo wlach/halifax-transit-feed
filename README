@@ -25,7 +25,7 @@ $HOME/src/transitfeed-1.1.7/python/schedule_viewer.py --feed=hfxfeed.zip
 
 === Copyright ===
 
-With the exception of table.py, which is licensed under the Apache Public
+With the exception of createfeed.py, which is licensed under the Apache Public
 License, please consider all software tools in distribution to be in the public 
 domain. Use them for what you will.
 

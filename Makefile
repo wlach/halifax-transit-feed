@@ -1,7 +1,7 @@
 default: hfxfeed.zip
 
-hfxfeed.zip: hfxtable.yml table.py
-	./table.py --input=hfxtable.yml --output=hfxfeed.zip
+hfxfeed.zip: hfxtable.yml createfeed.py
+	./createfeed.py --input=hfxtable.yml --output=hfxfeed.zip
 
 ROUTE_FILES=1-to-dartmouth.yml 1-to-mumford.yml \
 	2-to-downtown-via-north.yml 2-to-wedgewood-via-main.yml \

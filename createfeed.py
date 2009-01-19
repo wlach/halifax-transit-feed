@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 # Copyright (C) 2007 Google Inc.
-# Copyright (C) 2008 William Lachance
+# Copyright (C) 2008-2009 William Lachance
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
