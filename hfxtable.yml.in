@@ -485,4 +485,10 @@ stops:
   - { name: Quinpool & Vernon, stop_code: 8149, lat: 44.64639, lng: -63.59360 }
   - { name: Quinpool & Robie, stop_code: 8150, lat: 44.64702, lng: -63.59167 }
 
+# heading away from bayer's road, onto gottingen (at least for #21)
+  - { name: Young & Isleville, stop_code: 8632, lat: 44.66144, lng: -63.59985 }
+
+# heading towards bayer's road, from gottingen (at least for #21)
+  - { name: Young & Agricola, stop_code: 8631, lat: 44.66096, lng: -63.60080 }
+
 routes:
