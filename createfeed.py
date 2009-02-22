@@ -113,8 +113,8 @@ def AddTripsToSchedule(schedule, route, routedata, service_id, stop_times):
       trip_stops = []  # Build a list of (time, stop_code) tuples
       i = 0
       for stop_time in trip:
-        matches = timerex.match(stop_time)
-        if matches:
+        matches = timerex.match(str(stop_time))
+        if matches and len(matches.groups()) == 3:
           hour, minute, shift = (int(matches.group(1)), 
                                  str(matches.group(2)), 
                                  matches.group(3))
@@ -133,8 +133,11 @@ def AddTripsToSchedule(schedule, route, routedata, service_id, stop_times):
           clock_time = str(hour) + ":" + minute + ":00"
           seconds = transitfeed.TimeToSecondsSinceMidnight(clock_time)
           trip_stops.append((seconds, routedata['time_points'][i]) )  
-        elif re.search(r'^\-$', stop_time):
+        elif re.search(r'^\-$', str(stop_time)):
           pass
+        else:
+          class InvalidStopTimeError(Exception): pass
+          raise InvalidStopTimeError, 'Bad stoptime "%s"' % stop_time
         i = i + 1
 
     trip_stops.sort()  # Sort by time
