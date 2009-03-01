@@ -158,8 +158,18 @@ stops:
   - { name: North & Barrington (south bound), stop_code: 7343, lat: 44.65865, lng: -63.58818 }
   - { name: Barrington & Duke (south bound), stop_code: 6105, lat: 44.64973, lng: -63.57519 }
   - { name: Barrington & Duke (north bound), stop_code: 6087, lat: 44.65066, lng: -63.57561 }
+  # headed towards the north end on barrington
   - { name: Barrington & Duke (north bound), stop_code: 6086, lat: 44.65041, lng: -63.57559 }
-  - { name: Barrington and Cornwallis (north bound), stop_code: 6089, lat: 44.65436, lng: -63.58181 }
+  - { name: Barrington & Cornwallis (north bound), stop_code: 6089, lat: 44.65436, lng: -63.58181 }
+  # on barrington and north, just east of the macdonald bridge
+  - { name: Barrington & North, stop_code: 6116, lat: 44.65875, lng: -63.58761 }
+  # ditto, but just west of the bridge
+  - { name: Barrington & North, stop_code: 6091, lat: 44.66043, lng: -63.58963 }
+  - { name: Barrington & Russell, stop_code: 6127, lat: 44.66310, lng: -63.59233 }
+  # now headed towards the macdonald bridge from the west, on barrington
+  - { name: Barrington & Russell (south bound), stop_code: 6090, lat: 44.66327, lng: -63.59279 }
+  - { name: Barrington (south bound), stop_code: 6107, lat: 44.66067, lng: -63.59007 }
+  - { name: Barrington & North (south bound), stop_code: 6115, lat: 44.65940, lng: -63.58880 }
   - { name: Gottingen & Young (north bound), stop_code: 7366, lat: 44.66267, lng: -63.59887 }
   - { name: North & Brunswick (south bound), stop_code: 8638, lat: 44.65853, lng: -63.58986 }
   - { name: Barrington (south bound), stop_code: 6088, lat: 44.65675, lng: -63.58524 }
