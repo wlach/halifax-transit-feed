@@ -9,7 +9,6 @@ options:
 stops:
 # the following waypoints are derived from google maps / google earth
   - { name: Robie & Lady Hammond, stop_code: 8208, lat: 44.6647155, lng: -63.61677 }
-  - { name: Robie & Lady Hammond, stop_code: 7094, lat: 44.6647155, lng: -63.61677 }
   - { name: Kearney Lake & Grosvenor, stop_code: 7019, lat: 44.681611, lng: -63.667767 }
   - { name: Kearney Lake & Wedgewood, stop_code: 7023, lat: 44.681611, lng: -63.667767 }
   - { name: Lacewood Terminal, stop_code: 7087, lat: 44.661511, lng: -63.656975 }
@@ -163,9 +162,11 @@ stops:
   - { name: Barrington & Cornwallis (north bound), stop_code: 6089, lat: 44.65436, lng: -63.58181 }
   # on barrington and north, just east of the macdonald bridge
   - { name: Barrington & North, stop_code: 6116, lat: 44.65875, lng: -63.58761 }
-  # ditto, but just west of the bridge
+  # ditto, just west of the bridge
   - { name: Barrington & North, stop_code: 6091, lat: 44.66043, lng: -63.58963 }
+  # headed west on barrington from north, up towards duffus (following the 9)
   - { name: Barrington & Russell, stop_code: 6127, lat: 44.66310, lng: -63.59233 }
+
   # now headed towards the macdonald bridge from the west, on barrington
   - { name: Barrington & Russell (south bound), stop_code: 6090, lat: 44.66327, lng: -63.59279 }
   - { name: Barrington (south bound), stop_code: 6107, lat: 44.66067, lng: -63.59007 }
@@ -500,5 +501,29 @@ stops:
 
 # heading towards bayer's road, from gottingen (at least for #21)
   - { name: Young & Agricola, stop_code: 8631, lat: 44.66096, lng: -63.60080 }
+
+# robie and lady hammond -> barrington, following the #9
+  - { name: Robie & Lady Hammond, stop_code: 7094, lat: 44.66531, lng: -63.60980 }
+  - { name: Duffus & Isleville, stop_code: 6581, lat: 44.66669, lng: -63.60707 }
+  - { name: Novalea & Duffus, stop_code: 6582, lat: 44.66782, lng: -63.60558 }
+  - { name: Albert & Duffus, stop_code: 6586, lat: 44.66926, lng: -63.60375 }
+  - { name: Duffus & Barrington, stop_code: 6587, lat: 44.67051, lng: -63.60189 }
+  - { name: Barrington & Marginal, stop_code: 6100, lat: 44.66868, lng: -63.60024 }
+  - { name: Barrington & Richmond, stop_code: 6120, lat: 44.66799, lng: -63.59873 }
+  - { name: Barrington & Hannover, stop_code: 6109, lat: 44.66677, lng: -63.59710 }
+  - { name: Barrington & Young, stop_code: 6095, lat: 44.66502, lng: -63.59504 }
+
+# barrington -> robie and lady hammond, following the #9
+  - { name: Barrington & Young, stop_code: 6094, lat: 44.66523, lng: -63.59504 }
+  - { name: Barrington & Hanover, stop_code: 6110, lat: 44.66667, lng: -63.59676 }
+  - { name: Barrington & Richmond, stop_code: 6119, lat: 44.66803, lng: -63.59848 }
+  - { name: Barrington & Marginal, stop_code: 6128, lat: 44.66892, lng: -63.60026 }
+  - { name: Barrington & Duffus, stop_code: 6580, lat: 44.67064, lng: -63.60203 }
+  - { name: Duffus & Albert, stop_code: 6588, lat: 44.66975, lng: -63.60318 }
+  - { name: Duffus & Acadia, stop_code: 6584, lat: 44.66852, lng: -63.60486 }
+  - { name: Duffus & Novalea, stop_code: 6583, lat: 44.66728, lng: -63.60654 }
+  - { name: Duffus & Agricola, stop_code: 6585, lat: 44.66585, lng: -63.60852 }
+  - { name: Robie & Lady Hammond, stop_code: 7096, lat: 44.66546, lng: -63.61008 }
+
 
 routes:
