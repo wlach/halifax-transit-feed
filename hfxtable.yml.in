@@ -339,10 +339,7 @@ stops:
 
 # barrington, from spring garden to duke
   - { name: Barrington & Sackville, stop_code: 6121, lat: 44.64590, lng: -63.57344 }
-# I have marked down 6086 as being the gotime id for the stop below, but
-# that can't be right: 6086 is for barrington & duke (south bound). the
-# schedules say so
-#- { name: Barrington & Prince, stop_code: xxxx, lat: 44.64671, lng: -63.57383 }
+  - { name: Barrington & Prince, stop_code: 6085, lat: 44.64671, lng: -63.57383 }
   - { name: Barrington & George, stop_code: 6106, lat: 44.64871, lng: -63.57474 }
   
   # dartmouth
