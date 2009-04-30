@@ -56,6 +56,8 @@ stops:
   - { name: Cow Bay and Shore Road, stop_code: 7497, lat: 44.611722, lng: -63.494494 }
   - { name: Ocean View Manor (Sea Breeze and Caldwell), stop_code: 6340, lat: 44.606528, lng: -63.468805 }
   - { name: Heritage Hills (Samuel Daniel and Cow Bay), stop_code: 8669, lat: 44.617328, lng: -63.464734 }
+  # stop for 2 and 4, north bound 
+  - { name: Argyle & Duke (north bound), stop_code: 6589, lat: 44.6490162, lng: -63.5757807 }
 
 # major timepoints for the 20
 # this is a big lie... I have no actual idea exactly where the dockyards are
