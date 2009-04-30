@@ -45,6 +45,17 @@ stops:
   - { name: Cowie Hill & Ridge Valley, stop_code: 8167, lat: 44.63064, lng: -63.622718 }
   - { name: Cowie Hill & Ridge Valley, stop_code: 8168, lat: 44.63064, lng: -63.622718 }
   - { name: Juniper Crescent & Leiblin Drive, stop_code: 7143, lat: 44.595027, lng: -63.636932 }
+  # stops on 60 (eastern passage)
+  - { name: Alderney Ferry Terminal (Alderney & Ochterloney), stop_code: 6030, lat: 44.6664922, lng: -63.5700424 }
+  - { name: Dartmouth General Hospital, stop_code: 8010, lat: 44.6532160801, lng: -63.5482610872 }
+  - { name: Dartmouth General Hospital, stop_code: 7481, lat: 44.6532160801, lng: -63.5482610872 }
+  - { name: Woodside Ferry Terminal, stop_code: 8605, lat: 44.6494917, lng: -63.5460573 }
+  - { name: Woodside Ferry Terminal, stop_code: 8606, lat: 44.6494917, lng: -63.5460573 }
+  - { name: Shearwater main gates (Main & Bonaventure), stop_code: 7462, lat: 44.626612, lng: -63.5150518 }
+  - { name: Shearwater main gates (Main & Bonaventure), stop_code: 7486, lat: 44.626612, lng: -63.5150518 }
+  - { name: Cow Bay and Shore Road, stop_code: 7497, lat: 44.611722, lng: -63.494494 }
+  - { name: Ocean View Manor (Sea Breeze and Caldwell), stop_code: 6340, lat: 44.606528, lng: -63.468805 }
+  - { name: Heritage Hills (Samuel Daniel and Cow Bay), stop_code: 8669, lat: 44.617328, lng: -63.464734 }
 
 # major timepoints for the 20
 # this is a big lie... I have no actual idea exactly where the dockyards are
@@ -68,7 +79,7 @@ stops:
   - { name: Larry Uteck Boulevard & Bedford Highway, stop_code: 7125, lat: 44.6989, lng: -63.6639 }
   - { name: Dorothea & Lucien, stop_code: 6575, lat: 44.6784, lng: -63.5109, bad: 1 }
   - { name: Penhorn Terminal, stop_code: 7445, lat: 44.6730, lng: -63.5413, bad: 1 }
-  - { name: Alderney Ferry Terminal, stop_code: 6031, lat: 44.6645, lng: -63.5685 }
+  - { name: Alderney Ferry Terminal (Alderney & Queen), stop_code: 6031, lat: 44.6645, lng: -63.5685 }
   - { name: South & LeMarchant, stop_code: 7144, lat: 44.6359, lng: -63.5895 }
   - { name: Robie & Young, stop_code: 8269, lat: 44.6597, lng: -63.6021 }
   - { name: Robie & Spring Garden (north bound), stop_code: 8185, lat: 44.6407, lng: -63.5867 }
@@ -521,6 +532,5 @@ stops:
   - { name: Duffus & Novalea, stop_code: 6583, lat: 44.66728, lng: -63.60654 }
   - { name: Duffus & Agricola, stop_code: 6585, lat: 44.66585, lng: -63.60852 }
   - { name: Robie & Lady Hammond, stop_code: 7096, lat: 44.66546, lng: -63.61008 }
-
 
 routes:
