@@ -4,7 +4,8 @@ time_points: [ 6317, 6189, 7087, 8364 ]
 # FIXME: should start at 6722, 5 minutes before
 between_stops:  
   7087-8364: [ 6983, 8631, 6783, 6776, 6777, 6781, 6774, 6780, 6786, 6790, 6771, 6084, 6103, 6122, 8331, 8330, 8334, 8335 ]
-stop_times: [
+stop_times:
+  weekday: [
   [ 550a, 602a, 615a, 651a],
   [ 625a, 637a, 650a, 726a],
   [ 655a, 707a, 720a, 756a],
@@ -44,7 +45,7 @@ stop_times: [
   [ 1203a, 1211x, 1223x, -],
   [ 1233a, 1241x, 1253x, -]
 ]
-stop_times_saturday: [
+saturday: [
   [ 625a, 633a, 645a, -],
   [ 655a, 703a, 715a, -],
   [ 725a, 733a, 745a, -],
@@ -83,7 +84,7 @@ stop_times_saturday: [
   [ 1200x, 1208x, 1220x, -],
   [ 1230x, 1238x, 1250x, -]
 ]
-stop_times_sunday: [
+sunday: [
   [ 645a, 653a, 705a, -],
   [ 745a, 753a, 805a, -],
   [ 845a, 853a, 905a, -],

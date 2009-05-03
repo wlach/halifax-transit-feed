@@ -2,7 +2,8 @@ short_name: 60
 long_name: To Bridge Terminal
 time_points: [ 6340, 8669, 7486, 8606, 7481, 6030, 8640 ]
 between_stops: {}
-stop_times: [
+stop_times:
+  weekday: [
   [ 542a, -, 550a, -, 557a, 605a, 610a],
   [ -, 557a, 605a, 612a, 614a, 623a, 628a],
   [ 612a, -, 621a, 628a, 630a, 639a, 644a],
@@ -58,7 +59,7 @@ stop_times: [
   [ 1136p, -, 1144p, -, 1151p, 1159p, 1204x],
   [ 1253x, -, 101x, -, 108x, 116x, 121x]
 ]
-stop_times_saturday: [
+saturday: [
   [ 638a, -, 647a, -, 655a, 704a, 709a],
   [ 738a, -, 747a, -, 755a, 804a, 809a],
   [ 808a, -, 817a, -, 825a, 834a, 839a],
@@ -93,7 +94,7 @@ stop_times_saturday: [
   [ 1138p, -, 1146p, -, 1154p, 1203x, 1208x],
   [ 1238x, -, 1246x, -, 1254x, 103x, 108x]
 ]
-stop_times_sunday: [
+sunday: [
   [ 713a, -, 722a, -, 731a, 739a, 744a],
   [ 813a, -, 822a, -, 831a, 839a, 844a],
   [ 913a, -, 922a, -, 931a, 939a, 944a],

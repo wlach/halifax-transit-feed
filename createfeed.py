@@ -161,11 +161,15 @@ def AddRouteToSchedule(schedule, routedata):
   r = schedule.AddRoute(short_name=str(routedata['short_name']), 
                         long_name=routedata['long_name'],
                         route_type='Bus')
-  AddTripsToSchedule(schedule, r, routedata, "weekday", routedata['stop_times'])
-  if routedata.get('stop_times_saturday'):
-    AddTripsToSchedule(schedule, r, routedata, "saturday", routedata['stop_times_saturday'])  
-  if routedata.get('stop_times_sunday'):
-    AddTripsToSchedule(schedule, r, routedata, "sunday", routedata['stop_times_sunday'])  
+  if routedata['stop_times'].get('weekday'):
+    AddTripsToSchedule(schedule, r, routedata, "weekday", 
+                       routedata['stop_times']['weekday'])
+  if routedata['stop_times'].get('saturday'):
+    AddTripsToSchedule(schedule, r, routedata, "saturday", 
+                       routedata['stop_times']['saturday'])  
+  if routedata['stop_times'].get('sunday'):
+    AddTripsToSchedule(schedule, r, routedata, "sunday", 
+                       routedata['stop_times']['sunday'])  
 
 def main():
   parser = OptionParser()
