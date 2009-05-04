@@ -1,10 +1,15 @@
 options:
-  start_date: 20080315
-  end_date: 20081215
-  remove_date: 20080704
+  start_date: 20090215
+  end_date: 20091231
+  remove_date: 20091231
   agency_name: Halifax Metro Transit
   agency_url: http://www.halifax.ca/metrotransit/
   agency_timezone: America/Halifax
+
+service_periods:
+  - { id: weekday, start_date: 20090215, end_date: 20091231, weekday: 1 } 
+  - { id: saturday, start_date: 20090215, end_date: 20091231, saturday: 1 } 
+  - { id: sunday, start_date: 20090215, end_date: 20091231, sunday: 1 } 
 
 stops:
 # the following waypoints are derived from google maps / google earth

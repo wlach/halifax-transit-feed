@@ -30,17 +30,24 @@ def ProcessOptions(schedule, options):
   agency_url = options.get('agency_url')
   agency_timezone = options.get('agency_timezone')
 
+  if not (agency_name and agency_url and agency_timezone):
+    print "You must provide agency information"
+
+  schedule.NewDefaultAgency(agency_name=agency_name, agency_url=agency_url,
+                            agency_timezone=agency_timezone)
+
+def ProcessServicePeriods(schedule, options, service_periods_data):
   service_periods = []
 
-  service_periods.append(ServicePeriod(id="weekday"))
-  service_periods[0].SetWeekdayService()
-  service_periods.append(ServicePeriod(id="saturday"))
-  service_periods[1].SetDayOfWeekHasService(5)
-  service_periods.append(ServicePeriod(id="sunday"))
-  service_periods[2].SetDayOfWeekHasService(6)
+  for service_period_data in service_periods_data:
+    service_period = ServicePeriod(id=service_period_data['id'])
+    if service_period_data.get('weekday'):
+      service_period.SetWeekdayService()
+    if service_period_data.get('saturday'):
+      service_period.SetDayOfWeekHasService(5)
+    if service_period_data.get('sunday'):
+      service_period.SetDayOfWeekHasService(6)
 
-  # the service period options are, well, optional
-  for service_period in service_periods:
     if options.get('start_date'):
       service_period.SetStartDate(options['start_date'])
     if options.get('end_date'):
@@ -50,24 +57,21 @@ def ProcessOptions(schedule, options):
     if options.get('remove_date'):
       service_period.SetDateHasService(options['remove_date'], 
                                        has_service=False)
+    service_periods.append(service_period)
 
+      
   # Add all service period objects to the schedule
+  for service_period in service_periods:
+    schedule.AddServicePeriodObject(service_period, validate=False)
+
   schedule.SetDefaultServicePeriod(service_periods[0], validate=False)
-  schedule.AddServicePeriodObject(service_periods[1], validate=False)
-  schedule.AddServicePeriodObject(service_periods[2], validate=False)
-
-  if not (agency_name and agency_url and agency_timezone):
-    print "You must provide agency information"
-
-  schedule.NewDefaultAgency(agency_name=agency_name, agency_url=agency_url,
-                            agency_timezone=agency_timezone)
 
 
 # Remove any stops from stopsdata that aren't serviced by any routes in
 # routedata.
-def PruneStops(stopsdata, routedata):
+def PruneStops(stopsdata, routedata_yml):
   stopset = set()
-  for route in routedata:
+  for route in routedata_yml:
     stopset.update(route['time_points'])
     for between_list in route['between_stops']:
       stopset.update(route['between_stops'][between_list])
@@ -161,16 +165,11 @@ def AddRouteToSchedule(schedule, routedata):
   r = schedule.AddRoute(short_name=str(routedata['short_name']), 
                         long_name=routedata['long_name'],
                         route_type='Bus')
-  if routedata['stop_times'].get('weekday'):
-    AddTripsToSchedule(schedule, r, routedata, "weekday", 
-                       routedata['stop_times']['weekday'])
-  if routedata['stop_times'].get('saturday'):
-    AddTripsToSchedule(schedule, r, routedata, "saturday", 
-                       routedata['stop_times']['saturday'])  
-  if routedata['stop_times'].get('sunday'):
-    AddTripsToSchedule(schedule, r, routedata, "sunday", 
-                       routedata['stop_times']['sunday'])  
 
+  for service_period in schedule.GetServicePeriodList():
+    if routedata['stop_times'].get(service_period.service_id):
+      AddTripsToSchedule(schedule, r, routedata, service_period.service_id, 
+                         routedata['stop_times'][service_period.service_id])
 def main():
   parser = OptionParser()
   parser.add_option('--input', dest='input',
@@ -184,6 +183,7 @@ def main():
   stream = open(options.input, 'r')
   data = yaml.load(stream)
   ProcessOptions(schedule, data['options'])
+  ProcessServicePeriods(schedule, data['options'], data['service_periods'])
   PruneStops(data['stops'], data['routes'])
   AddStops(schedule, data['stops'])
 
@@ -191,7 +191,6 @@ def main():
     AddRouteToSchedule(schedule, route)
 
   schedule.WriteGoogleTransitFeed(options.output)
-
 
 if __name__ == '__main__':
   main()
