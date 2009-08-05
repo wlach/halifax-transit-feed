@@ -11,17 +11,17 @@ Requirements: GNU Make, Perl, Python 2.5.
 First, grab a copy of google transit feed tools:
 
 cd $HOME/src
-wget http://googletransitdatafeed.googlecode.com/files/transitfeed-1.1.7.tar.gz
-tar zxvf transitfeed-1.1.7.tar.gz
+wget http://googletransitdatafeed.googlecode.com/files/transitfeed-1.2.1.tar.gz
+tar zxvf transitfeed-1.2.1.tar.gz
 
 Set PYTHONPATH to the python directory in the above checkout:
 
-export PYTHONPATH=$HOME/src/transitfeed-1.1.7/python
+export PYTHONPATH=$HOME/src/transitfeed-1.2.1/python
 
 Then just type "make" to build the feed. The output at the end is "feed.zip".
 For fun, you can view this feed using the snazzy transit feed view application:
 
-$HOME/src/transitfeed-1.1.7/python/schedule_viewer.py --feed=hfxfeed.zip
+$HOME/src/transitfeed-1.2.1/python/schedule_viewer.py --feed=hfxfeed.zip
 
 === Copyright ===
 
