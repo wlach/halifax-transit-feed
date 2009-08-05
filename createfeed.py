@@ -36,9 +36,11 @@ def ProcessOptions(schedule, options):
   schedule.NewDefaultAgency(agency_name=agency_name, agency_url=agency_url,
                             agency_timezone=agency_timezone)
 
-def ProcessServicePeriods(schedule, options, service_periods_data):
+def ProcessServicePeriods(schedule, options, service_periods_data, 
+                          service_period_exceptions_data):
   service_periods = []
 
+  # Create basic service periods
   for service_period_data in service_periods_data:
     service_period = ServicePeriod(id=service_period_data['id'])
     if service_period_data.get('weekday'):
@@ -48,22 +50,26 @@ def ProcessServicePeriods(schedule, options, service_periods_data):
     if service_period_data.get('sunday'):
       service_period.SetDayOfWeekHasService(6)
 
-    if options.get('start_date'):
-      service_period.SetStartDate(options['start_date'])
-    if options.get('end_date'):
-      service_period.SetEndDate(options['end_date'])
-    if options.get('add_date'):
-      service_period.SetDateHasService(options['add_date'])
-    if options.get('remove_date'):
-      service_period.SetDateHasService(options['remove_date'], 
-                                       has_service=False)
+    service_period.SetStartDate(service_period_data['start_date'])
+    service_period.SetEndDate(service_period_data['end_date'])
     service_periods.append(service_period)
-
       
   # Add all service period objects to the schedule
   for service_period in service_periods:
     schedule.AddServicePeriodObject(service_period, validate=False)
 
+  # Add exceptions data
+  for service_period_exception_data in service_period_exceptions_data:
+    for service_period_removed in service_period_exception_data['service_periods_removed']:
+      schedule.GetServicePeriod(service_period_removed).SetDateHasService(
+        service_period_exception_data['date'],
+        has_service=False)
+    for service_period_added in service_period_exception_data['service_periods_added']:
+      schedule.GetServicePeriod(service_period_added).SetDateHasService(
+        service_period_exception_data['date'],
+        has_service=True)
+
+  # Set a default service period
   schedule.SetDefaultServicePeriod(service_periods[0], validate=False)
 
 
@@ -183,7 +189,8 @@ def main():
   stream = open(options.input, 'r')
   data = yaml.load(stream)
   ProcessOptions(schedule, data['options'])
-  ProcessServicePeriods(schedule, data['options'], data['service_periods'])
+  ProcessServicePeriods(schedule, data['options'], data['service_periods'],
+                        data['service_period_exceptions'])
   PruneStops(data['stops'], data['routes'])
   AddStops(schedule, data['stops'])
 

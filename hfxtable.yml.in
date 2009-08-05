@@ -12,6 +12,19 @@ service_periods:
   - { id: saturday, start_date: 20090215, end_date: 20091231, saturday: 1 } 
   - { id: sunday, start_date: 20090215, end_date: 20091231, sunday: 1 } 
 
+service_period_exceptions:
+   - { id: victoria_day, date: 20090518, service_periods_removed: [ weekday, weekday_academic, saturday], service_periods_added: [ sunday ] }
+   - { id: canada_day, date: 20090701, service_periods_removed: [ weekday, weekday_academic, saturday], service_periods_added: [ sunday ] }
+   - { id: natal_day, date: 20090804, service_periods_removed: [ weekday, weekday_academic, saturday], service_periods_added: [ sunday ] }
+   - { id: labour_day, date: 20090907, service_periods_removed: [ weekday, weekday_academic, saturday], service_periods_added: [ sunday ] }
+   - { id: thanksgiving_day, date: 20091012, service_periods_removed: [ weekday, weekday_academic, saturday], service_periods_added: [ sunday ] }
+   - { id: remembrance_day, date: 20091111, service_periods_removed: [ weekday, weekday_academic, saturday], service_periods_added: [ sunday ] }
+   - { id: christmas_day, date: 20091225, service_periods_removed: [ weekday, weekday_academic, saturday], service_periods_added: [ sunday ] }
+   - { id: boxing_day, date: 20091226, service_periods_removed: [ weekday, weekday_academic, saturday], service_periods_added: [ sunday ] }
+# pre-emptive schedule exceptions for 2010 (outside of schedule validity for now)
+#  - { id: new_years, date: 20100101, service_periods_removed: [ weekday, weekday_academic, saturday], service_periods_added: [ sunday ] }
+#  - { id: good_friday, date: 20100402, service_periods_removed: [ weekday, weekday_academic, saturday], service_periods_added: [ sunday ] }
+
 stops:
 # the following waypoints are derived from google maps / google earth
   - { name: Robie & Lady Hammond, stop_code: 8208, lat: 44.6647155, lng: -63.61677 }
