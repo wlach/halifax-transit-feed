@@ -489,7 +489,7 @@ stops:
   - { name: South Park & Fenwick, stop_code: 8315, lat: 44.63687, lng: -63.57716 }
   # (two between stops with no gotime id #'s...)
   - { name: Inglis (SMU), stop_code: 6960, lat: 44.63326, lng: -63.58090 }
-  - { name: Inglish & Robie, stop_code: 6966, lat: 44.63280, lng: -63.58262 }
+  - { name: Inglis & Robie, stop_code: 6966, lat: 44.63280, lng: -63.58262 }
 
 # robie & young -> Leeds & Rosemeade
   - { name: Robie & Young, stop_code: 8192, lat: 44.66001, lng: -63.60277 }
