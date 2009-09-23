@@ -7,7 +7,7 @@ options:
   agency_timezone: America/Halifax
 
 service_periods:
-  - { id: weekday, start_date: 20090215, end_date: 20091231, weekday: 1 } 
+  - { id: weekday, start_date: 20090901, end_date: 20091231, weekday: 1 } 
   - { id: weekday_academic, start_date: 20090901, end_date: 20091231, weekday: 1 } 
   - { id: saturday, start_date: 20090215, end_date: 20091231, saturday: 1 } 
   - { id: sunday, start_date: 20090215, end_date: 20091231, sunday: 1 } 
