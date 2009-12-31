@@ -1,29 +1,29 @@
 options:
   start_date: 20090501
   end_date: 20091231
-  remove_date: 20091231
+  remove_date: 20100131
   agency_name: Halifax Metro Transit
   agency_url: http://www.halifax.ca/metrotransit/
   agency_timezone: America/Halifax
 
 service_periods:
-  - { id: weekday, start_date: 20090901, end_date: 20091231, weekday: 1 } 
-  - { id: weekday_academic, start_date: 20090901, end_date: 20091231, weekday: 1 } 
-  - { id: saturday, start_date: 20090215, end_date: 20091231, saturday: 1 } 
-  - { id: sunday, start_date: 20090215, end_date: 20091231, sunday: 1 } 
+  - { id: weekday, start_date: 20090901, end_date: 20100131, weekday: 1 } 
+  - { id: weekday_academic, start_date: 20090901, end_date: 20100131, weekday: 1 } 
+  - { id: saturday, start_date: 20090215, end_date: 20100131, saturday: 1 } 
+  - { id: sunday, start_date: 20090215, end_date: 20100131, sunday: 1 } 
 
 service_period_exceptions:
-   - { id: victoria_day, date: 20090518, service_periods_removed: [ weekday, weekday_academic, saturday], service_periods_added: [ sunday ] }
-   - { id: canada_day, date: 20090701, service_periods_removed: [ weekday, weekday_academic, saturday], service_periods_added: [ sunday ] }
-   - { id: natal_day, date: 20090804, service_periods_removed: [ weekday, weekday_academic, saturday], service_periods_added: [ sunday ] }
-   - { id: labour_day, date: 20090907, service_periods_removed: [ weekday, weekday_academic, saturday], service_periods_added: [ sunday ] }
-   - { id: thanksgiving_day, date: 20091012, service_periods_removed: [ weekday, weekday_academic, saturday], service_periods_added: [ sunday ] }
-   - { id: remembrance_day, date: 20091111, service_periods_removed: [ weekday, weekday_academic, saturday], service_periods_added: [ sunday ] }
-   - { id: christmas_day, date: 20091225, service_periods_removed: [ weekday, weekday_academic, saturday], service_periods_added: [ sunday ] }
-   - { id: boxing_day, date: 20091226, service_periods_removed: [ weekday, weekday_academic, saturday], service_periods_added: [ sunday ] }
-# pre-emptive schedule exceptions for 2010 (outside of schedule validity for now)
-#  - { id: new_years, date: 20100101, service_periods_removed: [ weekday, weekday_academic, saturday], service_periods_added: [ sunday ] }
-#  - { id: good_friday, date: 20100402, service_periods_removed: [ weekday, weekday_academic, saturday], service_periods_added: [ sunday ] }
+  - { id: new_years, date: 20100101, service_periods_removed: [ weekday, weekday_academic, saturday], service_periods_added: [ sunday ] }
+  - { id: good_friday, date: 20100402, service_periods_removed: [ weekday, weekday_academic, saturday], service_periods_added: [ sunday ] }
+# Old service exemptions for 2009... need to update these for 2010
+#   - { id: victoria_day, date: 20090518, service_periods_removed: [ weekday, weekday_academic, saturday], service_periods_added: [ sunday ] }
+#   - { id: canada_day, date: 20090701, service_periods_removed: [ weekday, weekday_academic, saturday], service_periods_added: [ sunday ] }
+#   - { id: natal_day, date: 20090804, service_periods_removed: [ weekday, weekday_academic, saturday], service_periods_added: [ sunday ] }
+#   - { id: labour_day, date: 20090907, service_periods_removed: [ weekday, weekday_academic, saturday], service_periods_added: [ sunday ] }
+#   - { id: thanksgiving_day, date: 20091012, service_periods_removed: [ weekday, weekday_academic, saturday], service_periods_added: [ sunday ] }
+#   - { id: remembrance_day, date: 20091111, service_periods_removed: [ weekday, weekday_academic, saturday], service_periods_added: [ sunday ] }
+#   - { id: christmas_day, date: 20091225, service_periods_removed: [ weekday, weekday_academic, saturday], service_periods_added: [ sunday ] }
+#   - { id: boxing_day, date: 20091226, service_periods_removed: [ weekday, weekday_academic, saturday], service_periods_added: [ sunday ] }
 
 stops:
 # the following waypoints are derived from google maps / google earth
