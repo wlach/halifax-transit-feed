@@ -487,7 +487,6 @@ stops:
   - { name: South Park & Morris, stop_code: 8313, lat: 44.64017, lng: -63.57877 }
   - { name: South Park & South, stop_code: 8311, lat: 44.63837, lng: -63.57793 }
   - { name: South Park & Fenwick, stop_code: 8315, lat: 44.63687, lng: -63.57716 }
-  # (two between stops with no gotime id #'s...)
   - { name: Inglis (SMU), stop_code: 6960, lat: 44.63326, lng: -63.58090 }
   - { name: Inglis & Robie, stop_code: 6966, lat: 44.63280, lng: -63.58262 }
 
@@ -554,4 +553,6 @@ stops:
   - { name: Duffus & Agricola, stop_code: 6585, lat: 44.66585, lng: -63.60852 }
   - { name: Robie & Lady Hammond, stop_code: 7096, lat: 44.66546, lng: -63.61008 }
 
+# submitted by transit to go users!
+  - { name: South Park & Inglis (south), stop_code: 8310, lat: 44.63445, lng: -63.5760 }
 routes:
