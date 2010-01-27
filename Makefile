@@ -21,7 +21,7 @@ ROUTE_FILES=1-to-dartmouth.yml 1-to-mumford.yml \
 	41-to-dalhousie.yml 41-to-bridge-terminal.yml \
 	42-to-lacewood.yml 42-to-dalhousie.yml \
 	52-to-bridge-terminal-burnside.yml 52-to-lacewood-chain-lake-drive.yml \
-	58-to-lucien-drive.yml \
+	58-to-bridge-terminal-halifax.yml 58-to-lucien-drive.yml \
 	60-to-eastern-passage-heritage-hills.yml 60-to-bridge-terminal.yml \
 	80-to-bedford-halifax.yml 80-to-bedford-sackville.yml \
 	81-to-downtown-halifax.yml 81-to-hemlock-ravine.yml

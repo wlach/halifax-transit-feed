@@ -100,6 +100,7 @@ stops:
   - { name: Larry Uteck Boulevard & Bedford Highway, stop_code: 7125, lat: 44.6989, lng: -63.6639 }
   - { name: Dorothea & Lucien, stop_code: 6575, lat: 44.6784, lng: -63.5109, bad: 1 }
   - { name: Penhorn Terminal, stop_code: 7445, lat: 44.6730, lng: -63.5413, bad: 1 }
+  - { name: Penhorn Terminal, stop_code: 7446, lat: 44.6730, lng: -63.5413, bad: 1 }
   - { name: Alderney Ferry Terminal (Alderney & Queen), stop_code: 6031, lat: 44.6645, lng: -63.5685 }
   - { name: South & LeMarchant, stop_code: 7144, lat: 44.6359, lng: -63.5895 }
   - { name: Robie & Young, stop_code: 8269, lat: 44.6597, lng: -63.6021 }
@@ -555,4 +556,6 @@ stops:
 
 # submitted by transit to go users!
   - { name: South Park & Inglis (south), stop_code: 8310, lat: 44.63445, lng: -63.5760 }
+  - { name: Portland & Maynard (westbound), stop_code: 8043, lat: 44.667957, lng: -63.553333 }
+
 routes:
