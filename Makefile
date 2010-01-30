@@ -25,7 +25,8 @@ ROUTE_FILES=1-to-dartmouth.yml 1-to-mumford.yml \
 	60-to-eastern-passage-heritage-hills.yml 60-to-bridge-terminal.yml \
 	61-to-bridge-terminal-halifax.yml 61-to-forest-hills-north-preston.yml \
 	80-to-bedford-halifax.yml 80-to-bedford-sackville.yml \
-	81-to-downtown-halifax.yml 81-to-hemlock-ravine.yml
+	81-to-downtown-halifax.yml 81-to-hemlock-ravine.yml \
+	82-to-cobequid-bedford-halifax.yml 82-to-millwood-downsview.yml
 
 hfxtable.yml: hfxtable.yml.in $(ROUTE_FILES) indent-route.pl
 	cp hfxtable.yml.in hfxtable.yml

@@ -54,6 +54,7 @@ stops:
   - { name: Walker Avenue & Old Sackville Road (Sackville Terminal), stop_code: 8260, lat: 44.769474, lng: -63.696749 }
   - { name: Cobequid Drive and Memory Lane (Cobequid Terminal), stop_code: 8646, lat: 44.753835, lng: -63.66313 }
   - { name: Cobequid Drive and Memory Lane (Cobequid Terminal), stop_code: 6445, lat: 44.753835, lng: -63.66313 }
+  - { name: Cobequid Drive and Memory Lane (Cobequid Terminal), stop_code: 6446, lat: 44.753835, lng: -63.66313 }
   - { name: Ash Lake & Chain Lake Drive (TeleTech), stop_code: 6390, lat: 44.637817, lng: -63.664118 }
   - { name: Victoria Road & Highfield Park Drive (Highfield Terminal), stop_code: 6923, lat: 44.682821, lng: -63.590579 }
   - { name: Victoria Road & Highfield Park Drive (Highfield Terminal), stop_code: 6918, lat: 44.682821, lng: -63.590579 }
@@ -573,8 +574,15 @@ stops:
   - { name: Near 148 Lake Major, stop_code: 7104, lat: 44.709877, lng: -63.467831 }
   - { name: Lake Major & Chamberlan, stop_code: 7103, lat: 44.703762, lng: -63.466801 }
 
+  - { name: Stokil & Millwood, stop_code: 7222, lat: 44.790249, lng: -63.692368 }
+  - { name: Stokil & Millwood, stop_code: 7229, lat: 44.790249, lng: -63.692368 }
+  - { name: Metropolitan & Polara, stop_code: 7204, lat: 44.781158, lng: -63.673145 }
+  - { name: Metropolitan & Polara, stop_code: 7206, lat: 44.781158, lng: -63.673145 }
+
 # submitted by transit to go users!
   - { name: South Park & Inglis (south), stop_code: 8310, lat: 44.63445, lng: -63.5760 }
   - { name: Portland & Maynard (westbound), stop_code: 8043, lat: 44.667957, lng: -63.553333 }
   - { name: Bedford Hwy after Nelsons Landing Blvd, stop_code: 6259, lat: 44.712719, lng: -63.674675 }
+  - { name: Bedford Hwy & Kearney Lake, stop_code: 6246, lat: 44.682175, lng: -63.660484 }
+
 routes:
