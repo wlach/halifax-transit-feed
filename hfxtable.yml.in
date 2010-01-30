@@ -554,6 +554,25 @@ stops:
   - { name: Duffus & Agricola, stop_code: 6585, lat: 44.66585, lng: -63.60852 }
   - { name: Robie & Lady Hammond, stop_code: 7096, lat: 44.66546, lng: -63.61008 }
 
+# neocoder + hrm mapping data
+  - { name: Arklow & John Stewart, stop_code: 6035, lat: 44.676609, lng: -63.479733 }
+  - { name: Arklow & John Stewart, stop_code: 6044, lat: 44.676609, lng: -63.479733 }
+  - { name: Auburn & Serocco, stop_code: 6076, lat: 44.689133, lng: -63.483261 }
+  - { name: Auburn & Serocco, stop_code: 6077, lat: 44.689133, lng: -63.483261 }
+  - { name: Portland Hills Terminal, stop_code: 8048, lat: 44.670799, lng: -63.507465 }
+  - { name: Portland Hills Terminal, stop_code: 8049, lat: 44.670799, lng: -63.507465 }
+  - { name: North Preston Rec Center, stop_code: 8282, lat: 44.7460, lng: -63.46781 }
+  - { name: Downey & Simmonds, stop_code: 8281, lat: 44.746178, lng: -63.464531 }
+  - { name: North Preston & Beals, stop_code: 7107, lat: 44.743504, lng: -63.464489 }
+  - { name: Cain & Churchill, stop_code: 6331, lat: 44.743351, lng: -63.465389 }
+  - { name: William & Cain, stop_code: 8506, lat: 44.742966, lng: -63.468590 }
+  - { name: Clarence & Johnson, stop_code: 8507, lat: 44.742966, lng: -63.468590 }
+  - { name: North Preston & Johnson, stop_code: 7118, lat: 44.717880, lng: -63.467190 }
+  - { name: Lake Major & Reddy, stop_code: 7115, lat: 44.715469, lng: -63.467300 }
+  - { name: Near 190 Lake Major, stop_code: 7109, lat: 44.709877, lng: -63.467831  }
+  - { name: Near 148 Lake Major, stop_code: 7104, lat: 44.709877, lng: -63.467831 }
+  - { name: Lake Major & Chamberlan, stop_code: 7103, lat: 44.703762, lng: -63.466801 }
+
 # submitted by transit to go users!
   - { name: South Park & Inglis (south), stop_code: 8310, lat: 44.63445, lng: -63.5760 }
   - { name: Portland & Maynard (westbound), stop_code: 8043, lat: 44.667957, lng: -63.553333 }
