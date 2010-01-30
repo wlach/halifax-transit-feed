@@ -576,5 +576,5 @@ stops:
 # submitted by transit to go users!
   - { name: South Park & Inglis (south), stop_code: 8310, lat: 44.63445, lng: -63.5760 }
   - { name: Portland & Maynard (westbound), stop_code: 8043, lat: 44.667957, lng: -63.553333 }
-
+  - { name: Bedford Hwy after Nelsons Landing Blvd, stop_code: 6259, lat: 44.712719, lng: -63.674675 }
 routes:
