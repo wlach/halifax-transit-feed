@@ -1,8 +1,8 @@
 short_name: 61
 long_name: To Bridge Terminal / Halifax
 time_points: [ 8282, 6077, 6035, 8049, 7446, 6030, 7151, 6105 ]
+# 7001, 7002, 7003, 7000 just before 7118, but I can't geocode it right now 
 between_stops: 
-  # 7001, 7002, 7003, 7000 just before 7118, but I can't geocode it right now 
   8282-6077: [ 8281, 7107, 6331, 8506, 8507, 7118, 7115, 7109, 7104, 7103 ]
   7446-6030: [ 8043 ]
 stop_times:
@@ -44,7 +44,7 @@ stop_times:
   [ 1027p, 1042p, 1046p, 1100p, 1110p, 1117p, 1122p, -],
   [ -, 1114p, 1118p, 1130p, 1140p, -, -, -],
   [ -, 1214x, 1218x, 1230x, 1240x, -, -, -]
-  ]
+]
   saturday: [
   [ 642a, 659a, 705a, 717a, 723a, 733a, 738a, 747a],
   [ 742a, 759a, 805a, 817a, 823a, 833a, 838a, 847a],
